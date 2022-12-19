@@ -14,8 +14,7 @@ def main():
 def convert(time):
     hours, minutes = time.split(":")
     mes = float(minutes)/60
-    float(hours)
-    return hours + mes
+    return float(hours) + mes
 
 if __name__ == "__main__":
     main()
