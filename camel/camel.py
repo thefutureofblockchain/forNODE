@@ -3,10 +3,11 @@ def main():
 
     for letter in a:
         if letter.isupper():
-            b = letter.lower()
-            x,y,z = a.partition(b)
+            letter = letter.lower()
+            a = a.lower()
+            x,y,z = a.partition(letter)
             #print(letter, end = "")
-            print("_" ,y,z, sep="", end = "")
+            print("_" ,z, sep="", end = "")
         else:
             s = 3
             #print(letter, end= "")
