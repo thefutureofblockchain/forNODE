@@ -2,6 +2,8 @@ a = input("Enter eet: ")
 for letter in a:
     if letter.isupper():
         letter = letter.lower()
-        print(letter)
+        print(letter, end = "")
     else:
-        print(letter)
+        print(letter, end= "")
+print()
+
