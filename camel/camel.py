@@ -29,6 +29,7 @@ def main():
 def al_is(inpt):
     if inpt.find("A" or "B" or "C" or "D" or "E" or "F" or "G" or "H" or "I" or "J" or "K" or "L" or "M" or "N" or "O" or "P" or "Q" or "S" or "T" or "U" or "V" or "W" or "X" or "Y" or "Z" ) == 1:
      return 1
+     print("i")
     else:
      return 2
 
