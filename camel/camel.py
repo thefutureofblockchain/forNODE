@@ -12,8 +12,7 @@ def main():
             #print(letter, end = "")
             print(predecessor , letter,successor, sep="", end = "")
         else:
-            a = 1
-            # print(letter, end= "")'''
+            print(letter, end= "")'''
     print()
 
 main()
