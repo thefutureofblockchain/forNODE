@@ -4,7 +4,7 @@ def main():
     for letter in a:
         if letter.isupper():
             x,y,z = a.partition(letter)
-            print(y)
+            print(x)
             letter = letter.lower()
             print(letter, end = "")
         else:
