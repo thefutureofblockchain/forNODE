@@ -5,4 +5,8 @@ i can split the main input like
 
 camel Case Sucks
 and then i can lower all
-and add 
+and add
+def uppers(b):
+    if b.isupper():
+        b = b.replace(b, "_" + b.lower())
+        return b 
