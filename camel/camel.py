@@ -7,10 +7,10 @@ def main():
             user_input = user_input.lower()
             x,y,z = user_input.partition(letter)
             #print(letter, end = "")
-            print("_" ,x, sep="", end = "")
+            print("_" ,y,z, sep="", end = "")
         else:
-            s = 3
-            #print(letter, end= "")
+            a = 1 
+            # print(letter, end= "")
     print()
 
 main()
