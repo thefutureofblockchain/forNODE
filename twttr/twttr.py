@@ -11,11 +11,4 @@ def main():
         else:
             print(letter, end= "")
     print()'''
-def isupperr(letter):
-    if letter.isupper():
-        return letter
-    else:
-        x = 4
 
-
-main()
