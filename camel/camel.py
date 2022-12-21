@@ -5,11 +5,11 @@ def main():
         if letter.isupper():
             letter = letter.lower()
             user_input = user_input.lower()
-            x,y,z = user_input.partition(letter)
+            predecessor ,partition ,successor = user_input.partition(letter)
             #print(letter, end = "")
-            print("_" ,y,z, sep="", end = "")
+            print("_" ,partition,successor, sep="", end = "")
         else:
-            a = 1 
+            a = 1
             # print(letter, end= "")
     print()
 
