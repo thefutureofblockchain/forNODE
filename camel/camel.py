@@ -7,7 +7,7 @@ def main():
             a = a.lower()
             x,y,z = a.partition(letter)
             #print(letter, end = "")
-            print("_" ,z, sep="", end = "")
+            print("_" ,x, sep="", end = "")
         else:
             s = 3
             #print(letter, end= "")
