@@ -9,4 +9,5 @@ and add
 def uppers(b):
     if b.isupper():
         b = b.replace(b, "_" + b.lower())
-        return b 
+        return b
+if user_input.find(letter.isupper) == 1:
