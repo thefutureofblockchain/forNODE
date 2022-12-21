@@ -7,8 +7,8 @@ def main():
             print(x)
             letter = letter.lower()
             print(letter, end = "")
-        else:
-            print(letter, end= "")
+        '''else:
+            print(letter, end= "")'''
     print()
 
 main()
