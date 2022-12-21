@@ -11,5 +11,9 @@ def main():
         else:
             print(letter, end= "")
     print()'''
-def 
+def isupperr(letter):
+    if letter.isupper():
+        return letter
+    else:
+        
 
