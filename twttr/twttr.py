@@ -2,7 +2,7 @@ def main():
     a = input("Enter eet: ")
 
     for letter in a:
-        lets, me = a.split(letter.isupper)
+        lets, me = a.split(isupperr(letter))
         print(lets , me )
         '''if letter.isupper():
             lets, me = a.split(letter.isupper)
@@ -15,5 +15,7 @@ def isupperr(letter):
     if letter.isupper():
         return letter
     else:
-        
+        x = 4
 
+
+main()
