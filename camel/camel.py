@@ -3,7 +3,7 @@ def main():
 
     for letter in user_input:
         if letter.isupper():
-            if user_input.find(al_is(user_input)) == "1":
+            if al_is(user_input) == "1":
                 predecessor ,successor = user_input.split(sep = letter)
                 letter = letter.lower()
                 #letter = letter.replace(letter,"_"+letter)
