@@ -5,7 +5,7 @@ def main():
         if letter.isupper():
             letter = letter.lower()
             x,y,z = a.partition(letter)
-            print(x ,"_" , y , z, sep="", end = "")
+            print("_" ,y,z, sep="", end = "")
 
             '''print(letter, end = "")'''
         else:
