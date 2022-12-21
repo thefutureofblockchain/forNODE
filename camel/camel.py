@@ -3,14 +3,14 @@ def main():
 
     for letter in user_input:
         if letter.isupper():
-            predecessor ,partition ,successor = user_input.split(sep = letter)
+            predecessor ,successor = user_input.split(sep = letter)
             letter = letter.lower()
-            letter = letter.replace(letter,"_"+letter)
+            #letter = letter.replace(letter,"_"+letter)
             # print(letter)
             user_input = user_input.lower()
 
             #print(letter, end = "")
-            print(predecessor , "_",letter,"_",successor, sep="", end = "")
+            print(predecessor , "_",letter,successor, sep="", end = "")
         else:
             c = 1
             #print(letter, end= "")
