@@ -1,11 +1,11 @@
 def main():
-    a = input("Enter it: ")
+    user_input = input("Enter it: ")
 
-    for letter in a:
+    for letter in user_input:
         if letter.isupper():
             letter = letter.lower()
-            a = a.lower()
-            x,y,z = a.partition(letter)
+            user_input = user_input.lower()
+            x,y,z = user_input.partition(letter)
             #print(letter, end = "")
             print("_" ,x, sep="", end = "")
         else:
