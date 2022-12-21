@@ -16,8 +16,3 @@ else:
    uppers(letter)
    upper
 
-def a(inpt):
-    if inpt.find(upper) == 1:
-     return 1
-    else:
-        return 2
