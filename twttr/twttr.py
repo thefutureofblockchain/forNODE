@@ -1,5 +1,5 @@
 def main():
-    a = input("Enter eet: ")
+    a = input("Enter it: ")
 
     for letter in a:
         if letter.isupper():
@@ -9,8 +9,7 @@ def main():
 
             '''print(letter, end = "")'''
         else:
-           s = 3
-           # print(letter, end= "")
+           print(letter, end= "")
     print()
 
 main()
