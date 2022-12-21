@@ -11,3 +11,7 @@ def uppers(b):
         b = b.replace(b, "_" + b.lower())
         return b
 if user_input.find(letter.isupper) == 1:
+   uppers(letter)
+else:
+   uppers(letter)
+   upper
