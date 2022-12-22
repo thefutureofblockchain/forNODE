@@ -1,8 +1,15 @@
+given = 0
+to_get = 0
 amtdue = 50
-print("Amount Due:" , amtdue  )
-coins = int(input("Insert Coin : "))
-if coins == 25 or coins == 10 or coins == 5:
-    while coins <= amtdue:
-        amtdue = 50 - coins
-        print("Amount due:" , amtdue)
-        coins = int(input("Insert Coin : "))
+while True:
+    coins = int(input("Insert Coin: "))
+    if coins == 25 or coins == 10 or coins == 5:
+        given = to_get + coins
+        amtdue = amtdue - given
+    if amtdue > 0:
+        print("amount due: ", amtdue)
+    elif amtdue <= 0:
+        change = amtdue*-1
+        print("change owed", change)
+
+
