@@ -1,8 +1,8 @@
 while True:
-    n == 0:
+    n = 0
     if n == 0:
         n = int(input("Insert Coin: "))
-            if n != 25 or n != 10 or n != 5:
+        if n != 25 or n != 10 or n != 5:
                 amtdue = 50 - n
                 print("Amount due:" , amtdue)
                 x = int(input("Insert Coin: "))
