@@ -11,5 +11,6 @@ while True:
     elif amtdue <= 0:
         change = amtdue*-1
         print("change owed", change)
+        break
 
 
