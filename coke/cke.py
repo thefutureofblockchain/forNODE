@@ -7,7 +7,7 @@ while True:
         amtdue = amtdue - n+x
         print("Amount due: ", amtdue)
         y = int(input("Insert Coin: "))
-        amtdue = amtdue - amtdue+y
+        amtdue = amtdue - y
         print("Amount due: ", amtdue)
 '''sum = n-50
 print("Change = ", sum)
