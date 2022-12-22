@@ -16,3 +16,4 @@ else:
    uppers(letter)
    upper
 
+make a simple program that uses for and replaces and thats it and outside loop print the thing 
