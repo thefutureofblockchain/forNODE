@@ -2,9 +2,9 @@ while True:
     n = int(input("Insert Coin: "))
     if n > 50:
         break
-    elif 
+    elif n == 25 or n == 10 or n == 5:
+        amtdue = 50 - coins
+        print("Amount due:" , amtdue)
 sum = n-50
 print("Change = ", sum)
 
-for _ in range(n):
-    print("meow")
