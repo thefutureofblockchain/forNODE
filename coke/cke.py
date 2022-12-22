@@ -6,6 +6,9 @@ while True:
         x = int(input("Insert Coin: "))
         amtdue = amtdue - n+x
         print("Amount due: ", amtdue)
+        y = int(input("Insert Coin: "))
+        amtdue = amtdue - n+x+y
+        print("Amount due: ", amtdue)
 '''sum = n-50
 print("Change = ", sum)
 '''
