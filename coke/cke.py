@@ -8,7 +8,7 @@ while True:
         amtdue = amtdue - given
     if amtdue > 0:
         print("amount due is ", amtdue)
-    else:
+    elif amtdue <= 0:
         change = amtdue*-1
         print("channge is", change)
 
