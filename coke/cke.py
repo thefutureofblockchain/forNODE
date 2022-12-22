@@ -7,9 +7,9 @@ while True:
         given = to_get + coins
         amtdue = amtdue - given
     if amtdue > 0:
-        print("amount due is: ", amtdue)
+        print("amount due: ", amtdue)
     elif amtdue <= 0:
         change = amtdue*-1
-        print("channge is: ", change)
+        print("change owed", change)
 
 
