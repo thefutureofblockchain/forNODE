@@ -6,7 +6,7 @@ while True:
     if coins == 25 or coins == 10 or coins == 5:
         given = to_get + coins
         amtdue = amtdue - given
-    if given > 0:
+    if amtdue > 0:
         print("amount due is ", amtdue)
     else:
         change = amtdue*-1
