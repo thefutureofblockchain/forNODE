@@ -1,4 +1,5 @@
 .isalnum will helppp
  and is_6(s) == True and is_num(s) == True and is_period(s) == True
 qa = c.split(sep = letter)
-and is_6(s) == True and is_period(s) == True and 
+and is_6(s) == True and is_period(s) == True and
+ and is_6(s) == True and is_period(s) == True and is_num(s) == True
