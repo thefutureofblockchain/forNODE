@@ -28,10 +28,10 @@ def is_period(d):
             return False
 def is_num(c):
     for letter in c:
-        if letter.isdigit():
+        if letter.isdigit() == True:
             qa, b, d = c.partition(letter)
             print(qa, b, d)
-            if d.isdigit() or d.isspace():
+            if d.isdigit() == True or d.isprintable() == False:
                 return True
             else:
                 return False
