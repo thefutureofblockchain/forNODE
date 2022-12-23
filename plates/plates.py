@@ -30,14 +30,15 @@ def is_period(d):
 def is_num(c):
     for letter in c:
         if letter.isdigit() == True:
-            qa, ba, da = c.partition(letter)
-            if ba == 0 or ba == "0":
+            qa, b, d = c.partition(letter)
+            if b == 0 or b == "0":
                 return False
                 break
-            if da.isdigit() == True or len(da)== 0:
+            if d.isdigit() == True or len(d)== 0:
                 return True
             else:
                 return False
+
         else:
             return True
 main()
