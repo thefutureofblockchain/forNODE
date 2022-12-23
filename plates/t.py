@@ -1,4 +1,6 @@
-if len("c") <= 6:
-        print("False")
-else:
-        print("F")
+c = input("Enterr")
+for letter in c:
+    if letter.isdigit():
+       qa, b = c.split(sep = letter)
+       print(qa)
+       print(b)
