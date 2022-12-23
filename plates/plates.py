@@ -4,11 +4,8 @@ def main():
         print("Valid")
     else:
         print("Invalid")
-
-
-
 def is_valid(s):
-    if is_let(s) == True and is_6(s) == True and is_num(s) == True and is_period(s) == True:
+    if is_let(s) == True and is_6(s) == True and is_period(s) == True and is_num(s) == True:
         return True
     else:
         return False
@@ -18,27 +15,24 @@ def is_let(a):
         return True
     else:
         return False
-
 def is_6(b):
-    if len(b) <= 6 and len(b) <=2 :
+    if len(b) <= 6:
         return False
     else:
         return True
-
-def is_num(c):
-    for letter in c:
-        if letter.isnum():
-            qa =  c[letter:1]
-            if qa.isalpha():
-                return False
-            else:
-                return True
 
 def is_period(d):
         if d.isalnum() == True:
             return True
         else:
             return False
-
-
+def is_num(c):
+    for letter in c:
+        if letter.isdigit():
+            qa, b, d = c.partition(letter)
+            print(qa, b, d)
+            if d.isdigit():
+                return True
+            else:
+                return False
 main()
