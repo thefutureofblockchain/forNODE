@@ -26,7 +26,13 @@ def is_6(b):
         return False
 
 def is_num(c):
-
+    for letter in c:
+        if letter.isnum():
+            qa =  c[letter:1]
+            if qa.isalpha():
+                return False
+            else:
+                return True
 
 def is_period(d):
         if d.isalnum() == True:
