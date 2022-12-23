@@ -29,7 +29,7 @@ def is_period(d):
 def is_num(c):
     for letter in c:
         if letter.isdigit():
-            qa =  c[letter:1]
+            qa =  c[letter:letter+1]
             if qa.isalpha():
                 return False
             else:
