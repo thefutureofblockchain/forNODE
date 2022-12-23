@@ -33,7 +33,7 @@ def is_num(c):
             qa, b, d = c.partition(letter)
             if b == 0 or b == "0":
                 return False
-                break
+                continue
             if d.isdigit() == True or len(d)== 0:
                 return True
             else:
