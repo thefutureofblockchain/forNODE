@@ -36,9 +36,9 @@ def is_num(c):
 
 def is_period(d):
         if d.isalnum() == True:
-            return False
-        else:
             return True
+        else:
+            return False
 
 
 main()
