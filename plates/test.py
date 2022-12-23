@@ -16,7 +16,7 @@ def is_let(a):
     else:
         return False
 def is_6(b):
-    if len(b) <= 6 and len(b) <=2 :
+    if len(b) <= 6:
         return True
     else:
         return False
