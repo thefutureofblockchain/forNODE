@@ -38,4 +38,6 @@ def is_num(c):
                 return True
             else:
                 return False
+        else:
+            return True
 main()

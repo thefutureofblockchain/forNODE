@@ -8,3 +8,5 @@ for letter in "NRVOUS":
                 print("True")
             else:
                 print("F")
+        else:
+            print("t")
