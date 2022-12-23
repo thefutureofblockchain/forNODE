@@ -31,7 +31,7 @@ def is_num(c):
         if letter.isdigit():
             qa, b, d = c.partition(letter)
             print(qa, b, d)
-            if d.isdigit():
+            if d.isdigit() or d.isspace():
                 return True
             else:
                 return False
