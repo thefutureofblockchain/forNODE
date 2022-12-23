@@ -1,1 +1,2 @@
 .isalnum will helppp
+ and is_6(s) == True and is_num(s) == True and is_period(s) == True

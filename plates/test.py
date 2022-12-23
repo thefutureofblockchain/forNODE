@@ -1,0 +1,18 @@
+def main():
+    plate = input("Plate: ")
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
+def is_valid(s):
+    if is_let(s) == True:
+        return True
+    else:
+        return False
+def is_let(a):
+    ba = a[0:2]
+    if ba.isalpha() == True:
+        return True
+    else:
+        return False
+main()
