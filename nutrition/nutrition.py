@@ -1,4 +1,6 @@
-students = {
+f = input("Enterr")
+f = f.lower()
+fruits = {
     "apple": "130",
     "avocado": "50",
     "banana": "110",
@@ -15,8 +17,10 @@ students = {
     "pear": "100",
     "pineapple": "50",
     "plums": "70",
-    "strawberries": "130",
-    "sweet cherries": "Gryffindor",
-    "tangerine": "Gryffindor",
-    "watermelon": "Slytherin",
+    "strawberries": "50",
+    "sweet cherries": "100",
+    "tangerine": "50",
+    "watermelon": "80",
 }
+if f in fruits:
+    print(fruits[f])
