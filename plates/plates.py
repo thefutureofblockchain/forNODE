@@ -12,6 +12,11 @@ def is_valid(s):
     else:
         return False
 
-def is_let(a)
+def is_let(a):
+
+def is_6(b):
+
+def is_num(C):
+def is_period(d):
 
 main()
