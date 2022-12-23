@@ -4,9 +4,8 @@ def main():
         print("Valid")
     else:
         print("Invalid")
-
 def is_valid(s):
-    if is_let(s) == True  and is_period(s) == True and is_num(s) == True and is_6(s) == True:
+    if is_let(s) == True and is_6(s) == True and is_period(s) == True and is_num(s) == True:
         return True
     else:
         return False
@@ -18,9 +17,9 @@ def is_let(a):
         return False
 def is_6(b):
     if len(b) <= 6:
-        return True
-    else:
         return False
+    else:
+        return True
 
 def is_period(d):
         if d.isalnum() == True:
@@ -31,6 +30,7 @@ def is_num(c):
     for letter in c:
         if letter.isdigit() == True:
             qa, b, d = c.partition(letter)
+            print(qa, b, d)
             if d.isdigit() == True or len(d)== 0:
                 return True
             else:
