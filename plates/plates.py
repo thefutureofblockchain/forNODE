@@ -21,9 +21,9 @@ def is_let(a):
 
 def is_6(b):
     if len(b) <= 6 and len(b) <=2 :
-        return True
-    else:
         return False
+    else:
+        return True
 
 def is_num(c):
     for letter in c:
