@@ -36,6 +36,8 @@ def is_num(c):
                 continue
             if d.isdigit() == True or len(d)== 0:
                 return True
+            elif b == "0":
+                return False
             else:
                 return False
 
