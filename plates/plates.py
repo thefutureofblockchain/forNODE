@@ -28,14 +28,17 @@ def is_period(d):
         else:
             return False
 def is_num(c):
-    for letter in c:
-        if letter.isnumeric() == True:
-            qa, b, d = c.partition(letter)
-            if d.isdigit() == True and b!="0" or len(d)== 0:
-                return True
-            else:
-                return False
-        
+    if c.isalpha() == True:
+        return True
+    else:
+        for letter in c:
+            if letter.isnumeric() == True:
+                qa, b, d = c.partition(letter)
+                if d.isdigit() == True and b!="0" or len(d)== 0:
+                    return True
+                else:
+                    return False
+
 
 
 
