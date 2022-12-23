@@ -31,9 +31,9 @@ def is_num(c):
     for letter in c:
         if letter.isdigit() == True:
             qa, b, d = c.partition(letter)
-            if b == 0 or b == "0":
+            '''if b == 0 or b == "0":
                 return False
-                continue
+                continue'''
             if d.isdigit() == True or len(d)== 0:
                 return True
             elif b == "0":
