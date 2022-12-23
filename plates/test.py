@@ -29,9 +29,10 @@ def is_period(d):
 def is_num(c):
     for letter in c:
         if letter.isdigit():
-            qa =  c[letter:letter+1]
-            if qa.isalpha():
-                return False
-            else:
+            qa, b, d = c.partition(letter)
+            print(qa, b, d)
+            if d.isdigit():
                 return True
+            else:
+                return False
 main()
