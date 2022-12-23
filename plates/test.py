@@ -28,7 +28,7 @@ def is_period(d):
             return False
 def is_num(c):
     for letter in c:
-        if letter.isnum():
+        if letter.isdigit():
             qa =  c[letter:1]
             if qa.isalpha():
                 return False
