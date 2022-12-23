@@ -6,7 +6,7 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    if is_let(s) == True :
+    if is_let(s) == True:
         return True
     else:
         return False
