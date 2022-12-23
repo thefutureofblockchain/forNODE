@@ -6,7 +6,7 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    if is_let(s) == True  and is_period(s) == True and is_num(s) == True and is_6(s) == True:
+    if is_let(s) == True:
         return True
     else:
         return False
@@ -16,7 +16,7 @@ def is_let(a):
         return True
     else:
         return False
-def is_6(b):
+'''def is_6(b):
     if len(b) <= 6:
         return True
     else:
@@ -31,14 +31,14 @@ def is_num(c):
     for letter in c:
         if letter.isdigit() == True:
             qa, b, d = c.partition(letter)
-            '''if b == 0 or b == "0":
+            if b == 0 or b == "0":
                 return False
-                continue'''
+                continue
             if d.isdigit() == True and b!="0" or len(d)== 0:
                 return True
             else:
                 return False
 
         else:
-            return True
+            return True'''
 main()
