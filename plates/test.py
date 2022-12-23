@@ -5,7 +5,7 @@ def main():
     else:
         print("Invalid")
 def is_valid(s):
-    if is_let(s) == True and is_6(s) == True and is_period(s) == True:
+    if is_let(s) == True and is_6(s) == True and is_period(s) == True and is_num(s) == True:
         return True
     else:
         return False
@@ -26,4 +26,12 @@ def is_period(d):
             return True
         else:
             return False
+def is_num(c):
+    for letter in c:
+        if letter.isnum():
+            qa =  c[letter:1]
+            if qa.isalpha():
+                return False
+            else:
+                return True
 main()
