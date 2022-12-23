@@ -17,7 +17,7 @@ def is_let(a):
     else:
         return False
 def is_6(b):
-    if len(b) <= 7:
+    if len(b) <= 6:
         return True
     else:
         return False
@@ -30,11 +30,11 @@ def is_period(d):
 def is_num(c):
     for letter in c:
         if letter.isdigit() == True:
-            qa, b, d = c.partition(letter)
-            if b == 0 or b == "0":
+            qa, ba, da = c.partition(letter)
+            if ba == 0 or ba == "0":
                 return False
                 break
-            if d.isdigit() == True or len(d)== 0:
+            if da.isdigit() == True or len(da)== 0:
                 return True
             else:
                 return False

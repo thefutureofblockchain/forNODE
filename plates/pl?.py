@@ -1,38 +1,10 @@
-def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
-        print("Valid")
-    else:
-        print("Invalid")
-def is_valid(s):
-    if is_let(s) == True and is_6(s) == True and is_period(s) == True and is_num(s) == True:
-        return True
-    else:
-        return False
-def is_let(a):
-    ba = a[0:2]
-    if ba.isalpha() == True:
-        return True
-    else:
-        return False
-def is_6(b):
-    if len(b) <= 6:
-        return False
-    else:
-        return True
-
-def is_period(d):
-        if d.isalnum() == True:
-            return True
-        else:
-            return False
-def is_num(c):
-    for letter in c:
+for letter in "NRVOUS":
         if letter.isdigit() == True:
-            qa, b, d = c.partition(letter)
-            print(qa, b, d)
-            if d.isdigit() == True or len(d)== 0:
-                return True
+            qa, ba, da = "NRVOUS".partition(letter)
+            if ba == 0 or ba == "0":
+                print("f")
+                break
+            if da.isdigit() == True or len(da)== 0:
+                print("True")
             else:
-                return False
-main()
+                print("F")
