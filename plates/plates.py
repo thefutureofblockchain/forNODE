@@ -34,10 +34,8 @@ def is_num(c):
             '''if b == 0 or b == "0":
                 return False
                 continue'''
-            if d.isdigit() == True or len(d)== 0:
+            if d.isdigit() == True and b!="0" or len(d)== 0:
                 return True
-            elif b == "0":
-                return False
             else:
                 return False
 
