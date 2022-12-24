@@ -1,7 +1,13 @@
 def main():
     xy = get_frac()
     percentage = per(xy)
-    print(percentage,"%",sep="")
+    if percentage > 1 and percentage < 99:
+        print(percentage,"%",sep="")
+    elif percentage == 1 or percentage == 0:
+        print("E")
+    elif percentage == 99 or percentage == 100:
+        print("F")
+
 def get_frac():
     while True:
         try:
@@ -22,12 +28,7 @@ def get_frac():
             pass
 def per(c):
     c = round(c)
-    if c > 1 and c < 99:
-        return c
-    elif c <= 1:
-        return "E"
-    elif c <= 99:
-        return"F"
+    return c
 main()
 
 
