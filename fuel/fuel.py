@@ -16,7 +16,7 @@ def get_frac():
             x = int(x)
             y = int(y)
             if x>y and y>0:
-                pass
+                xy = input("What's x/y")
             perc =x/y*100
             return perc
         except ValueError:
@@ -25,6 +25,7 @@ def get_frac():
         except ZeroDivisionError:
             print("You divided by zero")
             pass
+
 
 def per(c):
     c = round(c)
