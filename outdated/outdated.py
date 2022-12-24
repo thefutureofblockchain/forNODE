@@ -48,6 +48,7 @@ def conv(n):
                     month = int(month)
                     if is_char(month) == True:
                         month = ("0" + month)
+                        print(month)
                     if is_char(day) == True:
                          day = ("0" + day)
                     print(year,"-",month, "-",day,sep="")
