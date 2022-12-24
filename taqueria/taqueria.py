@@ -15,10 +15,14 @@ while True:
         ite = input("Item: ")
         ite = ite.title()
         a = a+items[ite]
-        a = float(a)
+        a = %.2f(a)
         print("$",a, sep="")
     except ValueError:
         pass
+    except KeyError:
+        print("There was an error")
+        pass
     except EOFError:
+        print()
         break
 
