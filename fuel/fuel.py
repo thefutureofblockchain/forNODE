@@ -25,7 +25,7 @@ def get_frac():
             pass
         except ZeroDivisionError:
             print("You divided by zero")
-            pass
+            
 def per(c):
     c = round(c)
     return c
