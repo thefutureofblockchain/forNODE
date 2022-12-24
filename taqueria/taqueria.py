@@ -9,11 +9,14 @@ items = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+a = 0
 while True:
     try:
         ite = input("Item: ")
         ite = ite.title()
-        print(items[ite])
+        a = a+items[ite]
+        a = float(a)
+        print("$",a, sep="")
     except ValueError:
         pass
     except EOFError:
