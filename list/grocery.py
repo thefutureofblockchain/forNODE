@@ -1,8 +1,11 @@
 items = {
-    1 ,
-    2,
-    3,
-    4,
+
 }
-items[1] = "apple"
-print(items[1])
+x = 1
+while True:
+    try:
+        items[x] = input("enter: ")
+        print(items[x])
+        x = x+1
+    except EOFError:
+        print(items[x-1])
