@@ -14,8 +14,9 @@ while True:
     try:
         ite = input("Item: ")
         ite = ite.title()
-        a = a+items[ite]
         a = float(a)
+        a = a+items[ite]
+        a = '%.2f' % a
         print("$",a, sep="")
     except ValueError:
         pass
