@@ -8,4 +8,4 @@ while True:
         print(items[x])
         x = x+1
     except EOFError:
-        print(items[x-1])
+    
