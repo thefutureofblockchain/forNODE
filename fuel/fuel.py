@@ -16,7 +16,7 @@ def get_frac():
             x = int(x)
             y = int(y)
             if x>y and y>0:
-                print("X is bigger than y")
+                pass
             perc =x/y*100
             return perc
         except ValueError:
