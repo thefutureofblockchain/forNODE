@@ -7,10 +7,11 @@ def get_frac():
         try:
             xy = input("What's x/y?")
             x,y = xy.split(sep = "/")
+            print(x,y)
             int(x)
             int(y)
             if x<=y:
-                perc = x/y*100
+                perc =int(x/y*100)
                 return perc
             else:
                 pass
