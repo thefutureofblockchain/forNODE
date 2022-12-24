@@ -11,7 +11,8 @@ items = {
 }
 while True:
     try:
-        ite = input("Item: ".title())
+        ite = input("Item: ")
+        ite = ite.title()
         print(items[ite])
     except ValueError:
         pass
