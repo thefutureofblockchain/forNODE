@@ -1,12 +1,34 @@
 def main():
     xy = get_frac()
-def get_frac()
+    percentage = per(xy)
+    print(percentage)
+def get_frac():
     while True:
         try:
-            x = int(input("What's x?"))
+            xy = input("What's x/y?")
+            x,y = xy.split(sep = "/")
+            int(x)
+            int(y)
+            perc = x/y*100
+            return perc
         except ValueError:
-            print("x is not an integer")
-        else:
-            break
-    return x
+            print("x and y are not integers")
+            pass
+        except ZeroDivisionError:
+            print("You divided by zero")
+            pass
+        except x>y:
+            print("x is bigger than y")
+            pass
+def per(c):
+    c = round(c)
+    if c > 1 and c < 99:
+        return c
+    elif c <= 1:
+        return "E"
+    elif c <= 99:
+        return"F"
+main()
+
+
 
