@@ -31,26 +31,25 @@ def conv(n):
             "November",
             "December"
             ]
-            while True:
-                if "/" in n:
+
+            if "/" in n:
                     month, day, year = n.split(sep = "/")
                     month = int(month)
                     day = int(day)
                     year = int(year)
-                    month = 'month:02'
-                    day = 'day:02'
-                    print(f{year}-{int(month):02}-{int(day):02}
+                    '''month = 'month:02'
+                    day = 'day:02'''
+                    print(year,"-",month, "-",day)
 
-                elif "," in n:
+            elif "," in n:
                     n = n.replace(",", " ")
                     month, day, year = n.split()
                     month = mon.index(month)
                     month = int(month)
-                    '''month = month:02
-                    day = day:02
-                    print(f{year}-{month}-{day})
-
-                if month > 12 or day > 31:
+                    '''month = month:02'''
+                    day = 'day:02'
+                    print(year,"-",month, "-",day,sep="")
+            if month > 12 or day > 31:
                     raise ValueError
 
     except (ValueError,KeyError):
