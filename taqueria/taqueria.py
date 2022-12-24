@@ -15,7 +15,7 @@ while True:
         ite = input("Item: ")
         ite = ite.title()
         a = a+items[ite]
-        a = "{:.2f}".format(a)
+        a = float(a)
         print("$",a, sep="")
     except ValueError:
         pass
