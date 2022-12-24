@@ -1,17 +1,16 @@
 def main():
     xy = get_frac()
     percentage = per(xy)
-    print(percentage)
+    print(percentage,"%",sep="")
 def get_frac():
     while True:
         try:
             xy = input("What's x/y?")
             x,y = xy.split(sep = "/")
-            print(x,y)
-            int(x)
-            int(y)
+            x = int(x)
+            y = int(y)
             if x<=y:
-                perc =int(x/y*100)
+                perc =x/y*100
                 return perc
             else:
                 pass
