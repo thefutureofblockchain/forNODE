@@ -39,19 +39,20 @@ def conv(n):
                     year = int(year)
                     '''month = 'month:02'
                     day = 'day:02'''
-                    print(year,"-",month, "-",day,sep="")
+
+                    print(f"{year}-{month:02}-{day:02}")
 
             elif "," in n:
                     n = n.replace(",", " ")
                     day,month,year = n.split()
                     month = mon.index(month)
                     month = int(month)
-                    if is_char(month) == True:
+                    '''if is_char(month) == True:
                         month = ("0" + month)
                         print(month)
                     if is_char(day) == True:
-                         day = ("0" + day)
-                    print(year,"-",month, "-",day,sep="")
+                         day = ("0" + day)'''
+                    print(f"{year}-{month:02}-{day:02}")
             if month > 12 or day > 31:
                     raise ValueError
 
