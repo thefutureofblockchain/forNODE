@@ -39,11 +39,11 @@ def conv(n):
                     year = int(year)
                     '''month = 'month:02'
                     day = 'day:02'''
-                    print(year,"-",month, "-",day)
+                    print(year,"-",month, "-",day,sep="")
 
             elif "," in n:
                     n = n.replace(",", " ")
-                    month, day, year = n.split()
+                    day,month,year = n.split()
                     month = mon.index(month)
                     month = int(month)
                     if is_char(month) == True:
