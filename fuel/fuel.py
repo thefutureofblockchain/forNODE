@@ -15,17 +15,15 @@ def get_frac():
             x,y = xy.split(sep = "/")
             x = int(x)
             y = int(y)
-            if x<=y:
-                perc =x/y*100
-                return perc
-            else:
-                pass
+            perc =x/y*100
+            return perc
         except ValueError:
             print("x and y are not integers")
             pass
         except ZeroDivisionError:
             print("You divided by zero")
-            
+            pass
+
 def per(c):
     c = round(c)
     return c
