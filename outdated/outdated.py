@@ -55,6 +55,7 @@ def conv(n):
                     print(f"{year}-{month:02}-{day:02}")
             if month > 12 or day > 31:
                     raise ValueError
+                    pass
 
     except (ValueError,KeyError):
         pass
