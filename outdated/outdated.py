@@ -23,6 +23,7 @@ while True:
                         year = int(year)
                         if int(month) > 12 or int(day) > 31:
                                 raise ValueError
+                        print(f"{year}-{month:02}-{day:02}")
                         break
                 elif "," in a:
                         a = a.replace(",", " ")
@@ -43,5 +44,5 @@ while True:
 
         except (ValueError,KeyError):
                 continue
-print(f"{year}-{month:02}-{day:02}")
+#print(f"{year}-{month:02}-{day:02}")
 
