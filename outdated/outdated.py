@@ -1,4 +1,3 @@
-
 while True:
         try:
                 a = input("enter: ")
@@ -46,5 +45,5 @@ while True:
                         break
         except (ValueError,KeyError):
                 continue
-#print(f"{year}-{month:02}-{day:02}")
+
 
