@@ -41,6 +41,7 @@ while True:
                         if int(month) > 12 or int(day) > 31 or month not in mon:
                                 raise ValueError
                         break
+
         except (ValueError,KeyError):
                 #print()
                 continue
