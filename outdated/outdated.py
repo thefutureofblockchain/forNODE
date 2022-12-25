@@ -38,7 +38,7 @@ while True:
                         year = year.strip()
                         month = mon.index(month)
                         month = int(month)
-                        if int(month) > 12 or int(day) > 31 or month not in mon:
+                        if int(month) > 12 or int(day) > 31 or month.isnum == False:
                                 raise ValueError
                         break
 
