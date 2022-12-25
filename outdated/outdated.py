@@ -33,12 +33,14 @@ while True:
                         month = month.strip()
                         month = month.title()
                         year = year.strip()
+                        if not month in mon:
+                                raise KeyError
                         month = mon.index(month)
+
                         month = int(month)
                         month += 1
                         print(f"{year}-{month:02}-{day:02}")
-                        if not month in mon:
-                                raise KeyError
+
                         if int(month) > 12 or int(day) > 31:
                                 raise ValueError
                         break
