@@ -29,15 +29,18 @@ while True:
                 elif "," in a:
 
                         a = a.replace(",", " ")
+                        print(a)
                         day,month,year = a.split()
                         day = day.strip()
                         month = month.strip()
+                        month = month.title()
                         year = year.strip()
-                        month = mon.index(month)
-                        month = int(month)
-                        if int(month) > 12 or int(day) > 31:
-                                raise ValueError
-                        break
+                        month = mon.index("June")
+                        #month = int(month)
+                        print(day, month, year)
+                        '''if int(month) > 12 or int(day) > 31:
+                                raise ValueError'''
+                       # break
         except (ValueError,KeyError):
                 #print()
                 continue
