@@ -2,8 +2,7 @@ from pyfiglet import Figlet
 import sys
 #use sys.argv btwwww
 figlet = Figlet
-a = figlet.getFonts()
-print(a)
+print(figlet.getFonts())
 '''if lensys.argv) == 2:
     if sys.argv[1] == "-f" or "--font":
         s = input("Enter: ")
