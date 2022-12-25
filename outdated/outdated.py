@@ -16,7 +16,6 @@ while True:
                 "November",
                 "December"
                 ]
-
                 if "/" in a:
                         month, day, year = a.split(sep = "/")
                         month = int(month)
@@ -25,9 +24,7 @@ while True:
                         if int(month) > 12 or int(day) > 31:
                                 raise ValueError
                         break
-
                 elif "," in a:
-
                         a = a.replace(",", " ")
                         print(a)
                         month,day,year = a.split()
@@ -38,13 +35,13 @@ while True:
                         year = year.strip()
                         month = mon.index(month)
                         month = int(month)
-                        if int(month) > 12 or int(day) > 31 or month.isnum == False:
+                        month += 1
+                        if not month in mon:
+                                raise KeyError
+                        if int(month) > 12 or int(day) > 31:
                                 raise ValueError
                         break
-
         except (ValueError,KeyError):
-                #print()
                 continue
-
 print(f"{year}-{month:02}-{day:02}")
 
