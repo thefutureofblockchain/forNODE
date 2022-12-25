@@ -36,9 +36,9 @@ while True:
                         month = mon.index(month)
                         month = int(month)
                         month += 1
+                        print(f"{year}-{month:02}-{day:02}")
                         if not month in mon:
                                 raise KeyError
-                                continue
                         if int(month) > 12 or int(day) > 31:
                                 raise ValueError
                         break
