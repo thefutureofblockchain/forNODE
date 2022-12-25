@@ -38,6 +38,7 @@ while True:
                         month += 1
                         if not month in mon:
                                 raise KeyError
+                                continue
                         if int(month) > 12 or int(day) > 31:
                                 raise ValueError
                         break
