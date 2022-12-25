@@ -1,4 +1,11 @@
 from pyfiglet import Figlet
-figlet = Figlet()
-figlet.getFonts()
+import sys
+#use sys.argv btwwww
+figlet = Figlet
+a = figlet.getFonts()
+if len(sys.argv) == 2:
+    if sys.argv[1] == "-f" or "--font":
+        s = input("Enter: ")
+        s = figlet.setFont(font=sys.argv[2])
+        print(figlet.renderText(s))
 
