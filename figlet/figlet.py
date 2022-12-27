@@ -1,10 +1,11 @@
 from pyfiglet import Figlet
 import sys
 figlet = Figlet()
-s = input("Enter: ")
-if len(sys.argv) == 2 and sys.argv[1] == "-f" or sys.argv[1] == "--font":
-
-        figlet.setFont(font = sys.argv[2])
-        print(figlet.renderText(s))
+print(len(sys.argv))
+if len(sys.argv) == 3:
+        if sys.argv[2] == "-f" or sys.argv[2] == "--font":
+                s = input("Enter: ")
+                figlet.setFont(font = sys.argv[1])
+                print(figlet.renderText(s))
 
 
