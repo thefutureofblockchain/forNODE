@@ -3,7 +3,7 @@ import sys
 #use sys.argv btwwww
 figlet = Figlet()
 #a  = figlet.getFonts()
-s = input("Enter: ")\
+s = input("Enter: ")
 a = figlet.getFonts(sys.argv[2])
 print(a)
 if len(sys.argv) == 2:
