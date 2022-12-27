@@ -12,7 +12,7 @@ if len(sys.argv) == 3:
                         figlet.setFont(font = sys.argv[2])
                         print(figlet.renderText(s))
                 else:
-                        sys.exit
+                        sys.exit("hi so")
 elif len(sys.argv) == 1:
                 s = input("Enter: ")
                 d = c[a]
