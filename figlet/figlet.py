@@ -11,7 +11,8 @@ if len(sys.argv) == 3:
                 sys.exit("First arguement wasn't appropriate")
 elif len(sys.argv) == 1:
         s = input("Enter: ")
-        a = random.randint(0, len(figlet.getFonts()))
+        b = len(figlet.getFonts()) - 1
+        a = random.randint(0, b)
         figlet.setFont(font = figlet.getFonts(a))
         print(figlet.renderText(s))
 else:
