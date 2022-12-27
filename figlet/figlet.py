@@ -4,7 +4,7 @@ import sys
 figlet = Figlet()
 #a  = figlet.getFonts()
 s = input("Enter: ")
-a = figlet.getFonts(sys.argv[2])
+req_font = figlet.getFonts(sys.argv[2])
 print(a)
 if len(sys.argv) == 2:
         #if sys.argv[1] == "-f" or sys.argv[1] == "--font":
