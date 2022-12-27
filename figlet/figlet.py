@@ -7,12 +7,12 @@ b = len(figlet.getFonts())
 a = random.randint(0, b)
 c = figlet.getFonts()
 if len(sys.argv) == 3:
-                if sys.argv[1] == "-f" or sys.argv[1] == "--font" and c.count(sys.argv[2]) != 0:
+                if sys.argv[1] == "-f" and c.count(sys.argv[2]) != 0 or sys.argv[1] == "--font" and c.count(sys.argv[2]) != 0:
                         s = input("Enter: ")
                         figlet.setFont(font = sys.argv[2])
                         print(figlet.renderText(s))
                 else:
-                        sys.exit("First arguement wasn't appropriate")
+                        sys.exit
 elif len(sys.argv) == 1:
                 s = input("Enter: ")
                 d = c[a]
