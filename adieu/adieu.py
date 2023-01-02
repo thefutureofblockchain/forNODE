@@ -8,5 +8,5 @@ while True:
     except EOFError:
         break
 cd = p.join(ab)
-print("Adieu, adieu, to ", cd)
+print("Adieu, adieu, to", cd)
 
