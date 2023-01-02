@@ -9,7 +9,7 @@ def main():
        try:
             d = generate_integer(lvl)
             q = generate_integer(lvl)
-            c = input(f"{d} + {q} =")
+            c = input(f"{d} + {q} = ")
             '''if c.isnumeric == True:
                 c = int(c)
             else:
@@ -24,13 +24,13 @@ def main():
                         break
                     else:
                         print("EEE")
-                        c = input(f"{d} + {q} =")
+                        c = input(f"{d} + {q} = ")
                 except ValueError:
                     print("EEE")
-                    c = input(f"{d} + {q} =")
+                    c = input(f"{d} + {q} = ")
                     continue
             if int(c) != ab:
-                print(d, "+", q ,"would be" ,ab)
+                print(d, "+", q ,"=" ,ab)
             else:
                 pass
        except ValueError:
