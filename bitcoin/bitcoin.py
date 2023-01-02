@@ -5,9 +5,9 @@ try:
     a = sys.argv[1]
     print(float(a))
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-
+    print(json.dumps(response.json(), indent=2))
     o = response.json()
-    print(o, indent = 2 )
+    #print(o, indent = 2 )
     '''for result in o["bpi"]:
         amount =
         print(f"${amount:,.4f}")'''
