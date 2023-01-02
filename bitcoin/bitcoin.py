@@ -5,8 +5,13 @@ try:
     a = sys.argv[1]
     print(float(a))
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-    print(json.dumps(response.json(), indent=2))
+    #print(json.dumps(response.json(), indent=2))
     o = response.json()
+    ab = o["bpi"]
+    b = ab["USD"]
+    rate = b["rate_float"]
+    rate = float(rate)
+    print(rate*a)
     #print(o, indent = 2 )
     '''for result in o["bpi"]:
         amount =
