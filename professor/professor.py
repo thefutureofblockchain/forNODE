@@ -17,8 +17,8 @@ def main():
             ab = d + q
 
             for _ in range (2):
-                '''if c.isdigit == True:
-                    b = int(c)'''
+                if c.isdigit == True:
+                    print("HII")
                 try:
                     if int(c) == ab:
                         i += 1
