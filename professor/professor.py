@@ -11,9 +11,9 @@ def main():
         ab = d + q
         for _ in range (3):
             if c == ab:
-                continue
+                break
             else:
-                c = input(f"what would {d} + {q} be")
+                continue
 
 def get_level():
     while True:
