@@ -17,10 +17,10 @@ def main():
             ab = d + q
 
             for _ in range (2):
-                if c.isdigit == True:
-                    b = int(c)
+                '''if c.isdigit == True:
+                    b = int(c)'''
                 try:
-                    if b == ab:
+                    if int(c) == ab:
                         i += 1
                         break
                     elif c.isnumeric == False:
@@ -31,7 +31,7 @@ def main():
                 except ValueError:
                     print("EEE")
                     continue
-            if c != ab:
+            if int(c) != ab:
                 print(d, "+", q ,"would be" ,ab)
             else:
                 pass
