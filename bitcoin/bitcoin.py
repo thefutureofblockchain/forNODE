@@ -7,8 +7,9 @@ try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
     o = response.json()
-    for result in o["USD"]:
-        print(result["rate_float"])
+    for result in o["bpi"]:
+        amount = result["rate_float"]
+        print(f"${amount:,.4f}")
 
 except requests.RequestException:
     pass
