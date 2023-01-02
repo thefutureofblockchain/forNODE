@@ -15,11 +15,9 @@ def main():
             else:
                 raise ValueError'''
             ab = d + q
-
+            
             for _ in range (2):
                 try:
-                    #if c.isnumeric == False:
-                        #raise ValueError
                     if c == ab:
                         i += 1
                         break
@@ -27,7 +25,7 @@ def main():
                         raise ValueError
                     else:
                         print("EEE")
-                        c = int(input(f"what would {d} + {q} be"))
+                        c = input(f"what would {d} + {q} be")
                 except ValueError:
                     print("EEE")
                     continue
