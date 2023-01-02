@@ -64,8 +64,8 @@ def generate_integer(level):
         else:
             raise ValueError
     except ValueError:
-        pass
-    i = random.randint(0, x )
+            pass
+    i = random.randint(0, x)
     return i
 
 
