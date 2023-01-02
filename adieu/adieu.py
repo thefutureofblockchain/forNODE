@@ -13,6 +13,7 @@ while True:
         print()
         break
 c = len(ab)
-for i in range(c):
-    print("Adieu, Adieu to ", ab[i])
+cd = p.join(ab)
+#for i in range(c):
+print("Adieu, Adieu to ", cd)
 
