@@ -27,6 +27,7 @@ def main():
                         c = input(f"what would {d} + {q} be")
                 except ValueError:
                     print("EEE")
+                    c = input(f"what would {d} + {q} be")
                     continue
             if c != ab:
                 print(d, "+", q ,"would be" ,ab)
