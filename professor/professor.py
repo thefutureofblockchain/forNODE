@@ -23,10 +23,10 @@ def main():
                         break
                     else:
                         print("EEE")
-                        if c.isnumeric == True:
-                            c = int(input(f"what would {d} + {q} be"))
-                        else:
-                            raise ValueError
+                        '''if c.isnumeric == True:'''
+                        c = int(input(f"what would {d} + {q} be"))
+                        '''else:
+                            raise ValueError'''
                         '''if c.isnum == True:
                             c = int(c)
                         else:
