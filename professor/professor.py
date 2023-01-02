@@ -17,7 +17,6 @@ def main():
             ab = d + q
 
             for _ in range (2):
-
                 try:
                     if int(c) == ab:
                         i += 1
