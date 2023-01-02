@@ -6,15 +6,15 @@ def main():
     lvl = get_level()
 
     for _ in range(10):
-        try:
+       try:
             d = generate_integer(lvl)
             q = generate_integer(lvl)
             c = int(input(f"what would {d} + {q} be"))
             '''if c.isnumeric == True:
                 c = int(c)
             else:
-                raise ValueError
-            ab = d + q'''
+                raise ValueError'''
+            ab = d + q
 
             for _ in range (2):
                 try:
@@ -23,7 +23,10 @@ def main():
                         break
                     else:
                         print("EEE")
-                        c = int(input(f"what would {d} + {q} be"))
+                        if c.isnumeric == True:
+                            c = int(input(f"what would {d} + {q} be"))
+                        else:
+                            raise ValueError
                         '''if c.isnum == True:
                             c = int(c)
                         else:
@@ -36,7 +39,6 @@ def main():
                 pass
        except ValueError:
             pass
-
     print("your score is", i)
 
 
