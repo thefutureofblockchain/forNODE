@@ -16,7 +16,6 @@ def main():
             g = int(input("Guess: "))
             if g == r:
                 print("Just right!")
-                break
             elif g > r:
                 print("Too Large!")
             elif g < r:
