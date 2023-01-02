@@ -32,7 +32,7 @@ def main():
             if int(c) != ab:
                 print(d, "+", q ,"would be" ,ab)
             else:
-                pass
+                continue
        except ValueError:
             pass
     print("your score is", i)
