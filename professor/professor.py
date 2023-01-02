@@ -1,5 +1,5 @@
 import random
-
+import sys
 
 def main():
     i = 0
@@ -40,6 +40,7 @@ def main():
        except ValueError:
             pass
     print("your score is", i)
+    sys.exit("")
 
 
 
