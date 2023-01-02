@@ -7,7 +7,6 @@ while True:
     try:
         a = input("Enter: ")
         ab.append(a)
-        print(ab[i])
         i+=1
     except EOFError:
         print()
