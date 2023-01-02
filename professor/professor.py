@@ -35,6 +35,7 @@ def main():
             else:
                 pass
         except ValueError:
+            pass;frkhdfknkl'd'lm
 
     print("your score is", i)
 
