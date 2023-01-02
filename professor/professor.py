@@ -2,6 +2,7 @@ import random
 
 
 def main():
+    i = 0
     lvl = get_level()
 
     for _ in range(10):
@@ -12,6 +13,7 @@ def main():
 
         for _ in range (2):
                 if c == ab:
+                    i += 1
                     break
                 else:
                     print("EEE")
@@ -20,6 +22,8 @@ def main():
             print(d, "+", q ,"would be" ,ab)
         else:
             pass
+    print("your score is" i)
+
 
 
 def get_level():
