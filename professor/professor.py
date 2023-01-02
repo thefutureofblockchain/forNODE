@@ -6,23 +6,28 @@ def main():
     lvl = get_level()
 
     for _ in range(10):
-        d = generate_integer(lvl)
-        q = generate_integer(lvl)
-        c = int(input(f"what would {d} + {q} be"))
-        ab = d + q
+        try:
+            d = generate_integer(lvl)
+            q = generate_integer(lvl)
+            c = int(input(f"what would {d} + {q} be"))
+            ab = d + q
 
-        for _ in range (2):
-            try:
-                if c == ab:
-                    i += 1
-                    break
-                else:
-                    print("EEE")
-                    c = int(input(f"what would {d} + {q} be"))
-        if c != ab:
-            print(d, "+", q ,"would be" ,ab)
-        else:
-            pass
+            for _ in range (2):
+                try:
+                    if c == ab:
+                        i += 1
+                        break
+                    else:
+                        print("EEE")
+                        c = int(input(f"what would {d} + {q} be"))
+                except ValueError:
+                    continue
+            if c != ab:
+                print(d, "+", q ,"would be" ,ab)
+            else:
+                pass
+        except ValueError:
+            continue
     print("your score is", i)
 
 
