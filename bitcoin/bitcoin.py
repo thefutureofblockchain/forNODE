@@ -7,8 +7,8 @@ try:
     response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
     o = response.json()
-    for result in o["results"]:
-        print(result["trackName"])
+    for result in o["USD"]:
+        print(result["rate_float"])
 
 except requests.RequestException:
     pass
