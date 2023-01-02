@@ -9,7 +9,11 @@ def main():
         try:
             d = generate_integer(lvl)
             q = generate_integer(lvl)
-            c = int(input(f"what would {d} + {q} be"))
+            c = input(f"what would {d} + {q} be")
+            if c.isnum == True:
+                c = int(c)
+            else:
+                raise ValueError
             ab = d + q
 
             for _ in range (2):
@@ -19,7 +23,11 @@ def main():
                         break
                     else:
                         print("EEE")
-                        c = int(input(f"what would {d} + {q} be"))
+                        c = input(f"what would {d} + {q} be")
+                        if c.isnum == True:
+                            c = int(c)
+                        else:
+                            raise ValueError
                 except ValueError:
                     continue
             if c != ab:
@@ -27,7 +35,7 @@ def main():
             else:
                 pass
         except ValueError:
-            continue
+
     print("your score is", i)
 
 
