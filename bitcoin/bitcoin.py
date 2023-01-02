@@ -13,11 +13,6 @@ try:
     rate = float(rate)
     ba = a*rate
     print(f"${ba:,.4f}")
-    #print(o, indent = 2 )
-    '''for result in o["bpi"]:
-        amount =
-        print(f"${amount:,.4f}")'''
-
 except requests.RequestException:
     pass
 except ValueError:
