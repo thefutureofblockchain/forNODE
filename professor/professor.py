@@ -22,8 +22,6 @@ def main():
                     if c == ab:
                         i += 1
                         break
-                    '''elif c.isnumeric == False:
-                        raise KeyError'''
                     else:
                         print("EEE")
                         c = input(f"what would {d} + {q} be")
