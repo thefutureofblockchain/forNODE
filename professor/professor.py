@@ -15,12 +15,10 @@ def main():
             else:
                 raise ValueError'''
             ab = d + q
-            if c.isnumeric == True:
-                b = int(c)
 
             for _ in range (2):
                 try:
-                    if b == ab:
+                    if int(c) == ab:
                         i += 1
                         break
                     elif c.isnumeric == False:
