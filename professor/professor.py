@@ -22,11 +22,11 @@ def main():
                         i += 1
                         break
                     elif c.isnumeric == False:
-                        raise ValueError
+                        raise KeyError
                     else:
                         print("EEE")
                         c = input(f"what would {d} + {q} be")
-                except ValueError:
+                except KeyError:
                     print("EEE")
                     continue
             if int(c) != ab:
