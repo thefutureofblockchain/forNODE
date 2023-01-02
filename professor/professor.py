@@ -10,7 +10,7 @@ def main():
             d = generate_integer(lvl)
             q = generate_integer(lvl)
             c = input(f"what would {d} + {q} be")
-            if c.isnum == True:
+            if c.isnumeric == True:
                 c = int(c)
             else:
                 raise ValueError
