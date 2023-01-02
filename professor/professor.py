@@ -44,7 +44,7 @@ def get_level():
     while True:
         try:
             a = int(input("Enter: "))
-            if a > 3 or a < 0:
+            if a > 3 or a <= 0:
                 raise ValueError
             else:
                 return a
