@@ -17,7 +17,7 @@ def main():
             g = int(input("Guess: "))
             if g == r:
                 print("Just right!")
-                sys.exit
+                sys.exit("")
             elif g > r:
                 print("Too Large!")
             elif g < r:
