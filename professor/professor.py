@@ -7,13 +7,13 @@ def main():
     for _ in range(10):
         d = generate_integer(lvl)
         q = generate_integer(lvl)
-        c = input(f"what would {d} + {q} be")
+        c = int(input(f"what would {d} + {q} be"))
         ab = d + q
         for _ in range (2):
             if c == ab:
                 break
             else:
-                 c = input(f"what would {d} + {q} be")
+                 c = int(input(f"what would {d} + {q} be"))
 
 def get_level():
     while True:
