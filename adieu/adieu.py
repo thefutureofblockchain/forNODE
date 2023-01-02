@@ -1,3 +1,2 @@
 import inflect
-def main():
-    a = 1 
+p = inflect.engine()
