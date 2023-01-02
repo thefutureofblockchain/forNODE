@@ -29,7 +29,7 @@ def main():
                     print("EEE")
                     c = input(f"what would {d} + {q} be")
                     continue
-            if c != ab:
+            if int(c) != ab:
                 print(d, "+", q ,"would be" ,ab)
             else:
                 pass
