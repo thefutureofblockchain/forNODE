@@ -4,7 +4,9 @@ import random
 def main():
     lvl = get_level()
     d = generate_integer(lvl)
-    
+    q = generate_integer(lvl)
+    for _ in range(10):
+        print("what would" ,d ,"+" ,q ,"be")
 
 def get_level():
     while True:
