@@ -1,7 +1,18 @@
 import inflect
 p = inflect.engine()
 ab = []
+i = 0
 #mylist = p.join(("apple" , "banana"))
 while True:
-    a = input("Enter: ")
-    ab = ab.append(a)
+    try:
+        a = input("Enter: ")
+        ab.append(a)
+        print(ab[i])
+        i+=1
+    except EOFError:
+        print()
+        break
+c = len(ab)
+for i in range(c):
+    print("Adieu, Adieu to ", ab[i])
+
