@@ -18,18 +18,16 @@ def main():
 
             for _ in range (2):
                 try:
-                    #if c.isnumeric == False:
-                        #raise ValueError
-                    if c == ab:
+                    if int(c) == ab:
                         i += 1
                         break
                     elif c.isnumeric == False:
                         raise ValueError
                     else:
                         print("EEE")
-                        '''if c.isnumeric == True:'''
                         c = int(input(f"what would {d} + {q} be"))
                 except ValueError:
+                    print("EEE")
                     continue
             if c != ab:
                 print(d, "+", q ,"would be" ,ab)
