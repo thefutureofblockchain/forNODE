@@ -56,16 +56,19 @@ def get_level():
 def generate_integer(level):
     try:
         if level == 1:
+            y = 0
             x = 9
         elif level == 2:
+            y = 10
             x = 99
         elif level == 3:
+            y = 100
             x = 999
         else:
             raise ValueError
     except ValueError:
             pass
-    i = random.randint(0, x)
+    i = random.randint(y, x)
     return i
 
 
