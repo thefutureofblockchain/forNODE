@@ -5,7 +5,7 @@ def main():
         try:
             lvl = int(input("Level: "))
 
-            if lvl < 0:
+            if lvl <= 0:
                 raise ValueError
             else:
                 break
