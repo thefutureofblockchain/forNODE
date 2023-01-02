@@ -12,6 +12,7 @@ def main():
         ab = d + q
 
         for _ in range (2):
+            try:
                 if c == ab:
                     i += 1
                     break
@@ -22,7 +23,7 @@ def main():
             print(d, "+", q ,"would be" ,ab)
         else:
             pass
-    print("your score is" i)
+    print("your score is", i)
 
 
 
