@@ -29,7 +29,7 @@ def main():
                 except ValueError:
                     print("EEE")
                     continue
-            if c != ab:
+            if int(c) != ab:
                 print(d, "+", q ,"would be" ,ab)
             else:
                 pass
