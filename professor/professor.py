@@ -9,11 +9,11 @@ def main():
         q = generate_integer(lvl)
         c = input(f"what would {d} + {q} be")
         ab = d + q
-        for _ in range (3):
+        for _ in range (2):
             if c == ab:
                 break
             else:
-                continue
+                 c = input(f"what would {d} + {q} be")
 
 def get_level():
     while True:
