@@ -18,11 +18,13 @@ def main():
 
             for _ in range (2):
                 try:
-                    if c.isnumeric == False:
-                        raise ValueError
+                    #if c.isnumeric == False:
+                        #raise ValueError
                     if c == ab:
                         i += 1
                         break
+                    elif c.isnumeric == False:
+                        raise ValueError
                     else:
                         print("EEE")
                         '''if c.isnumeric == True:'''
