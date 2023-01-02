@@ -25,7 +25,7 @@ def main():
                         raise ValueError
                     else:
                         print("EEE")
-                        c = int(input(f"what would {d} + {q} be"))
+                        c = input(f"what would {d} + {q} be")
                 except ValueError:
                     print("EEE")
                     continue
