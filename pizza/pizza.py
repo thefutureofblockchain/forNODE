@@ -6,7 +6,8 @@ try:
     with open(sys.argv[1], "r") as file:
         if len(sys.argv) != 2:
             raise FileNotFoundError
-        
+        if sys.argv[1].endswith(".csv") == False:
+            raise FileNotFoundError
         reader = csv.reader(file)
         '''read = csv.reader(file)'''
         table = reader
