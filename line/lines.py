@@ -3,7 +3,6 @@ a = []
 try:
     with open(sys.argv[1], "r") as file:
         for line in file:
-            line = line.lstrip()
             if line.startswith("#") == True or line.isspace() == True or line.startswith("'''") == True:
                 pass
             else:
