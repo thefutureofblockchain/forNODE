@@ -12,8 +12,8 @@ try:
         '''read = csv.reader(file)'''
         table = reader
         header = csv.reader(file)
-        print(header)
-        print(tabulate.tabulate(table, header,tablefmt="grid"))
+
+        print(tabulate.tabulate(table, headers="firstrow",tablefmt="grid"))
 
 except (FileNotFoundError,IndexError):
     sys.exit("there was an error")
