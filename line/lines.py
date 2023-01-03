@@ -9,6 +9,8 @@ try:
                 a.append(line)
             if len(sys.argv) != 2:
                 raise ValueError
+            if sys.argv[1].endswith(".py") == False:
+                raise ValueError
     print(len(a))
 except (ValueError , IndexError):
     sys.exit("Too many or too few args")
