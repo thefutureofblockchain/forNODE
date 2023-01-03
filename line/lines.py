@@ -7,6 +7,10 @@ try:
                 pass
             else:
                 a.append(line)
+            if len(sys.argv) != 2:
+                raise ValueError
     print(len(a))
-except ValueError:
+except (ValueError , IndexError):
     sys.exit("Too many or too few args")
+except FileNotFoundError:
+    sys.exit("File wasn't found")
