@@ -8,10 +8,12 @@ try:
             raise FileNotFoundError
         if sys.argv[1].endswith(".csv") == False:
             raise FileNotFoundError
-        reader = csv.reader(file)
+        reader = csv.DictReader(file)
         '''read = csv.reader(file)'''
         table = reader
-        print(tabulate.tabulate(table, tablefmt="grid"))
+        header = csv.reader(file)
+        print(header)
+        print(tabulate.tabulate(table, header,tablefmt="grid"))
 
 except (FileNotFoundError,IndexError):
     sys.exit("there was an error")
