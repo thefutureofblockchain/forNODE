@@ -4,8 +4,10 @@ import csv
 
 try:
     with open(sys.argv[1], "r") as file:
-        reader = csv.DictReader(csvfile)
-        print(tabulate(table, headers, tablefmt="plain"))
+        reader = csv.DictReader(file)
+        table = reader
+
+        print(tabulate.tabulate(table, tablefmt="grid"))
 
 except FileNotFoundError:
-    pass
+    sys.exit("there was an error")
