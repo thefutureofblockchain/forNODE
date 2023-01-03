@@ -14,6 +14,5 @@ try:
         header = csv.reader(file)
 
         print(tabulate.tabulate(table, headers="firstrow",tablefmt="grid"))
-
 except (FileNotFoundError,IndexError):
     sys.exit("there was an error")
