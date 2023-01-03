@@ -8,7 +8,7 @@ try:
             raise FileNotFoundError
         if sys.argv[1].endswith(".csv") == False:
             raise FileNotFoundError
-        reader = csv.DictReader(file)
+        reader = csv.reader(file)
         '''read = csv.reader(file)'''
         table = reader
         header = csv.reader(file)
