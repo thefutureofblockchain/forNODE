@@ -23,7 +23,7 @@ try:
         writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
         writer.writeheader()
         for line in q:
-                writer.writerow({"first": line[0],"last": line[1], "house": line[2]})
+                writer.writerow({"first": line[0].lstrip(),"last": line[1].lstrip(), "house": line[2].lstrip()})
 except (FileNotFoundError,ValueError,IndexError):
     sys.exit("uh oh")
 
