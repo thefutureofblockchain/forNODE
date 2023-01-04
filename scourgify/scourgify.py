@@ -19,10 +19,11 @@ for student in students:
     a = student['name']
     b = student['house']
     n1,n2 = a.split(",")
-    q.append(n2)
-    q.append(n1)
-    q.append(b)
+    ab = [n2,n1,b]
+    q.append(ab)
 with open(sys.argv[2], "a") as file:
-    for line in q:
+#for line in q:
         writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
-        writer.writerow({"first": n2,"last": n1, "house":b })
+        writer.writerow({"first": ab[0],"last": ab[1], "house": ab[2] })
+
+
