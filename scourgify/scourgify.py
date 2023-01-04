@@ -17,6 +17,12 @@ with open(sys.argv[1]) as file:
 for student in students:
 #b = students.index()
     a = student['name']
+    b = student['house']
     n1,n2 = a.split(",")
-    q.append(n2,n1)
-    #print(f"{student['name']} is from {student['house']}")
+    q.append(n2)
+    q.append(n1)
+    q.append(b)
+with open(sys.argv[2], "a") as file:
+    for line in q:
+        writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
+        writer.writerow({"first": n2,"last": n1, "house":b })
