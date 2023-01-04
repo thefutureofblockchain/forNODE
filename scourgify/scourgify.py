@@ -19,7 +19,7 @@ try:
         n1,n2 = a.split(",")
         ab = [n2,n1,b]
         q.append(ab)
-    with open(sys.argv[2], "a") as file:
+    with open(sys.argv[2], "w") as file:
         writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
         writer.writeheader()
         for line in q:
