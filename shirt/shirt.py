@@ -7,7 +7,7 @@ def main():
         outp = sys.argv[2]
         sys.argv[1] = sys.argv[1].lower()
         sys.argv[2] = sys.argv[2].lower()
-        if len(sys.argv) != 3 or sys.argv[1].endswith("png","jpeg","jpg") == False or sys.argv[2].endswith("png","jpeg","Jpg") == False or os.path.splitext(sys.argv[1]) != os.path.splitext(sys.argv[2]):
+        if len(sys.argv) != 3 or sys.argv[1].endswith("png","jpeg","jpg") == False or sys.argv[2].endswith("png","jpeg","Jpg") == False:
             raise ValueError
         else:
             pass
@@ -19,6 +19,13 @@ def main():
         updatedshirt = ImageOps.fit(shirt,size2, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
         inp1.paste(updatedshirt, updatedshirt)
         inp1.save(outp)
+def osthing(a,b):
+    ab, ba = os.path.splitext(a)
+    aba , baa = os.path.splitext(b)
+    if ba != baa:
+        return False
+    else:
+        return True
 main()
 
 
