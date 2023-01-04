@@ -1,9 +1,10 @@
 from PIL import Image, ImageOps
 import sys
+import os
 try:
         sys.argv[1] = sys.argv[1].lower()
         sys.argv[2] = sys.argv[2].lower()
-        if len(sys.argv) != 3 or sys.argv[1].endswith("png") == False or sys.argv[1].endwith("jpeg") == False or sys.argv[1].endswith("jpg") == False or sys.argv[2].endswith("png") == False or sys.argv[2].endwith("jpeg") == False or sys.argv[2].endswith("jpg") == False or os.path.splitext:
+        if len(sys.argv) != 3 or sys.argv[1].endswith("png") == False or sys.argv[1].endswith("jpeg") == False or sys.argv[1].endswith("jpg") == False or sys.argv[2].endswith("png") == False or sys.argv[2].endwith("jpeg") == False or sys.argv[2].endswith("jpg") == False or os.path.splitext(sys.argv[1]) != os.path.splitext(sys.argv[2]):
             raise ValueError
         else:
             pass
