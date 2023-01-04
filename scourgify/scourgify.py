@@ -21,14 +21,11 @@ for student in students:
     n1,n2 = a.split(",")
     ab = [n2,n1,b]
     q.append(ab)
-print(q)
 with open(sys.argv[2], "a") as file:
     writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
     writer.writeheader()
     for line in q:
             print(line)
-
-
             writer.writerow({"first": line[0],"last": line[1], "house": line[2]})
 
 
