@@ -17,10 +17,11 @@ def main():
             size = shirt.size
             size2 = inp1.size
 
-            updatedshirt = ImageOps.fit(shirt,size2, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+            updatedshirt = ImageOps.fit(shirt,size2)
             inp1.paste(updatedshirt, updatedshirt)
             inp1.save(outp)
-            Image.close(inp1,shirt)
+            inp1.close()
+            shirt.close()
         except(FileNotFoundError,IndexError,ValueError):
             sys.exit("uh")
 def osthing(a,b):
