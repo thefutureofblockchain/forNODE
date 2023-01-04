@@ -17,7 +17,7 @@ def main():
             size = shirt.size
             size2 = inp1.size
 
-            updatedshirt = ImageOps.fit(shirt,size2)
+            updatedshirt = ImageOps.fit(shirt,size2, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
             inp1.paste(updatedshirt, updatedshirt)
             inp1.save(outp)
             inp1.close()
