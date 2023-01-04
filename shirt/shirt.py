@@ -17,6 +17,7 @@ try:
         
 
 
+
 except(FileNotFoundError,IndexError,ValueError):
     sys.exit("uh")
 
