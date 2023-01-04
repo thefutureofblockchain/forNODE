@@ -24,7 +24,8 @@ for student in students:
 print(q)
 with open(sys.argv[2], "a") as file:
     for line in q:
-        writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
-        writer.writerow({"first": ab[0],"last": ab[1], "house": ab[2] })
+        
+        '''writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
+        writer.writerow({"first": q[0],"last": q[1], "house": q[2] })'''
 
 
