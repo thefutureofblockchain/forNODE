@@ -5,7 +5,7 @@ students = []
 q = []
 try:
     with open(sys.argv[1]) as file:
-            if len(sys.argv) != 2 or sys.argv[2].endswith(".csv") == False:
+            if len(sys.argv) != 3 or sys.argv[2].endswith(".csv") == False:
                 raise ValueError
             reader = csv.reader(file)
             for row in reader:
