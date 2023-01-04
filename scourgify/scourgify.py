@@ -23,10 +23,12 @@ for student in students:
     q.append(ab)
 print(q)
 with open(sys.argv[2], "a") as file:
+    writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
+    writer.writeheader()
     for line in q:
             print(line)
 
-            writer = csv.DictWriter(file, fieldnames=["first", "last", "house"])
+
             writer.writerow({"first": line[0],"last": line[1], "house": line[2]})
 
 
