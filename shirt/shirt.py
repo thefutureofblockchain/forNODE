@@ -1,18 +1,13 @@
 from PIL import Image, ImageOps
 import sys
 try:
-    def main():
-        if is_valid(sys.argv) == False:
+        sys.argv[1] = sys.argv[1].lower()
+        sys.argv[2] = sys.argv[2].lower()
+        if len(sys.argv) != 3 or sys.argv[1].endswith("png") == False or sys.argv[1].endwith("jpeg") == False or sys.argv[1].endswith("jpg") == False or sys.argv[2].endswith("png") == False or sys.argv[2].endwith("jpeg") == False or sys.argv[2].endswith("jpg") == False:
             raise ValueError
         else:
             pass
         
-    def is_valid(n):
-        n[1] = n[1].lower()
-        n[2] = n[2].lower()
-        if len(n) != 3 or n[1].endswith("png") == False or n[1].endwith("jpeg") == False or n[1].endswith("jpg")or n[2].endswith("png") == False or n[2].endwith("jpeg") == False or n[2].endswith("jpg") == False:
-            return False
-        else:
-            return True
 except(FileNotFoundError,IndexError,ValueError):
     sys.exit("uh")
+
