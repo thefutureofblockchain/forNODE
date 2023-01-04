@@ -16,8 +16,8 @@ try:
         size2 = inp1.size
 
         ImageOps.fit(inp1, size2, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-        inp1.paste(shirt, shirt)
-        inp1.show()
+        inp1.paste(inp1, shirt)
+        inp1.save(outp)
 
 
 
