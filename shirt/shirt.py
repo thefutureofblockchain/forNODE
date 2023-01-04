@@ -17,9 +17,9 @@ def main():
             size = shirt.size
             size2 = inp1.size
 
-            updatedshirt = ImageOps.fit(shirt,size2, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-            inp1.paste(updatedshirt, updatedshirt)
-            inp1.save(outp)
+            updatedb4 = ImageOps.fit(inp1,size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
+            updatedb4.paste(shirt, shirt)
+            shirt.save(outp)
             inp1.close()
             shirt.close()
         except(FileNotFoundError,IndexError,ValueError):
