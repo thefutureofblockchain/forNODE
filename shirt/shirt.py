@@ -7,7 +7,7 @@ def main():
         outp = sys.argv[2]
         sys.argv[1] = sys.argv[1].lower()
         sys.argv[2] = sys.argv[2].lower()
-        if len(sys.argv) != 3 or sys.argv[1].endswith("png","jpeg","jpg") == False or sys.argv[2].endswith("png","jpeg","Jpg") == False:
+        if len(sys.argv) != 3 or sys.argv[1].endswith("png","jpeg","jpg") == False or sys.argv[2].endswith("png","jpeg","Jpg") == False or osthing(inp,outp) == False:
             raise ValueError
         else:
             pass
