@@ -14,9 +14,10 @@ try:
         inp1 = Image.open(inp)
         size = shirt.size
         size2 = inp1.size
-        inp1.paste(shirt, shirt)
+
         ImageOps.fit(inp1, size2, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-        
+        inp1.paste(shirt, shirt)
+
 
 
 
