@@ -13,8 +13,9 @@ try:
         shirt = Image.open("shirt.png")
         inp1 = Image.open(inp)
         size = shirt.size
+        size2 = inp1.size
         inp1.paste(shirt, shirt)
-        ImageOps.fit(inp1, shirt.size)
+        ImageOps.fit(inp1, size2)
 
 
 
