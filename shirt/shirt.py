@@ -3,7 +3,7 @@ import sys
 import os
 
 def main():
-        #try:
+        try:
             inp = sys.argv[1]
             outp = sys.argv[2]
             sys.argv[1] = sys.argv[1].lower()
@@ -18,12 +18,12 @@ def main():
             size2 = inp1.size
 
             updatedb4 = ImageOps.fit(inp1 ,size, method=Image.Resampling.BICUBIC, bleed=0.0, centering=(0.5, 0.5))
-            shirt.paste(updatedb4, mask = updatedb4)
-            shirt.save(outp)
+            updatedb4.paste(shirt, mask = shirt)
+            updatedb4.save(outp)
             inp1.close()
             shirt.close()
-            '''except(FileNotFoundError,IndexError,ValueError):
-            sys.exit("uh")'''
+        except(FileNotFoundError,IndexError,ValueError):
+            sys.exit("uh")
 def osthing(a,b):
         ab, ba = os.path.splitext(a)
         aba , baa = os.path.splitext(b)
