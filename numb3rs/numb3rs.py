@@ -9,9 +9,9 @@ def main():
 def validate(ip):
     num = re.search(r"^([0-255]\.[0-255]\.[0-255]\.[0-255])$", ip)
     if num:
-        return num
+        return num.group(1)
     else:
-        return num
+        return num.group(1)
 
 
 
