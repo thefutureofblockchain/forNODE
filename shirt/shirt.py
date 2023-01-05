@@ -3,7 +3,7 @@ import sys
 import os
 
 def main():
-        try:
+        #try:
             inp = sys.argv[1]
             outp = sys.argv[2]
             sys.argv[1] = sys.argv[1].lower()
@@ -22,8 +22,8 @@ def main():
             shirt.save(outp)
             inp1.close()
             shirt.close()
-        except(FileNotFoundError,IndexError,ValueError):
-            sys.exit("uh")
+            '''except(FileNotFoundError,IndexError,ValueError):
+            sys.exit("uh")'''
 def osthing(a,b):
         ab, ba = os.path.splitext(a)
         aba , baa = os.path.splitext(b)
