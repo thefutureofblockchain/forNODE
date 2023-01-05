@@ -7,11 +7,11 @@ def main():
 
 
 def validate(ip):
-    num = re.search(r"^([0-255]\.[0-255]\.[0-255]\.[0-255])$", ip)
+    num = re.search(r"^([0-255]+\.[0-255]+\.[0-255]+\.[0-255]+)", ip)
     if num:
-        return num.group(1)
+        return True
     else:
-        return num.group(1)
+        return False
 
 
 
