@@ -8,7 +8,7 @@ def main():
 
 
 def validate(ip):
-    num = re.search("^([0,2].[0,5].[0,5])",ip)
+    num = re.search("^([0,2].[0,5]?.[0,5]?.)",ip)
     if num:
         return True
     else:
