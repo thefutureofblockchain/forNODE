@@ -4,7 +4,7 @@ def main():
     print(parse(input("HTML: ")))
 def parse(s):
 
-    string = re.search(r'(src="http(?:s)?://(?:www.)youtube.com/embed/[\w]+)',s)
+    string = re.search(r'src="(http(?:s)?://(?:www.)youtube.com/embed/[\w]+)',s)
     if string:
         print(string)
     else:
