@@ -8,7 +8,7 @@ def main():
 
 
 def validate(ip):
-    num = re.fullmatch("()",ip)
+    num = re.fullmatch(r"((?:[01])?(?:[0-9][0-9]?)|(?:2[0-4][0-9])|(?:25[0-5])\.",ip)
     if num:
         return True
     else:
