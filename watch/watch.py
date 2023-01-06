@@ -8,6 +8,8 @@ def parse(s):
     if string:
         a = str(string.groups(1))
         a = a.replace("youtube.com","youtu.be")
+        if "http:" in a:
+            a  = a.replace("http","https")
         if "www." in a:
             a = a.replace("www.","")
         a = a.replace("/embed","")
