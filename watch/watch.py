@@ -6,7 +6,10 @@ def parse(s):
 
     string = re.search(r'src="(http(?:s)?://(?:www.)youtube.com/embed/[\w]+)',s)
     if string:
-        a = string.groups(1).replace("youtube","you)
+        a = str(string.groups(1))
+        a = a.replace("youtube","youtu.be")
+        a = a.replace("/embed","")
+        return a
     else:
         print(string)
         print("SEE")
