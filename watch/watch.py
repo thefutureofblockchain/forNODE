@@ -11,6 +11,8 @@ def parse(s):
         if "www." in a:
             a = a.replace("www.","")
         a = a.replace("/embed","")
+        a = a.replace("('","")
+        a = a.replace("',)","")
         return a
     else:
         return None
