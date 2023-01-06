@@ -11,7 +11,6 @@ def parse(s):
         a = a.replace("/embed","")
         return a
     else:
-        print(string)
-        print("SEE")
+        return None
 if __name__ == "__main__":
     main()
