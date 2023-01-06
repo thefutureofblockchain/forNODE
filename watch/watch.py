@@ -4,9 +4,9 @@ def main():
     print(parse(input("HTML: ")))
 def parse(s):
 
-    string = re.search(r'src="(https://www.youtube.com/embed/xvFZjo5PgG0)" ',s)
+    string = re.search(r'src="(https?\:\/\/(?:www\.)?youtube\.com\/embed\/xvFZjo5PgG0)" ',s)
     if string:
-        print(string)
+        f = re.sub()
     else:
         print("SEE BITCH")
 if __name__ == "__main__":
