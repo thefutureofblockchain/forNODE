@@ -10,6 +10,8 @@ def convert(s):
     try:
         d = []
         t = []
+        co = []
+        bestie = []
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
@@ -22,6 +24,28 @@ def convert(s):
                 for time in ba:
                     time = re.split(r"\:",time)
                     print(time)
+                    num = time[0]
+                    amen = time[1]
+                    de = re.search(r"PM",amen)
+                    if de:
+                        amen = amen.replace(" PM", "")
+                        amen = int(amen)
+                        num = int(num)+12
+                        co.append(num)
+                    else:
+                        amen = amen.replace(" AM", "")
+                        amen = int(amen)
+                        if amen 
+                        num = int(num)
+                        bestie.append(num)
+                if len(co) == 1:
+                    if str(bestie[0]) in ba[0]:
+                        return f"{bestie[0]} to {co[0]}"
+                    else:
+                        return f"{co[0]}:{amen} to {bestie[0]}:{amen}"
+
+
+
 
         elif b:
                 ab = str(b.groups(1))
