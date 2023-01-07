@@ -13,8 +13,8 @@ def convert(s):
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
-            q = re.search()
-            ab = a.groups(1).replace(q.groups(1),)
+            #q = re.search()
+            #ab = a.groups(1).replace(q.groups(1),)
             return a
         elif b:
                 ab = str(b.groups(1))
@@ -35,6 +35,10 @@ def convert(s):
                             nonea = 1
                         ac = time.replace("AM","")
                         t.append(ac.rstrip())
+                        if len(d) == 0:
+                            alt = ba[0].rstrip().replace(" AM",":00")
+                            emo =ba[1].rstrip().replace(" AM",":00")
+                            return f"{alt} to{emo}"
                 if len(d) == 1:
                         qa = d[0]
                         qa = int(qa)
