@@ -33,7 +33,7 @@ def convert(s):
                     else:
                         if time == ba[0]:
                             nonea = 1
-                        ac = re.sub("PM","",time)
+                        ac = ac.replace("AM","")
                         t.append(ac)
                         print(t)
                 if len(d) == 1:
