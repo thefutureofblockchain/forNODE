@@ -28,18 +28,18 @@ def convert(s):
                     amen = time[1]
                     de = re.search(r"PM",amen)
                     if de:
-                        amen = amen.replace(" PM", "")
+                        Camen = amen.replace(" PM", "")
                         num = int(num)+12
                         co.append(num)
                     else:
-                        amen = amen.replace(" AM", "")
+                        Bamen = amen.replace(" AM", "")
                         num = int(num)
                         bestie.append(num)
                 if len(co) == 1:
                     if str(bestie[0]) in ba[0]:
-                        return f"{bestie[0]}:{amen} to {co[0]:{amen}}"
+                        return f"{bestie[0]}:{Bamen} to {co[0]:{Camen}}"
                     else:
-                        return f"{co[0]}:{amen} to {bestie[0]}:{amen}"
+                        return f"{co[0]}:{Camen} to {bestie[0]}:{Bamen}"
 
 
 
