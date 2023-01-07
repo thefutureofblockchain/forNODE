@@ -16,8 +16,11 @@ def convert(s):
             return a
         elif b:
                 ab = str(b.groups(1))
+                ab = str(ab)
+                ab = ab.replace("('","")
+                ab = ab.replace("',)","")
                 ba = re.split("to",ab)
-                print(ab)
+                print(ba)
                 #q = re.search(r"([0-9]|1[1-2]) PM", ab)
                 #if q:
                 #qa = str(q.groups(1))
