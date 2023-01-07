@@ -13,9 +13,16 @@ def convert(s):
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
-            #q = re.search()
-            #ab = a.groups(1).replace(q.groups(1),)
-            return a
+                ab = str(a.groups(1))
+                ab = str(ab)
+                ab = ab.replace("('","")
+                ab = ab.replace("',)","")
+                ba = re.split("to",ab)
+                print(ba)
+                for time in ba:
+                    time = re.split(r"\:",time)
+                    print(time)
+
         elif b:
                 ab = str(b.groups(1))
                 ab = str(ab)
