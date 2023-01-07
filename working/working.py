@@ -25,6 +25,9 @@ def convert(s):
                 for time in ba:
                     q = re.search(r"([0-9]|1[1-2]) PM", time)
                     if q:
+                        if time == ba[0]:
+                            nonea = 1
+                            noneb = "y"
                         ac = q.groups(1)
                         ac = str(ac)
                         ac = ac.replace("('","")
