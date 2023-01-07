@@ -29,10 +29,12 @@ def convert(s):
                     de = re.search(r"PM",amen)
                     if de:
                         Camen = amen.replace(" PM", "")
+                        print(Camen)
                         num = int(num)+12
                         co.append(num)
                     else:
                         Bamen = amen.replace(" AM", "")
+                        print(Bamen)
                         num = int(num)
                         bestie.append(num)
                 if len(co) == 1:
