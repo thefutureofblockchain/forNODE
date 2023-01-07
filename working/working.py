@@ -42,7 +42,7 @@ def convert(s):
                         if t[0] in ba[0]:
                             return f"{t[0]}:00 to {qa}:00"
                         else:
-                            return f"{qa}:00 to {t[0]}:00"
+                            return f"{qa}:00 to{t[0]}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
