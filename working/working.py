@@ -33,17 +33,16 @@ def convert(s):
                     else:
                         if time == ba[0]:
                             nonea = 1
-                        ac = ac.replace("AM","")
-                        t.append(ac)
-                        print(t)
+                        ac = time.replace("AM","")
+                        t.append(ac.rstrip())
                 if len(d) == 1:
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
                         if nonea == 1:
-                            return f"{qa}:00 to {t[0]}:00"
-                        else:
                             return f"{t[0]}:00 to {qa}:00"
+                        else:
+                            return f"{qa}:00 to {t[0]}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
