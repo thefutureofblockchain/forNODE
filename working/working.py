@@ -29,20 +29,18 @@ def convert(s):
                         ac = ac.replace("('","")
                         ac = ac.replace("',)","")
                         d.append(ac)
-                    if len(d) == 1:
+                if len(d) == 1:
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        print(qa)
-                    elif len(d) == 2:
+                elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        print(qa)
                         qb = d[1]
                         qb = int(qb)
                         qb = qb+12
-                        print(qb)
+                        return f"{qa}:00 to {qb}:00"
         else:
             raise ValueError
     except ValueError:
