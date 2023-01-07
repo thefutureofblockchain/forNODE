@@ -8,6 +8,7 @@ def main():
 
 def convert(s):
     try:
+        d = []
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
@@ -20,12 +21,15 @@ def convert(s):
                 ab = ab.replace("('","")
                 ab = ab.replace("',)","")
                 ba = re.split("to",ab)
-                print(ba)
-                #q = re.search(r"([0-9]|1[1-2]) PM", ab)
-                #if q:
-                #qa = str(q.groups(1))
                 for time in ba:
-                    
+                    q = re.search(r"([0-9]|1[1-2]) PM", time)
+                    if q:
+                        ac = q.groups(1)
+                        ac = str(ac)
+                        ac = ac.replace("('","")
+                        ac = ac.replace("',)","")
+                        d.append(ac)
+                print(d)
 
                 '''qa = str(q.groups(1))
                 qa = qa.replace("('","")
@@ -34,7 +38,6 @@ def convert(s):
                 qa = int(qa)
                 qa = qa+12
                 print(qa)'''
-            #ab = b.groups(1).replace(q.groups(1),)
         else:
             raise ValueError
     except ValueError:
