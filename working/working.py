@@ -29,22 +29,26 @@ def convert(s):
                     de = re.search(r"PM",amen)
                     if de:
                         Camen = amen.replace(" PM", "")
-                        print(Camen)
-                        num = int(num)+12
-                        co.append(num)
+                        Camen = Camen.strip()
+                        Cnum = int(num)+12
+                        co.append(Cnum)
                     else:
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
-                        num = int(num)
-                        bestie.append(num)
+                        Bnum = int(num)
+                        bestie.append(Bnum)
+
+                    if len(co) == 0:
+                        return f"{Bnum}:{Bamen}
                 if len(co) == 1:
                     l = str(bestie[0])
                     l = l+f":{Bamen} AM"
                     print(l)
                     if l in ba[0]:
-                        return f"{co[0]}:{Camen} to {bestie[0]}:{Bamen}"
-                    else:
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{Camen}"
+                    else:
+                        return f"{co[0]}:{Camen} to {bestie[0]}:{Bamen}"
+
 
 
 
