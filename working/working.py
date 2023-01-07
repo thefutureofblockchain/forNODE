@@ -37,7 +37,7 @@ def convert(s):
                         bestie.append(num)
                 if len(co) == 1:
                     if str(bestie[0]) in ba[0]:
-                        return f"{bestie[0]} to {co[0]}"
+                        return f"{bestie[0]}:{amen} to {co[0]:{amen}}"
                     else:
                         return f"{co[0]}:{amen} to {bestie[0]}:{amen}"
 
