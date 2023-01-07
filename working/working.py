@@ -33,6 +33,7 @@ def convert(s):
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
+                        return f"{qa}:00 to {qc}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
