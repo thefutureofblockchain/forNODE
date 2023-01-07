@@ -8,7 +8,8 @@ def main():
 
 def convert(s):
     try:
-        a = re.search(r"((?:[0-9]|1[1-2])\:[0-5][0-9]$)",s)
+        a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] [AM|PM] to (?:[0-9]|1[1-2])\:[0-5][0-9] [AM|PM]$)",s)
+        b = re.search(r"",s)
         if a:
             print(a)
         else:
