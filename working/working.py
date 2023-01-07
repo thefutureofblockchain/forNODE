@@ -18,7 +18,7 @@ def convert(s):
             ab = str(b.groups(1))
             q = re.search(r"([0-9]|1[1-2]) PM", ab)
             if q:
-                print(q.group(0))
+                print(len((q.groups(0))))
                 qa = str(q.groups(1))
                 qa = qa.replace("('","")
                 qa = qa.replace("',)","")
