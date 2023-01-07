@@ -1,6 +1,6 @@
 from working import convert
 def test_1():
-    pass
+    assert convert("cat")
 def test_2():
     pass
 def test_3():
