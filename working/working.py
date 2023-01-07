@@ -9,6 +9,7 @@ def main():
 def convert(s):
     try:
         d = []
+        t = []
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
@@ -29,11 +30,15 @@ def convert(s):
                         ac = ac.replace("('","")
                         ac = ac.replace("',)","")
                         d.append(ac)
+                    else:
+                        ac = re.sub("PM","",time)
+                        t.append(ac)
+                        print(t)
                 if len(d) == 1:
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        return f"{qa}:00 to {qc}:00"
+                        return f"{qa}:00 to :00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
