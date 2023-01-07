@@ -15,11 +15,12 @@ def convert(s):
             ab = a.groups(1).replace(q.groups(1),)
             return a
         elif b:
-            ab = str(b.groups(1))
-            ba = ab
-            q = re.search(r"([0-9]|1[1-2]) PM", ab)
-            if q:
-                qa = str(q.groups(1))
+                ab = str(b.groups(1))
+                ba = re.split("to",ab)
+                print(ab)
+                #q = re.search(r"([0-9]|1[1-2]) PM", ab)
+                #if q:
+                #qa = str(q.groups(1))
                 '''qa = str(q.groups(1))
                 qa = qa.replace("('","")
                 qa = qa.replace("',)","")
