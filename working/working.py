@@ -29,15 +29,20 @@ def convert(s):
                         ac = ac.replace("('","")
                         ac = ac.replace("',)","")
                         d.append(ac)
-                print(d)
-                if len(d) == 1:
-                    qa = str(q.groups(1))
-                    qa = qa.replace("('","")
-                    qa = qa.replace("',)","")
-                    print(qa)
-                    qa = int(qa)
-                    qa = qa+12
-                    print(qa)
+                    if len(d) == 1:
+                        qa = d[0]
+                        qa = int(qa)
+                        qa = qa+12
+                        print(qa)
+                    elif len(d) == 2:
+                        qa = d[0]
+                        qa = int(qa)
+                        qa = qa+12
+                        print(qa)
+                        qb = d[1]
+                        qb = int(qb)
+                        qb = qb+12
+                        print(qb)
         else:
             raise ValueError
     except ValueError:
