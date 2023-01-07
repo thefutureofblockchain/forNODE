@@ -34,7 +34,7 @@ def convert(s):
                         co.append(num)
                     else:
                         Bamen = amen.replace(" AM", "")
-                        print(Bamen)
+                        Bamen = Bamen.strip()
                         num = int(num)
                         bestie.append(num)
                 if len(co) == 1:
