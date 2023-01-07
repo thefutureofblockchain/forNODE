@@ -40,7 +40,8 @@ def convert(s):
                 if len(co) == 1:
                     l = str(bestie[0])
                     l = l+f":{Bamen} AM"
-                    if str(bestie[0]) in ba[0] and l in ba:
+                    print(l)
+                    if l in ba[0]:
                         return f"{co[0]}:{Camen} to {bestie[0]}:{Bamen}"
                     else:
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{Camen}"
