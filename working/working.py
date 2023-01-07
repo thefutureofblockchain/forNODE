@@ -8,9 +8,11 @@ def main():
 
 def convert(s):
     try:
-        a = re.search(r"([0-9]|1[1-2])\:[0-5][0-9]",s)
+        a = re.search(r"([0-9]|1[1-2]\:[0-5][0-9])",s)
         if a:
-            print(a)
+            print(a.groups(1))
+        else:
+            print("hello")
     except ValueError:
         pass
 
