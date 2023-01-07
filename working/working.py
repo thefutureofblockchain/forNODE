@@ -12,6 +12,7 @@ def convert(s):
         t = []
         co = []
         bestie = []
+        camen = []
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
@@ -20,16 +21,15 @@ def convert(s):
                 ab = ab.replace("('","")
                 ab = ab.replace("',)","")
                 ba = re.split("to",ab)
-                print(ba)
                 for time in ba:
                     time = re.split(r"\:",time)
-                    print(time)
                     num = time[0]
                     amen = time[1]
                     de = re.search(r"PM",amen)
                     if de:
                         Camen = amen.replace(" PM", "")
                         Camen = Camen.strip()
+                        camen.append(Camen)
                         Cnum = int(num)+12
                         co.append(Cnum)
                     else:
@@ -45,13 +45,12 @@ def convert(s):
                 elif len(co) == 1:
                     l = str(bestie[0])
                     l = l+f":{Bamen} AM"
-                    print(l)
                     if l in ba[0]:
-                        return f"{bestie[0]}:{Bamen} to {co[0]}:{Camen}"
+                        return f"{bestie[0]}:{Bamen} to {co[0]}:{Camen[0]}"
                     else:
-                        return f"{co[0]}:{Camen} to {bestie[0]}:{Bamen}"
+                        return f"{co[0]}:{Camen[0]} to {bestie[0]}:{Bamen}"
                 elif len(co) == 2:
-                    return f"{co[0]}:{Camen} to "
+                    return f"{co[0]}:{camen[0]} to {co[1]}:{camen[1]}"
 
 
 
