@@ -18,18 +18,13 @@ def convert(s):
             ab = str(b.groups(1))
             q = re.search(r"([0-9]|1[1-2]) PM", ab)
             if q:
-                abc = str(q.groups)
-                print(abc)
-                #q,a = re.split("to",abc)
-                #print(q,a)
-                '''print(len((q.groups(0))))
                 qa = str(q.groups(1))
                 qa = qa.replace("('","")
                 qa = qa.replace("',)","")
                 print(qa)
                 qa = int(qa)
                 qa = qa+12
-                print(qa)'''
+                print(qa)
             #ab = b.groups(1).replace(q.groups(1),)
         else:
             raise ValueError
