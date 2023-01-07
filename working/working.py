@@ -30,14 +30,14 @@ def convert(s):
                         ac = ac.replace("',)","")
                         d.append(ac)
                 print(d)
-
-                '''qa = str(q.groups(1))
-                qa = qa.replace("('","")
-                qa = qa.replace("',)","")
-                print(qa)
-                qa = int(qa)
-                qa = qa+12
-                print(qa)'''
+                if len(d) == 1:
+                    qa = str(q.groups(1))
+                    qa = qa.replace("('","")
+                    qa = qa.replace("',)","")
+                    print(qa)
+                    qa = int(qa)
+                    qa = qa+12
+                    print(qa)
         else:
             raise ValueError
     except ValueError:
