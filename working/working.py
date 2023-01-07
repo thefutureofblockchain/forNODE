@@ -41,7 +41,10 @@ def convert(s):
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        return f"{qa}:00 to :00"
+                        if nonea = 1:
+                            return f"{qa}:00 to {t[0]}:00"
+                        else:
+                            return f"{t[0]}:00 to {qa}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
