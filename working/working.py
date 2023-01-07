@@ -22,7 +22,9 @@ def convert(s):
                 qa = qa.replace("('","")
                 qa = qa.replace("',)","")
                 print(qa)
-                
+                qa = int(qa)
+                qa = qa+12
+                print(qa)
             #ab = b.groups(1).replace(q.groups(1),)
         else:
             raise ValueError
