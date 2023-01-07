@@ -16,7 +16,7 @@ def convert(s):
             return a
         elif b:
             ab = str(b.groups(1))
-            q = re.search(r"(?:[0-9]|1[1-2]) PM", ab)
+            q = re.search(r"([0-9]|1[1-2]) PM", ab)
             if q:
                 print(q.groups(1))
             #ab = b.groups(1).replace(q.groups(1),)
