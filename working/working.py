@@ -38,9 +38,11 @@ def convert(s):
                         Bnum = int(num)
                         bestie.append(Bnum)
 
-                    if len(co) == 0:
-                        return f"{Bnum}:{Bamen}
-                if len(co) == 1:
+                if len(co) == 0:
+                        lm = ba[0].replace(" AM","")
+                        ln = ba[1].replace(" AM","")
+                        return f"{lm}to{ln}"
+                elif len(co) == 1:
                     l = str(bestie[0])
                     l = l+f":{Bamen} AM"
                     print(l)
@@ -48,6 +50,8 @@ def convert(s):
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{Camen}"
                     else:
                         return f"{co[0]}:{Camen} to {bestie[0]}:{Bamen}"
+                elif len(co) == 2:
+                    return f"{co[0]}:{Camen} to "
 
 
 
