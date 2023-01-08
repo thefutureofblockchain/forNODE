@@ -32,7 +32,9 @@ def convert(s):
                         Camen = amen.replace(" PM", "")
                         Camen = Camen.strip()
                         camen.append(Camen)
+                        print(num)
                         if num == "12" or num == 12:
+
                             Cnum = "12"
                         else:
                             Cnum = int(num)+12
