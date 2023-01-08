@@ -141,7 +141,6 @@ def convert(s):
             raise ValueError
     except ValueError:
         sys.exit("ValueError")
-...
 
 
 
