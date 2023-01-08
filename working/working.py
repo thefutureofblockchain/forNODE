@@ -51,7 +51,10 @@ def convert(s):
                             prenum.append(Bnum)
                             if 10-Bnum >= 1:
                                 Bnum = "0"+str(Bnum)
-                            bestie.append(Bnum)
+                            if Bnum == 12:
+                                bestie.append("00")
+                            else:
+                                bestie.append(Bnum)
 
                 if len(co) == 0:
                         lm = ba[0].replace(" AM","")
