@@ -75,14 +75,16 @@ def convert(s):
                             nonea = 1
                         ac = time.replace("AM","")
                         t.append(ac.rstrip())
-                        if len(d) == 0:
+                if len(d) == 0:
                             alt = ba[0].rstrip().replace(" AM",":00")
                             emo =ba[1].rstrip().replace(" AM",":00")
                             return f"{alt} to{emo}"
                 if len(d) == 1:
+
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
+
                         if t[0] in ba[0]:
                             return f"{t[0]}:00 to {qa}:00"
                         else:
