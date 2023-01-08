@@ -36,6 +36,8 @@ def convert(s):
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
                         Bnum = int(num)
+                        if 10-Bnum > 1:
+                            Bnum = "0"+str(Bnum)
                         bestie.append(Bnum)
 
                 if len(co) == 0:
@@ -46,7 +48,9 @@ def convert(s):
                     l = str(bestie[0])
                     l = l+f":{Bamen} AM"
                     if l in ba[0]:
-                        return f"{bestie[0]}:{Bamen} to {co[0]}:{Camen[0]}"
+                        print(bestie[0])
+                        return f"{bestie[0]}:{Bamen} to {co[0]}:{camen[0]}"
+
                     else:
                         return f"{co[0]}:{Camen[0]} to {bestie[0]}:{Bamen}"
                 elif len(co) == 2:
