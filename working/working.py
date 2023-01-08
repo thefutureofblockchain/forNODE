@@ -80,6 +80,7 @@ def convert(s):
                         if time == ba[0]:
                             nonea = 1
                         ac = time.replace("AM","")
+                        ac = ac.strip()
                         prac.append(ac)
                         if 10-int(ac) >= 1:
                             ac = "0"+ac
@@ -98,7 +99,7 @@ def convert(s):
                         if str(prac[0]+" AM") in str(ba[0]):
                             return f"{t[0]}:00 to {qa}:00"
                         else:
-                            return f"{qa}:00 to{t[0]}:00"
+                            return f"{qa}:00 to {t[0]}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
