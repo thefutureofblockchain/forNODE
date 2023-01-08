@@ -108,7 +108,9 @@ def convert(s):
                         qa = qa+12
                         qb = d[1]
                         qb = int(qb)
+                        if qb == 12
                         qb = qb+12
+
                         return f"{qa}:00 to {qb}:00"
         else:
             raise ValueError
