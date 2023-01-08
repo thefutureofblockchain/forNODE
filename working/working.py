@@ -96,7 +96,7 @@ def convert(s):
                         qa = qa+12
                         qaa = t[0].replace("0","")
                         print(ba[0],ba[1],prac[0],qaa)
-                        q = re.search(r"(?:[0-9]|1[0-2]) AM",ba[0])
+                        q = re.search(r"qaa AM",ba[0])
                         print(q)
                         if ba[0].startswith(qaa) and q:
                                 return f"{t[0]}:00 to {qa}:00"
