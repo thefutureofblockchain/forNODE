@@ -109,8 +109,7 @@ def convert(s):
         else:
             raise ValueError
     except ValueError:
-        sys.exit("did not work bro")
-
+        pass
 ...
 
 
