@@ -1,2 +1,7 @@
 from validator_collection import validators, checkers, errors
-email_address = validators.email('test@domain.dev')
+a = input("enter: ")
+is_email_address = checkers.is_email(a)
+if is_email_address == True:
+    print("Valid")
+else:
+    print("Invalid")
