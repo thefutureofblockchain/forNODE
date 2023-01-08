@@ -32,15 +32,15 @@ def convert(s):
                         Camen = amen.replace(" PM", "")
                         Camen = Camen.strip()
                         camen.append(Camen)
-                        Cnum = int(num)+12
+                        if num == "12":
+                            Cnum = "00"
+                        else:
+                            Cnum = int(num)+12
                         co.append(Cnum)
                     else:
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
-                        if num == "12":
-                            Bnum = "00"
-                        else:
-                            Bnum = int(num)
+                        Bnum = int(num)
                         prenum.append(Bnum)
                         if 10-Bnum >= 1:
                             Bnum = "0"+str(Bnum)
@@ -53,7 +53,6 @@ def convert(s):
                 elif len(co) == 1:
                     l = str(prenum[0])
                     l = l+f":{Bamen} AM"
-                    print(l)
                     if l in ba[0]:
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{camen[0]}"
 
@@ -97,7 +96,10 @@ def convert(s):
 
                         qa = d[0]
                         qa = int(qa)
-                        qa = qa+12
+                        if qa == 12:
+                            qa = "00"
+                        else:
+                            qa = qa+12
                         qaa = t[0].replace("0","")
                         q = re.search(re.escape(qaa)+r" AM",ba[0])
                         if ba[0].startswith(qaa) and q:
