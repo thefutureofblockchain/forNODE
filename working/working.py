@@ -94,7 +94,9 @@ def convert(s):
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        if ba[0].startswith(t[0].replace("0","") and t[0].startswith("0")) == True:
+                        qaa = t[0].replace("0","")
+
+                        if ba[0].startswith(qaa) and t[0].startswith("0") == True:
                                 return f"{t[0]}:00 to {qa}:00"
                         elif ba[0].startswith(prac[0]) == True:
                                 return f"{t[0]}:00 to {qa}:00"
