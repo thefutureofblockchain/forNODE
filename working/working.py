@@ -105,11 +105,16 @@ def convert(s):
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
-                        qa = qa+12
+                        if qb == 12:
+                            qb = "00"
+                        else:
+                            qa = qa+12
                         qb = d[1]
                         qb = int(qb)
-                        if qb == 12
-                        qb = qb+12
+                        if qb == 12:
+                            qb = "00"
+                        else:
+                            qb = qb+12
 
                         return f"{qa}:00 to {qb}:00"
         else:
