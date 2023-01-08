@@ -7,7 +7,6 @@ def main():
 
 
 def convert(s):
-    try:
         d = []
         t = []
         co = []
@@ -139,8 +138,8 @@ def convert(s):
                         return f"{qa}:00 to {qb}:00"
         else:
             raise ValueError
-    except ValueError:
-        sys.exit("ValueError")
+
+...
 
 
 
