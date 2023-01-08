@@ -10,7 +10,8 @@ def count(s):
     b = 0
     s = s.split(" ")
     for word in s:
-        q = re.search("[!@#$%^&*() ]um[!@#$%^&*() ]",word)
+
+        q = re.search(r"(?:[!@#?/.,$%^&*() ]um[\!\@\#\$\%\?\/\.\,\>\<\^\&\*\(\) ])|^um$",word)
         if q:
             b+=1
     return b
