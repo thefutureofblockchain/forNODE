@@ -97,9 +97,10 @@ def convert(s):
                         qaa = t[0].replace("0","")
                         print(ba[0],ba[1],prac[0],qaa)
                         q = re.search(r"(?:[0-9]|1[0-2]) AM",ba[0])
-                        if ba[0].startswith(qaa) and t[0].startswith("0") == True:
+                        print(q)
+                        if ba[0].startswith(qaa) and q:
                                 return f"{t[0]}:00 to {qa}:00"
-                        elif ba[0].startswith(prac[0]) == True and ba[0].endswith("AM")== True:
+                        elif ba[0].startswith(prac[0]) == True and q:
                                 return f"{t[0]}:00 to {qa}:00"
                         else:
                             return f"{qa}:00 to {t[0]}:00"
