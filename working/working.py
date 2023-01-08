@@ -94,9 +94,7 @@ def convert(s):
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        print(prac[0])
-                        print(ba[0])
-                        if str(prac[0]+" AM") in str(ba[0]):
+                        if ba[0].startswith(prac[0]):
                             return f"{t[0]}:00 to {qa}:00"
                         else:
                             return f"{qa}:00 to {t[0]}:00"
