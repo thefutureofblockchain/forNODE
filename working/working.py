@@ -94,8 +94,11 @@ def convert(s):
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-                        if ba[0].startswith(t[0]):
-                            return f"{t[0]}:00 to {qa}:00"
+                        if t[0].startswith("0") == True:
+                            if ba[0].startswith(t[0].replace("0","")):
+                                return f"{t[0]}:00 to {qa}:00"
+                            elif ba[0].startswith(parc[0]):
+                                return f"{t[0]}:00 to {qa}:00"
                         else:
                             return f"{qa}:00 to {t[0]}:00"
                 elif len(d) == 2:
