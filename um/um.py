@@ -11,7 +11,7 @@ def count(s):
     s = s.split(" ")
     for word in s:
 
-        q = re.search(r"(?:[^/w][/D]um )|^um$",word)
+        q = re.search(r"(?:[^/w][/D]um)|(^um$)",word)
         if q:
             b+=1
     return b
