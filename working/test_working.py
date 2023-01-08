@@ -13,7 +13,7 @@ def test_3():
         with pytest.raises(ValueError):
             convert("13:00 to 15:00")
         with pytest.raises(ValueError):
-            convert("1:00 AM through 1:00 PM")
+            convert("1:00 AM through 1:00 PM")y
         with pytest.raises(ValueError):
             convert("1:00 AM through 1:00 PM")
         with pytest.raises(ValueError):
