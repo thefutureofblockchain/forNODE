@@ -38,7 +38,7 @@ def convert(s):
                         Bamen = Bamen.strip()
                         Bnum = int(num)
                         prenum.append(Bnum)
-                        if 10-Bnum > 1:
+                        if 10-Bnum >= 1:
                             Bnum = "0"+str(Bnum)
                         bestie.append(Bnum)
 
@@ -79,6 +79,8 @@ def convert(s):
                         if time == ba[0]:
                             nonea = 1
                         ac = time.replace("AM","")
+                        if int(ac)-10 >= 1:
+                            ac = "0"+ac
                         t.append(ac.rstrip())
                 if len(d) == 0:
                             alt = ba[0].rstrip().replace(" AM",":00")
