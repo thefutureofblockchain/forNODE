@@ -99,18 +99,13 @@ def convert(s):
                         qa = int(qa)
                         qa = qa+12
                         qaa = t[0].replace("0","")
-                        cd = t[0]
-                        if cd == "12" or cd == 12:
-                            cd = "00"
-                        else:
-                            pass
                         q = re.search(re.escape(qaa)+r" AM",ba[0])
                         if ba[0].startswith(qaa) and q:
-                                return f"{cd}:00 to {qa}:00"
+                                return f"{t[0]}:00 to {qa}:00"
                         elif ba[0].startswith(prac[0]) == True and q:
-                                return f"{cd}:00 to {qa}:00"
+                                return f"{t[0]}:00 to {qa}:00"
                         else:
-                            return f"{qa}:00 to {cd}:00"
+                            return f"{qa}:00 to {t[0]}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
