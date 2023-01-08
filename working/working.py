@@ -69,7 +69,7 @@ def convert(s):
                 ab = ab.replace("',)","")
                 ba = re.split("to",ab)
                 for time in ba:
-                    q = re.search(r"([0-9]|1[1-2]) PM", time)
+                    q = re.search(r"([0-9]|1[0-2]) PM", time)
                     if q:
                         ac = q.groups(1)
                         ac = str(ac)
