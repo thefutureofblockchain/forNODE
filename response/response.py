@@ -1,1 +1,1 @@
-import validator-collection 
+import validator
