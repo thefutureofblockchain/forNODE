@@ -41,6 +41,7 @@ def convert(s):
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
                         if num == "12" or num == 12:
+                            prenum.append(12)
                             Bnum = "00"
                             bestie.append(Bnum)
                         else:
