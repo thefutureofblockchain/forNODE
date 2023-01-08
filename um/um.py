@@ -16,9 +16,5 @@ def count(s):
             b+=1
     return b
 
-
-...
-
-
 if __name__ == "__main__":
     main()
