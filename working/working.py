@@ -95,7 +95,7 @@ def convert(s):
                         qa = qa+12
                         print(prac[0])
                         print(ba[0])
-                        if prac[0] in ba[0]:
+                        if str(prac[0]+" AM") in str(ba[0]):
                             return f"{t[0]}:00 to {qa}:00"
                         else:
                             return f"{qa}:00 to{t[0]}:00"
