@@ -13,6 +13,7 @@ def convert(s):
         co = []
         bestie = []
         camen = []
+        prenum = []
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
@@ -36,6 +37,7 @@ def convert(s):
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
                         Bnum = int(num)
+                        prenum.append(Bnum)
                         if 10-Bnum > 1:
                             Bnum = "0"+str(Bnum)
                         bestie.append(Bnum)
@@ -45,10 +47,9 @@ def convert(s):
                         ln = ba[1].replace(" AM","")
                         return f"{lm}to{ln}"
                 elif len(co) == 1:
-                    l = str(bestie[0])
+                    l = str(prenum[0])
                     l = l+f":{Bamen} AM"
                     if l in ba[0]:
-                        print(bestie[0])
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{camen[0]}"
 
                     else:
