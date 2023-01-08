@@ -17,6 +17,8 @@ def test_3():
         with pytest.raises(ValueError):
             convert("1:00 AM through 1:00 PM")
         with pytest.raises(ValueError):
-            convert("1:00 AM through 1:00 PM")
+            convert("1:00 AM through 100:00 PM")
+        with pytest.raises(ValueError):
+            convert("28:00 AM through 1:00 PM")
 def test_4():
     pass
