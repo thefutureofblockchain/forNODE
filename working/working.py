@@ -98,7 +98,7 @@ def convert(s):
                         print(ba[0],ba[1],prac[0])
                         if ba[0].startswith(qaa) and t[0].startswith("0") == True:
                                 return f"{t[0]}:00 to {qa}:00"
-                        elif ba[0].startswith(prac[0]) == True:
+                        elif ba[0].startswith(prac[0]) == True and ba[0].endswith("AM")== True:
                                 return f"{t[0]}:00 to {qa}:00"
                         else:
                             return f"{qa}:00 to {t[0]}:00"
