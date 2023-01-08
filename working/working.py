@@ -95,7 +95,8 @@ def convert(s):
                         qa = int(qa)
                         qa = qa+12
                         qaa = t[0].replace("0","")
-                        print(ba[0],ba[1],prac[0])
+                        print(ba[0],ba[1],prac[0],qaa)
+                        
                         if ba[0].startswith(qaa) and t[0].startswith("0") == True:
                                 return f"{t[0]}:00 to {qa}:00"
                         elif ba[0].startswith(prac[0]) == True and ba[0].endswith("AM")== True:
