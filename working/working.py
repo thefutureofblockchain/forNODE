@@ -40,11 +40,15 @@ def convert(s):
                     else:
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
-                        Bnum = int(num)
-                        prenum.append(Bnum)
-                        if 10-Bnum >= 1:
-                            Bnum = "0"+str(Bnum)
-                        bestie.append(Bnum)
+                        if num == "12" or num == 12:
+                            Bnum = "00"
+                            bestie.append(Bnum)
+                        else:
+                            Bnum = int(num)
+                            prenum.append(Bnum)
+                            if 10-Bnum >= 1:
+                                Bnum = "0"+str(Bnum)
+                            bestie.append(Bnum)
 
                 if len(co) == 0:
                         lm = ba[0].replace(" AM","")
