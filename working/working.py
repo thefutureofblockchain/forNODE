@@ -14,6 +14,7 @@ def convert(s):
         bestie = []
         camen = []
         prenum = []
+        prac = []
         a = re.search(r"((?:^[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM) to (?:[0-9]|1[1-2])\:[0-5][0-9] (?:AM|PM)$)",s)
         b = re.search(r"((?:^[0-9]|1[1-2]) (?:AM|PM) to (?:[0-9]|1[1-2]) (?:AM|PM)$)",s)
         if a:
@@ -79,6 +80,7 @@ def convert(s):
                         if time == ba[0]:
                             nonea = 1
                         ac = time.replace("AM","")
+                        prac.append(ac)
                         if 10-int(ac) >= 1:
                             ac = "0"+ac
                         t.append(ac.rstrip())
@@ -91,8 +93,9 @@ def convert(s):
                         qa = d[0]
                         qa = int(qa)
                         qa = qa+12
-
-                        if t[0] in ba[0]:
+                        print(prac[0])
+                        print(ba[0])
+                        if prac[0] in ba[0]:
                             return f"{t[0]}:00 to {qa}:00"
                         else:
                             return f"{qa}:00 to{t[0]}:00"
