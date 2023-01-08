@@ -8,6 +8,7 @@ def test_1():
 def test_2():
     assert convert("10 PM to 8 AM") == "22:00 to 08:00"
     assert convert("10:30 PM to 8:50 AM") == "22:30 to 08:50"
+    
 def test_3():
     pass
 def test_4():

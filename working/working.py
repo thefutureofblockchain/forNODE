@@ -32,7 +32,6 @@ def convert(s):
                         Camen = amen.replace(" PM", "")
                         Camen = Camen.strip()
                         camen.append(Camen)
-                        print(camen)
                         Cnum = int(num)+12
                         co.append(Cnum)
                     else:
@@ -55,7 +54,7 @@ def convert(s):
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{camen[0]}"
 
                     else:
-                        return f"{co[0]}:{Camen[0]} to {bestie[0]}:{Bamen}"
+                        return f"{co[0]}:{camen[0]} to {bestie[0]}:{Bamen}"
                 elif len(co) == 2:
                     return f"{co[0]}:{camen[0]} to {co[1]}:{camen[1]}"
 
