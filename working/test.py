@@ -5,3 +5,5 @@ print(a)
 for letter in a:
     ab = re.search(".+", letter)
     print(ab)
+if var == 12:
+    var = 00
