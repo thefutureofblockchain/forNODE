@@ -64,7 +64,7 @@ def convert(s):
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{camen[0]}"
 
                     else:
-                        print(Bamen,bestie)
+                        print(Bnum,bestie)
                         return f"{co[0]}:{camen[0]} to {bestie[0]}:{Bamen}"
                 elif len(co) == 2:
                     return f"{co[0]}:{camen[0]} to {co[1]}:{camen[1]}"
