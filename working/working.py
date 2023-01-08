@@ -32,15 +32,15 @@ def convert(s):
                         Camen = amen.replace(" PM", "")
                         Camen = Camen.strip()
                         camen.append(Camen)
-                        if num == "12":
-                            Cnum = "00"
-                        else:
-                            Cnum = int(num)+12
+                        Cnum = int(num)+12
                         co.append(Cnum)
                     else:
                         Bamen = amen.replace(" AM", "")
                         Bamen = Bamen.strip()
-                        Bnum = int(num)
+                        if num == "12":
+                            Bnum = "00"
+                        else:
+                            Bnum = int(num)
                         prenum.append(Bnum)
                         if 10-Bnum >= 1:
                             Bnum = "0"+str(Bnum)
@@ -53,6 +53,7 @@ def convert(s):
                 elif len(co) == 1:
                     l = str(prenum[0])
                     l = l+f":{Bamen} AM"
+                    print(l)
                     if l in ba[0]:
                         return f"{bestie[0]}:{Bamen} to {co[0]}:{camen[0]}"
 
@@ -96,18 +97,20 @@ def convert(s):
 
                         qa = d[0]
                         qa = int(qa)
-                        if qa == 12:
-                            qa = "00"
-                        else:
-                            qa = qa+12
+                        qa = qa+12
                         qaa = t[0].replace("0","")
+                        cd = t[0]
+                        if cd == "12" or cd == 12:
+                            cd = "00"
+                        else:
+                            pass
                         q = re.search(re.escape(qaa)+r" AM",ba[0])
                         if ba[0].startswith(qaa) and q:
-                                return f"{t[0]}:00 to {qa}:00"
+                                return f"{cd}:00 to {qa}:00"
                         elif ba[0].startswith(prac[0]) == True and q:
-                                return f"{t[0]}:00 to {qa}:00"
+                                return f"{cd}:00 to {qa}:00"
                         else:
-                            return f"{qa}:00 to {t[0]}:00"
+                            return f"{qa}:00 to {cd}:00"
                 elif len(d) == 2:
                         qa = d[0]
                         qa = int(qa)
