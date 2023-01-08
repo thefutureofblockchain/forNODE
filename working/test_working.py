@@ -1,5 +1,6 @@
 from working import convert
 def test_1():
+    with pytest.raises(ValueError)
     assert convert("cat")
 def test_2():
     pass
