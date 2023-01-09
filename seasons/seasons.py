@@ -17,6 +17,7 @@ def main():
 def get_difference(y):
     try:
         diff = date.today() - y
+        print(date.today(),y )
         print(diff)
     except ValueError:
         sys.exit("wtf bro")
