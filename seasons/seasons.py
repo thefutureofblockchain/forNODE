@@ -10,9 +10,12 @@ def main():
         month = int(month)
         _date = int(_date)
         print(date(year,month,_date))
-        print(date.today())
+        get_difference(date(year,month,_date))
     except ValueError:
         sys.exit("Something went wrong")
+
+
+def get_difference():
 
 
 ...
