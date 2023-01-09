@@ -6,7 +6,10 @@ class Jar:
 
 
     def __str__(self):
-        ...
+        cap = self.capacity
+        cap = int(cap)
+        cookiee = 🍪*cap
+        return cookiee
 
     def deposit(self, n):
         ...
