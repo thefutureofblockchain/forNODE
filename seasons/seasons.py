@@ -10,7 +10,11 @@ def main():
         month = int(month)
         _date = int(_date)
         minutes = get_difference(date(year,month,_date))
-        FinalReturn = convert_it(minutes)
+        
+        to_ret = p.number_to_words(minutes)
+        to_ret = to_ret.replace("and ","")
+        to_ret = to_ret.capitalize()
+        print(to_ret, "minutes")
     except ValueError:
         sys.exit("Something went wrong")
 
@@ -18,22 +22,16 @@ def main():
 def get_difference(y):
     try:
         diff = date.today() - y
-        print(date.today(),y )
         diff = str(diff)
         diff = diff.split(",")
-        print(diff[0])
         days = diff[0]
         days = days.replace(" days","")
         days = int(days)
         mins = days*24*60
-        print(mins)
         return mins
     except ValueError:
         sys.exit("wtf bro")
-def convert_it(s):
-    to_ret = p.number_to_words(s)
-    to_ret = to_ret.replace("and ","")
-    print(to_ret,"minutes")
+
 
 
 
