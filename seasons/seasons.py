@@ -26,6 +26,7 @@ def get_difference(y):
         days = days.replace(" days","")
         days = int(days)
         mins = days*24*60
+        #print(mins)
         return mins
     except ValueError:
         sys.exit("wtf bro")
