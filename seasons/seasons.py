@@ -9,7 +9,8 @@ def main():
         year = int(year)
         month = int(month)
         _date = int(_date)
-        get_difference(date(year,month,_date))
+        minutes = get_difference(date(year,month,_date))
+        FinalReturn = convert_it(minutes)
     except ValueError:
         sys.exit("Something went wrong")
 
@@ -26,8 +27,13 @@ def get_difference(y):
         days = int(days)
         mins = days*24*60
         print(mins)
+        return mins
     except ValueError:
         sys.exit("wtf bro")
+def convert_it(s):
+    to_ret = p.number_to_words(s)
+    to_ret = to_ret.replace("and ","")
+    print(to_ret,"minutes")
 
 
 
