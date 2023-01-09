@@ -22,4 +22,7 @@ def test_deposit():
 
 
 def test_withdraw():
-    ...
+    jar = Jar()
+    jar.deposit(10)
+    jar.withdraw(1)
+    assert jar.size == 9
