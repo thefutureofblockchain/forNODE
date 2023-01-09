@@ -10,11 +10,9 @@ def main():
         month = int(month)
         _date = int(_date)
         minutes = get_difference(date(year,month,_date))
-        
-        to_ret = p.number_to_words(minutes)
-        to_ret = to_ret.replace("and ","")
-        to_ret = to_ret.capitalize()
-        print(to_ret, "minutes")
+        a = conv(minutes)
+        print(a, "minutes")
+
     except ValueError:
         sys.exit("Something went wrong")
 
@@ -31,6 +29,11 @@ def get_difference(y):
         return mins
     except ValueError:
         sys.exit("wtf bro")
+def conv(s):
+    to_ret = p.number_to_words(s)
+    to_ret = to_ret.replace("and ","")
+    to_ret = to_ret.capitalize()
+    return to_ret
 
 
 
