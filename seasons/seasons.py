@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import date, timedelta
 import inflect
 import sys
 p = inflect.engine()
@@ -18,7 +18,7 @@ def get_difference(y):
     try:
         diff = date.today() - y
         print(date.today(),y )
-        print(diff(days))
+        print(diff)
     except ValueError:
         sys.exit("wtf bro")
 
