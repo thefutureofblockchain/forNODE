@@ -26,12 +26,11 @@ def get_difference(y):
         days = days.replace(" days","")
         days = int(days)
         mins = days*24*60
-        #print(mins)
         return mins
     except ValueError:
         sys.exit("wtf bro")
 def conv(s):
-    print(s)
+
     to_ret = p.number_to_words(s)
     to_ret = to_ret.replace("and ","")
     to_ret = to_ret.capitalize()
