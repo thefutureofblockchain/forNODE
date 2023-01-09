@@ -16,8 +16,7 @@ class Jar:
         self.p = self.contain+n
         if self.capacity < self.p:
             raise ValueError
-        else:
-            return self.contain+n
+        self.contain = self.p
 
 
 
