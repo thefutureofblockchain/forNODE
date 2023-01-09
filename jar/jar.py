@@ -36,5 +36,5 @@ class Jar:
         return self._contain
 def main():
     jar = Jar()
-    print(jar.capacity, jar.size)
+    print(jar.deposit)
 main()
