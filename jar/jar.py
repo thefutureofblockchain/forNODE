@@ -27,14 +27,27 @@ class Jar:
         self.contain = self.contain-n
         return self.contain
 
+
     @property
     def capacity(self):
         return self._capacity
-
+    @capacity.setter
+    def capacity(self, capacity):
+        if capacity >= 0:
+            self._capacity = capacity
+        else:
+            raise ValueError
     @property
     def size(self):
-        return self._contain
+        return self.contain
+
 def main():
     jar = Jar()
-    print(jar.deposit)
+    print(jar.capacity)
+    jar.deposit(2)
+    print(jar.size)
+    jar.withdraw(1)
+    print(jar.size)
+    jar.deposit(11)
+    print(jar)
 main()
