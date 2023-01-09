@@ -18,8 +18,6 @@ def main():
 def get_difference():
 
 
-...
-
 
 if __name__ == "__main__":
     main()
