@@ -7,7 +7,7 @@ class Jar:
 
 
     def __str__(self):
-        self.cap = self.capacity
+        self.cap = self.contain
         self.cap = int(self.cap)
         self.cookiee = "🍪"*self.cap
         return self.cookiee
@@ -33,4 +33,8 @@ class Jar:
 
     @property
     def size(self):
-        ...
+        return self.contain
+def main():
+    jar = Jar()
+    print(jar.capacity, jar.size)
+main()
