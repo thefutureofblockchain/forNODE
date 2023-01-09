@@ -2,7 +2,9 @@ from datetime import date
 import inflect
 
 def main():
-    print(date(, 12, 21))
+    dateInputted = input("year: ")
+    dateInputted = dateInputted.split("-")
+    print(date())
     print(date.today())
 
 
