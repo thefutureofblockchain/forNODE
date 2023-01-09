@@ -33,7 +33,7 @@ class Jar:
 
     @property
     def size(self):
-        return self.contain
+        return self._contain
 def main():
     jar = Jar()
     print(jar.capacity, jar.size)
