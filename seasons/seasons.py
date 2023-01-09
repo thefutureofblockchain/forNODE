@@ -31,6 +31,7 @@ def get_difference(y):
     except ValueError:
         sys.exit("wtf bro")
 def conv(s):
+    print(s)
     to_ret = p.number_to_words(s)
     to_ret = to_ret.replace("and ","")
     to_ret = to_ret.capitalize()
