@@ -18,7 +18,14 @@ def get_difference(y):
     try:
         diff = date.today() - y
         print(date.today(),y )
-        print(diff)
+        diff = str(diff)
+        diff = diff.split(",")
+        print(diff[0])
+        days = diff[0]
+        days = days.replace(" days","")
+        days = int(days)
+        mins = days*24*60
+        print(mins)
     except ValueError:
         sys.exit("wtf bro")
 
