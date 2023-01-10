@@ -15,4 +15,5 @@ class InputApp(App):
 
 if __name__ == "__main__":
     app = InputApp()
+
     app.run()
