@@ -1,11 +1,8 @@
-import plotly.express as px
-# This dataframe has 244 lines, but 4 distinct values for `day`
-df = px.data.tips()
-d = []
-cc = {"format" : "British Parli" ,"perc" : 20}
-bc = {"format" : "LD" , "perc" : 20}
-print(cc,bc)
-d.append(cc)
+import matplotlib.pyplot as plt
 
-fig = px.pie(df, values='cc["perc"]', names='cc["format"]')
-fig.show()
+my_data = [1, 2, 3]
+my_labels = 'label1', 'label2', 'label3'
+plt.pie(my_data, labels=my_labels, autopct='%1.1f%%')
+plt.title('My Title')
+plt.axis('equal')
+plt.show()
