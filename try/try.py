@@ -1,11 +1,13 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer
+from textual.widgets import Header, Footer, Welcome
 import random
 import time
 
 
 class EscapeRoomApp(App):
     """A Textual for a terminal based game."""
+    def compose(self) -> ComposeResult:
+        yield Welcome()
     COLORS = [
         "white",
         "maroon",
@@ -25,6 +27,8 @@ class EscapeRoomApp(App):
         """Create child widgets for the app."""
         yield Header()
         yield Footer()
+    def on_button_pressed(self) -> None:
+        self.exit()
 
     def action_toggle_dark(self) -> None:
         """An action to toggle dark mode."""
