@@ -30,8 +30,8 @@ class EscapeRoomApp(App):
         yield Static("Welcome.")
         yield Button("Yes", id="yes", variant="primary")
         yield Button("No", id="no", variant="error")
-    def on_button_pressed(self) -> None:
-        self.exit()
+    def on_button_pressed(self, event: Button.Pressed) -> None:
+        self.exit(event.button.id)
 
     def action_toggle_dark(self) -> None:
         """An action to toggle dark mode."""
