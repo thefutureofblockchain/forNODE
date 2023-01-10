@@ -11,6 +11,7 @@ class InputApp(App):
 
     def on_key(self, event: events.Key) -> None:
         self.query_one(TextLog).write(event)
+        
 
 
 if __name__ == "__main__":
