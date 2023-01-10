@@ -1,16 +1,18 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Welcome
+from textual.widgets import TextLog
+from textual import events
 
 
-class WelcomeApp(App):
+class InputApp(App):
+    """App to display key events."""
+
     def compose(self) -> ComposeResult:
-        yield Welcome()
+        yield TextLog()
 
-    def on_button_pressed(self) -> None:
-        self.exit()
+    def on_key(self, event: events.Key) -> None:
+        self.query_one(TextLog).write(event)
 
 
 if __name__ == "__main__":
-    app = WelcomeApp()
+    app = InputApp()
     app.run()
-    
