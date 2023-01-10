@@ -11,6 +11,5 @@ def main(stdscr):
     curses.flash()
     curses.echo()
     stdscr.refresh()
-    stdscr.getkey()
 
 curses.wrapper(main)
