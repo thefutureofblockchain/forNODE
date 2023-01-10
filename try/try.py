@@ -19,10 +19,6 @@ class EscapeRoomApp(App):
         "aqua",
     ]
 
-    def on_mount(self) -> None:
-        colors = self.COLORS
-        self.screen.styles.background = random.choice(colors)
-        t
     BINDINGS = [("d", "toggle_dark", "Toggle dark mode")]
 
     def compose(self) -> ComposeResult:
@@ -33,6 +29,10 @@ class EscapeRoomApp(App):
     def action_toggle_dark(self) -> None:
         """An action to toggle dark mode."""
         self.dark = not self.dark
+def main():
+    EscapeRoomApp.on_mount()
+    print("hello")
+    EscapeRoomApp.on_mount()
 
 
 if __name__ == "__main__":
