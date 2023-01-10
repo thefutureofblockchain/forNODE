@@ -10,3 +10,4 @@ def main(stdscr):
     stdscr.clear()
 
 rich.print("[red]hello")
+rich.print("welcome to the day that might be your very last")
