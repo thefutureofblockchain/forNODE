@@ -9,5 +9,7 @@ def main(stdscr):
     # Clear screen
     stdscr.clear()
 
-rich.print("[red]hello")
-rich.print("welcome to the day that might be your very last")
+rich.print("[red]Hello!")
+rich.print("[green]Are you ready?")
+print("y/n answers only!")
+ques1 = 
