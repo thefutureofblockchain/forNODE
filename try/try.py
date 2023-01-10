@@ -1,5 +1,5 @@
 from textual.app import App, ComposeResult
-from textual.widgets import Header, Footer, Welcome, Static
+from textual.widgets import Header, Footer, Welcome, Static, Button
 import random
 import time
 
@@ -28,6 +28,8 @@ class EscapeRoomApp(App):
         yield Header()
         yield Footer()
         yield Static("Welcome.")
+        yield Button("Yes", id="yes", variant="primary")
+        yield Button("No", id="no", variant="error")
     def on_button_pressed(self) -> None:
         self.exit()
 
