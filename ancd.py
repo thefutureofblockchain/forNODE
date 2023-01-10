@@ -1,8 +1,16 @@
-import matplotlib.pyplot as plt
+# Import libraries
+from matplotlib import pyplot as plt
+import numpy as np
 
-my_data = [1, 2, 3]
-my_labels = 'label1', 'label2', 'label3'
-plt.pie(my_data, labels=my_labels, autopct='%1.1f%%')
-plt.title('My Title')
-#plt.axis('equal')
+
+# Creating dataset
+cars = ['AUDI', 'BMW', 'FORD','TESLA', 'JAGUAR', 'MERCEDES']
+
+data = [23, 17, 35, 29, 12, 41]
+
+# Creating plot
+fig = plt.figure(figsize =(10, 7))
+plt.pie(data, labels = cars)
+
+# show plot
 plt.show()
