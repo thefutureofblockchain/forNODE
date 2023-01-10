@@ -15,6 +15,7 @@ def main(stdscr):
         else:
             break
     curses.echo()
+    curses.beep()
     stdscr.refresh()
     stdscr.getkey()
 
