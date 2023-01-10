@@ -9,7 +9,7 @@ class InputApp(App):
     def compose(self) -> ComposeResult:
         yield TextLog()
 
-    def on_key(self, event: events.Key) -> None:
+    def on_key(self, event: events.Key.character) -> None:
         self.query_one(TextLog).write(event)
 
 
