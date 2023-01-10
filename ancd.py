@@ -4,9 +4,9 @@ import numpy as np
 
 
 # Creating dataset
-cars = ['AUDI', 'BMW', 'FORD','TESLA', 'JAGUAR', 'MERCEDES']
+cars = ['bp', 'ld', 'wsd','pf']
 
-data = [23, 17, 35, 29, 12, 41]
+data = [20,40,10,30]
 
 # Creating plot
 fig = plt.figure(figsize =(10, 7))
