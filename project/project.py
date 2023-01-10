@@ -5,17 +5,10 @@ def main(stdscr):
     stdscr.clear()
     curses.init_pair(1, curses.COLOR_GREEN, curses.COLOR_BLACK)
     stdscr.addstr("Pretty text", curses.color_pair(1))
+    getch()
     curses.echo()
-    while True:
-        c = stdscr.getch()
-        if c == "p":
-            stdscr.addstr("hi")
-            stdscr.refresh()
-            stdscr.addstr("hi")
-        else:
-            break
+    curses.flash()
     curses.echo()
-    curses.beep()
     stdscr.refresh()
     stdscr.getkey()
 
