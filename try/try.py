@@ -1,6 +1,7 @@
 from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer
 import random
+import time
 
 
 class EscapeRoomApp(App):
@@ -20,9 +21,8 @@ class EscapeRoomApp(App):
 
     def on_mount(self) -> None:
         colors = self.COLORS
-        for _ in range(5):
-            self.screen.styles.background = random.choice(colors)
-            self.screen.styles.background = random.choice(colors)
+        self.screen.styles.background = random.choice(colors)
+        t
     BINDINGS = [("d", "toggle_dark", "Toggle dark mode")]
 
     def compose(self) -> ComposeResult:
