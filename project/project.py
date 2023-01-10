@@ -8,10 +8,12 @@ def main(stdscr):
     curses.echo()
     while True:
         c = stdscr.getch()
-        if c == ord('p'):
+        if c == "p":
             stdscr.addstr("hi")
-        elif c == ord('q'):
-            break  # Exit the while loop
+            stdscr.refresh()
+            stdscr.addstr("hi")
+        else:
+            break
     curses.echo()
     stdscr.refresh()
     stdscr.getkey()
