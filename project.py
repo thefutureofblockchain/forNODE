@@ -12,4 +12,7 @@ def main():
     if a != "y" and a.lower() != "n":
         sys.exit("Input was incorrect")
     os.system('clear')
+    
+if __name__ == "__main__":
+    main()
 
