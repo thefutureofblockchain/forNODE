@@ -13,4 +13,4 @@ fig = plt.figure(figsize =(10, 7))
 plt.pie(data, labels = cars)
 
 # show plot
-plt.show()
+plt.savefig('books_read.png')
