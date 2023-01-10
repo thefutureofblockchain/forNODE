@@ -2,8 +2,8 @@ from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer
 
 
-class StopwatchApp(App):
-    """A Textual app to manage stopwatches."""
+class EscapeRoomApp(App):
+    """A Textual for a terminal based game."""
 
     BINDINGS = [("d", "toggle_dark", "Toggle dark mode")]
 
@@ -18,5 +18,5 @@ class StopwatchApp(App):
 
 
 if __name__ == "__main__":
-    app = StopwatchApp()
+    app = EscapeRoomApp()
     app.run()
