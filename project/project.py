@@ -6,6 +6,7 @@ def main(stdscr):
     stdscr.addstr(0, 0, "Current mode: Typing mode",curses.A_BLINK)
     curses.init_pair(1, curses.COLOR_RED, curses.COLOR_WHITE)
     stdscr.addstr("Pretty text", curses.color_pair(0))
+    rprint("[red]sis")
     stdscr.refresh()
     stdscr.getkey()
 
