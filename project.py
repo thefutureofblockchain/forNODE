@@ -39,7 +39,9 @@ def main():
     os.system('clear')
     rich.print(" bp is",  bp ,", pf is",pf,"wsd is",wsd ," and lastly, mun is" ,mun)
     rich.print("[green]Do you want to download a pdf with an analysis of your results?")
-    pdfprompt = input(")
+    pdfprompt = input(": ")
+    if pdfprompt == "y":
+        
     chartize(bp,pf,wsd,mun)
 def ques1():
     global bp
