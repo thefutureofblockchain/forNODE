@@ -22,6 +22,16 @@ def main():
     ques8():
     ques9():
     ques10():
+def ques1():
+    rich.print("Are you the kind of person who likes to be anxious?")
+    while True:
+        Ques1 = input(": ")
+        a = Ques1.lower()
+        if a != "y" and a != "n":
+            rich.print("You did not enter a character that was y or n")
+        else:
+            break
+
 if __name__ == "__main__":
     main()
 
