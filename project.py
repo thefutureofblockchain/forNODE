@@ -12,7 +12,16 @@ def main():
     if a != "y" and a.lower() != "n":
         sys.exit("Input was incorrect")
     os.system('clear')
-    
+    ques1():
+    ques2():
+    ques3():
+    ques4():
+    ques5():
+    ques6():
+    ques7():
+    ques8():
+    ques9():
+    ques10():
 if __name__ == "__main__":
     main()
 
