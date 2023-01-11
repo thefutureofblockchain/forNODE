@@ -41,8 +41,11 @@ def main():
     rich.print("[green]Do you want to download a pdf with an analysis of your results?")
     pdfprompt = input(": ")
     if pdfprompt == "y":
+        chartize(bp,pf,wsd,mun)
         
-    chartize(bp,pf,wsd,mun)
+        pdf_ize()
+    else:
+        sys.exit("Great, I hope you enjoyed the experience!")
 def ques1():
     global bp
     global pf
