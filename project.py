@@ -2,6 +2,7 @@ import rich
 import os
 import time
 import sys
+import random
 col = [
     "black"
     "red"
@@ -51,7 +52,7 @@ def ques1():
     global pf
     global mun
     global wsd
-    rich.print("[green]Are you the kind of person who likes to be anxious?")
+    rich.print("[magenta]Are you the kind of person who likes to be anxious?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -70,7 +71,7 @@ def ques2():
     global pf
     global mun
     global wsd
-    rich.print("Do you like to lie?")
+    rich.print("[cyan]Do you like to lie?")
     while True:
         Ques2 = input(": ")
         a = Ques2.lower()
@@ -89,7 +90,7 @@ def ques3():
     global pf
     global mun
     global wsd
-    rich.print("Facts(y) or logic(n)?")
+    rich.print("[yellow]Facts(y) or logic(n)?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -110,7 +111,7 @@ def ques4():
     global pf
     global mun
     global wsd
-    rich.print("Do you have weird, what some might even call oddly specific knowledge?")
+    rich.print("[blue]Do you have weird, what some might even call oddly specific knowledge?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -129,7 +130,7 @@ def ques5():
     global pf
     global mun
     global wsd
-    rich.print("Do you think the speed and quality of the speaker can make or break a debate?")
+    rich.print("[red]Do you think the speed and quality of the speaker can make or break a debate?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -148,7 +149,7 @@ def ques6():
     global pf
     global mun
     global wsd
-    rich.print("Do you think the best things in life are short?")
+    rich.print("[yellow]Do you think the best things in life are short?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -167,7 +168,7 @@ def ques7():
     global pf
     global mun
     global wsd
-    rich.print("As a child, did you engage in pretend play much?")
+    rich.print("[cyan]As a child, did you engage in pretend play much?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -186,7 +187,7 @@ def ques8():
     global pf
     global mun
     global wsd
-    rich.print("Are you okay with being left out?")
+    rich.print("[green]Are you okay with being left out?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -205,7 +206,7 @@ def ques9():
     global pf
     global mun
     global wsd
-    rich.print("Truthfully, do you think you are the best in your friend group?")
+    rich.print("[]Truthfully, do you think you are the best in your friend group?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
