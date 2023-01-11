@@ -2,6 +2,16 @@ import rich
 import os
 import time
 import sys
+col = [
+    "black"
+    "red"
+    "green"
+    "yellow"
+    "blue"
+    "magenta"
+    "maroon"
+    "cyan"
+]
 bp = 0
 pf = 0
 mun = 0
