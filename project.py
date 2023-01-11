@@ -206,7 +206,7 @@ def ques9():
     global pf
     global mun
     global wsd
-    rich.print("[]Truthfully, do you think you are the best in your friend group?")
+    rich.print("[yellow]Truthfully, do you think you are the best in your friend group?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -225,7 +225,7 @@ def ques10():
     global pf
     global mun
     global wsd
-    rich.print("Do you like to go into a situation fully prepared?")
+    rich.print("[purple]Do you like to go into a situation fully prepared?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
