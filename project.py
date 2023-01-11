@@ -41,7 +41,7 @@ def ques1():
     global pf
     global mun
     global wsd
-    rich.print("[dark_green]Are you the kind of person who likes to be anxious?")
+    rich.print("[green]Are you the kind of person who likes to be anxious?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
