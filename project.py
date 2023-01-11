@@ -3,16 +3,7 @@ import os
 import time
 import sys
 import random
-col = [
-    "black"
-    "red"
-    "green"
-    "yellow"
-    "blue"
-    "magenta"
-    "maroon"
-    "cyan"
-]
+from ancd import chartize
 bp = 0
 pf = 0
 mun = 0
@@ -47,6 +38,7 @@ def main():
     ques10()
     os.system('clear')
     rich.print(" bp is",  bp ,", pf is",pf,"wsd is",wsd ," and lastly, mun is" ,mun)
+    chartize(bp,pf,wsd,mun)
 def ques1():
     global bp
     global pf
