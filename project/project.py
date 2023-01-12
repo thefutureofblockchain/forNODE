@@ -240,10 +240,12 @@ def ques10():
     if pdfprompt == "y":
         chartize(bp,pf,wsd,mun)
        # pdf_ize()
+        filenames = ["example.txt","exampl2.txt"]
+        fireworks(filenames,repeat=4)
     elif pdfprompt == "n":
 
         filenames = ["example.txt","exampl2.txt"]
-        fireworks(filenames)
+        fireworks(filenames,repeat=4)
         sys.exit("Great, I hope you enjoyed the experience!")
 
 if __name__ == "__main__":
