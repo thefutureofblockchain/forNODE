@@ -43,15 +43,7 @@ def main():
     ques10()
     os.system('clear')
     rich.print(" bp is",  bp ,", pf is",pf,"wsd is",wsd ," and lastly, mun is" ,mun)
-    rich.print("[green]Do you want to download a pdf with an analysis of your results?")
-    pdfprompt = input(": ")
-    if pdfprompt == "y":
-        chartize(bp,pf,wsd,mun)
 
-       # pdf_ize()
-    else:
-        fireworks()
-        sys.exit("Great, I hope you enjoyed the experience!")
 def ques1():
     global bp
     global pf
@@ -244,6 +236,14 @@ def ques10():
     else:
         wsd+=1
         bp+=1
+    rich.print("[green]Do you want to download a pdf with an analysis of your results?")
+    pdfprompt = input(": ")
+    if pdfprompt == "y":
+        chartize(bp,pf,wsd,mun)
+       # pdf_ize()
+    else:
+        fireworks()
+        sys.exit("Great, I hope you enjoyed the experience!")
 
 if __name__ == "__main__":
     main()
