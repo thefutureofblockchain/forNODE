@@ -11,7 +11,7 @@ for _ in range(5):
     print("[yellow]: /\ : :::::     *_\/_*     -=  =-  /)\    '  *")
     print(" [yellow]'..'  ':::'     * /\ *     .'/.\'.   '")
     print("[yellow] *            *..*         :")
-    time.sleep(200/1000)
+    time.sleep(500/1000)
     os.system("clear")
     print(  "  [purple]                              .''.")
     print(" [purple] .''.      .        *''*    :_\/_:     .")
@@ -28,8 +28,8 @@ for _ in range(5):
   '..'  ':::'     * /\ *     .'/.\'.   '
       *            *..*         :'''
 
-    time.sleep(250/1000)
+    time.sleep(500/1000)
     os.system('clear')
-    echo -e "\033[1K".
+    #echo -e "\033[1K".
 
 
