@@ -8,8 +8,8 @@ def pdf_ize(format= "a", description="b"):
     c = "hello world"
     pdf.cell(99,50, c)
     pdf.cell(-375,550,format,align="C")
-    pdf.output("pdf-with-image.pdf")
 def desize(des = "baa"):
-    pdf 
+    pdf.cell(-375, 40, "Hiii")
 pdf_ize()
 desize()
+pdf.output("pdf-with-image.pdf")
