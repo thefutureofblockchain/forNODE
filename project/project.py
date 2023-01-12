@@ -243,7 +243,7 @@ def ques10():
     elif pdfprompt == "n":
 
         filenames = ["example.txt","exampl2.txt"]
-        fireworks(filenames)
+        #fireworks(filenames)
         sys.exit("Great, I hope you enjoyed the experience!")
 
 if __name__ == "__main__":
