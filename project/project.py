@@ -9,7 +9,7 @@ from chart import chartize
 from  extra import fireworks
 bp = 0
 pf = 0
-#to do : tests, pdf, analysis, video
+#to do : tests, video
 mun = 0
 wsd = 0
 def main():
