@@ -1,6 +1,6 @@
 
-
-
+from tryy import pdf_ize
+from more import more
 import rich
 import os
 import time
@@ -41,7 +41,6 @@ def main():
     os.system('clear')
     ques10()
     os.system('clear')
-    rich.print(" bp is",  bp ,", pf is",pf,"wsd is",wsd ," and lastly, mun is" ,mun)
 
 def ques1():
     global bp
@@ -235,11 +234,26 @@ def ques10():
     else:
         wsd+=1
         bp+=1
+    os.system('clear')
+    rich.print(" british parliamentary is",  bp ,", public forum is",pf,"world schools debate is",wsd ," and lastly, Model United Nation is" ,mun)
     rich.print("[green]Do you want to download a pdf with an analysis of your results?")
     pdfprompt = input(": ")
     if pdfprompt == "y":
         chartize(bp,pf,wsd,mun)
-       # pdf_ize()
+        format = more(bp,pf,wsd,mun)
+        if format == bp:
+            f = "British Parliamentary"
+            description = formats.bp
+        elif format == pf:
+            f = "Public Forum"
+            description = formats.pf
+        elif format == wsd:
+            f = "World School Debate"
+            descritpion = formats.wsd
+        else:
+            f = "Model United Nations"
+            description = formats.mun
+        pdf_ize(format = f, description = description)
         filenames = ["example.txt","exampl2.txt"]
         fireworks(filenames,repeat=4)
     elif pdfprompt == "n":
