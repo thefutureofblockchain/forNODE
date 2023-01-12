@@ -19,7 +19,8 @@ def main():
     a = input("Y/N: ")
     while True:
         if a != "y" and a.lower() != "n":
-            rich.print("[red]Input was incorrect")
+            ab = "hii"
+            rich.print("[red]"+ab)
         else:
             break
     os.system('clear')
