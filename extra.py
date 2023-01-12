@@ -28,7 +28,7 @@ for _ in range(5):
   '..'  ':::'     * /\ *     .'/.\'.   '
       *            *..*         :'''
 
-    time.sleep(200/1000)
+    time.sleep(250/1000)
     os.system('clear')
 
 
