@@ -1,4 +1,4 @@
-# YOUR PROJECT TITLE
+# FIND YOUR DEBATE FORMAT
 #### Video Demo:  <URL HERE>
-#### Description:
+#### Description: 
 TODO
