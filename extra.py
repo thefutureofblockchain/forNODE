@@ -30,5 +30,6 @@ for _ in range(5):
 
     time.sleep(250/1000)
     os.system('clear')
+    echo -e "\033[1K".
 
 
