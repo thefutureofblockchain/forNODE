@@ -243,17 +243,17 @@ def ques10():
         format = more(bp,pf,wsd,mun)
         if format == bp:
             f = "British Parliamentary"
-            description = formats.bp
+            image = "bp.png"
         elif format == pf:
             f = "Public Forum"
-            description = formats.pf
+            image = "pf.png"
         elif format == wsd:
             f = "World School Debate"
-            descritpion = formats.wsd
+            image = "wsd.png"
         else:
             f = "Model United Nations"
-            description = formats.mun
-        pdf_ize(format = f, description = description)
+            image = "mun.png"
+        pdf_ize(format = f, image = image)
         filenames = ["example.txt","exampl2.txt"]
         fireworks(filenames,repeat=4)
     elif pdfprompt == "n":
