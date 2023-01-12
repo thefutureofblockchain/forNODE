@@ -22,6 +22,7 @@ def main():
         else:
             break
     os.system('clear')
+    rich.print("[magenta]Are you the kind of person who likes to be anxious?")
     ques1()
     os.system('clear')
     ques2()
@@ -48,7 +49,7 @@ def ques1():
     global pf
     global mun
     global wsd
-    rich.print("[magenta]Are you the kind of person who likes to be anxious?")
+
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
