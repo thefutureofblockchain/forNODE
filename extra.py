@@ -1,6 +1,12 @@
-import sys
+import os
+import time
 
-def status(percent):
-    sys.stdout.write("%3d%%\r" % percent)
-    sys.stdout.flush()
-status(4)
+os.system('ls')
+for _ in range(5):
+    print("#")
+    time.sleep(3)
+    os.system("clear")
+    print("##")
+    time.sleep(1)
+    os.system('clear')
+
