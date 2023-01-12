@@ -11,7 +11,7 @@ for _ in range(5):
     print("[yellow]: /\ : :::::     *_\/_*     -=  =-  /)\    '  *")
     print(" [yellow]'..'  ':::'     * /\ *     .'/.\'.   '")
     print("[yellow] *            *..*         :")
-    time.sleep(1)
+    time.sleep(200/1000)
     os.system("clear")
     print(  "  [purple]                              .''.")
     print(" [purple] .''.      .        *''*    :_\/_:     .")
@@ -28,7 +28,7 @@ for _ in range(5):
   '..'  ':::'     * /\ *     .'/.\'.   '
       *            *..*         :'''
 
-    time.sleep(1)
+    time.sleep(200/1000)
     os.system('clear')
 
 
