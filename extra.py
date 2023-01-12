@@ -1,37 +1,15 @@
-import os
-import time
-from rich import print
-os.system('ls')
-for _ in range(5):
-    print(  " [yellow]                               .''.")
-    print(" [yellow] .''.      .        *''*    :_\/_:     .")
-    print("[yellow]  :_\/_:   _\(/_  .:.*_\/_*   : /\ :  .'.:.'.")
-    print("[yello].''.: /\ :   ./)\   ':'* /\ * :  '..'.  -=::=-")
-    print("[yellow]:_\/_:'.:::.    ' *''*    * '.\'/.' _\(/_'.':'.'")
-    print("[yellow]: /\ : :::::     *_\/_*     -=  =-  /)\    '  *")
-    print(" [yellow]'..'  ':::'     * /\ *     .'/.\'.   '")
-    print("[yellow] *            *..*         :")
-    time.sleep(500/1000)
-
-    print('\033[? 25l', end="")
-    os.system("clear")
-    print(  "  [purple]                              .''.")
-    print(" [purple] .''.      .        *''*    :_\/_:     .")
-    print("[purple]  :_\/_:   _\(/_  .:.*_\/_*   : /\ :  .'.:.'.")
-    print("[purple].''.: /\ :   ./)\   ':'* /\ * :  '..'.  -=::=-")
-    print("[purple]: /\ : :::::     *_\/_*     -=  =-  /)\    '  *")
-    print("[purple] '..'  ':::'     * /\ *     .'/.\'.   '")
-    '''                                .''.
-       .''.      .        *''*    :_\/_:     .
-      :_\/_:   _\(/_  .:.*_\/_*   : /\ :  .'.:.'.
-  .''.: /\ :   ./)\   ':'* /\ * :  '..'.  -=:o:=-
- :_\/_:'.:::.    ' *''*    * '.\'/.' _\(/_'.':'.'
- : /\ : :::::     *_\/_*     -= o =-  /)\    '  *
-  '..'  ':::'     * /\ *     .'/.\'.   '
-      *            *..*         :'''
-
-    time.sleep(500/1000)
-    os.system('clear')
-    #echo -e "\033[1K".
-
+import os,time
+os.system('clear')
+filenames = ["example.txt","exampl2.txt"]
+def fireworks (filenames,delay=1,repeat=10):
+    frames = []
+    for name in filenames:
+        with open(name,"r") as f:
+            frames.append(f.readlines())
+    for _ in range(repeat):
+        for frame in frames:
+            print("".join(frame))
+            time.sleep(delay)
+            os.system('clear')
+fireworks(filenames, delay=1, repeat=10)
 
