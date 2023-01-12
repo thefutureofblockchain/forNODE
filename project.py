@@ -42,8 +42,8 @@ def main():
     pdfprompt = input(": ")
     if pdfprompt == "y":
         chartize(bp,pf,wsd,mun)
-        
-        pdf_ize()
+
+       # pdf_ize()
     else:
         sys.exit("Great, I hope you enjoyed the experience!")
 def ques1():
