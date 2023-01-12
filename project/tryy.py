@@ -11,4 +11,4 @@ def pdf_ize(format= "British Parliamentary", image="bp.png"):
     pdf.image(image,x=20, y=50)
     pdf.set_font("helvetica", "B", 30)
     pdf.cell(-375,550,format,align="C")
-    pdf.output("pdf-with-image.pdf")
+    pdf.output("quiz_results.pdf")
