@@ -6,6 +6,7 @@ def pdf_ize(format= "a", description="b"):
     pdf.cell(0, 0, "Your Analysis:", align="C")
     pdf.image("debate_analysis.png", x=-75, y=60)
     c = "hello world"
-    pdf.cell(0,-50, c)
-    pdf.cell(0,-50, c)
+    pdf.cell(99,50, c)
+    pdf.cell(-99,100, c)
     pdf.output("pdf-with-image.pdf")
+pdf_ize()
