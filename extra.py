@@ -12,6 +12,8 @@ for _ in range(5):
     print(" [yellow]'..'  ':::'     * /\ *     .'/.\'.   '")
     print("[yellow] *            *..*         :")
     time.sleep(500/1000)
+
+    print('\033[? 25l', end="")
     os.system("clear")
     print(  "  [purple]                              .''.")
     print(" [purple] .''.      .        *''*    :_\/_:     .")
