@@ -18,8 +18,9 @@ def main():
     rich.print("[green]Are you ready?")
     a = input("Y/N: ")
     while True:
+        a = input("Y/N: ")
         if a != "y" and a.lower() != "n":
-            ab = "hii"
+            ab = get_wrong()
             rich.print("[red]"+ab)
         else:
             break
@@ -288,7 +289,8 @@ def pdf_ize(format= "British Parliamentary", image="bp.png"):
     pdf.cell(-375,550,format,align="C")
     pdf.output("quiz_results.pdf")
     return format
-
+def get_wrong():
+    return "The input you entered was incorrect"
 if __name__ == "__main__":
     main()
 
