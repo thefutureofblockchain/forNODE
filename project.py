@@ -3,11 +3,11 @@ import os
 import time
 import sys
 from ancd import chartize
-from  extra import fireworks
+from extra import fireworks
 filenames = ["example.txt","exampl2.txt"]
 bp = 0
 pf = 0
-#to do : tests, pdf, analysis, video 
+#to do : tests, pdf, analysis, video
 mun = 0
 wsd = 0
 def main():

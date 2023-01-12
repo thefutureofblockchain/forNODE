@@ -5,7 +5,7 @@ import rich
 import os
 import time
 import sys
-from ancd import chartize
+from project.ancd import chartize
 from  extra import fireworks
 filenames = ["example.txt","exampl2.txt"]
 bp = 0
