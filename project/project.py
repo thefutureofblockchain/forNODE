@@ -1,10 +1,11 @@
-from tryy import pdf_ize
 import rich
 import os
 import time
 import sys
 from chart import chartize
 from  extra import fireworks
+from fpdf import FPDF
+pdf = FPDF()
 bp = 0
 pf = 0
 #to do : tests, video
@@ -272,6 +273,20 @@ def more (a,b,c,d):
         return c
     else:
         return d
+
+def pdf_ize(format= "British Parliamentary", image="bp.png"):
+    pdf.add_page()
+    pdf.set_font("helvetica", "B", 30)
+    pdf.cell(0, 0, "Your Analysis:", align="C")
+    pdf.image("debate_analysis.png", x=-75, y=60)
+    c = "hello world"
+    pdf.set_font("helvetica", "B", 16)
+    pdf.cell(99,50, "")
+    pdf.image(image,x=20, y=50)
+    pdf.set_font("helvetica", "B", 30)
+    pdf.cell(-375,550,format,align="C")
+    pdf.output("quiz_results.pdf")
+    return format
 
 if __name__ == "__main__":
     main()
