@@ -49,7 +49,7 @@ def ques1():
     global pf
     global mun
     global wsd
-    rich.print("[magenta]Are you the kind of person who likes to be anxious?")
+    rich.print("Are you the kind of person who likes to be anxious?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -59,6 +59,7 @@ def ques1():
             break
     if a == "y":
         bp+=1
+        return bp
     else:
         pf+=1
         mun+=1
