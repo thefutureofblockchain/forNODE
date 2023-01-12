@@ -8,7 +8,7 @@ def pdf_ize(format= "a", description="b"):
     c = "hello world"
     pdf.set_font("helvetica", "B", 16)
     pdf.cell(99,50, "")
-    pdf.image(image,x=20, y=50)
+    pdf.image("pf.png",x=20, y=50)
     pdf.set_font("helvetica", "B", 30)
     pdf.cell(-375,550,format,align="C")
     pdf.output("pdf-with-image.pdf")
