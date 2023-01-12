@@ -1,9 +1,7 @@
 import pytest
-from project import ques1,more,pdf_ize
-def test_ques1(monkeypatch):
-    ques1()
-    monkeypatch.setattr('builtins.input',lambda _: "y")
-    assert ques1() == 1
+from project import get_wrong,more,pdf_ize
+def test_get_wrong():
+    assert get_wrong() == "The input you entered was incorrect"
 def test_more():
     assert more(10,1,1,1) == 10
 def test_pdf_ize():
