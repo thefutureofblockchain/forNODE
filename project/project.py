@@ -17,8 +17,11 @@ def main():
     rich.print("[red]Hello!")
     rich.print("[green]Are you ready?")
     a = input("Y/N: ")
-    if a != "y" and a.lower() != "n":
-        sys.exit("Input was incorrect")
+    while True:
+        if a != "y" and a.lower() != "n":
+            rich.print("[red]Input was incorrect")
+        else:
+            break
     os.system('clear')
     ques1()
     os.system('clear')
