@@ -7,7 +7,6 @@ import time
 import sys
 from chart import chartize
 from  extra import fireworks
-filenames = ["example.txt","exampl2.txt"]
 bp = 0
 pf = 0
 #to do : tests, pdf, analysis, video
@@ -241,8 +240,10 @@ def ques10():
     if pdfprompt == "y":
         chartize(bp,pf,wsd,mun)
        # pdf_ize()
-    else:
-        fireworks()
+    elif pdfprompt == "n":
+
+        filenames = ["example.txt","exampl2.txt"]
+        fireworks(filenames)
         sys.exit("Great, I hope you enjoyed the experience!")
 
 if __name__ == "__main__":
