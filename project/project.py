@@ -1,5 +1,4 @@
 from tryy import pdf_ize
-from more import more
 import rich
 import os
 import time
@@ -49,7 +48,7 @@ def ques1():
     global pf
     global mun
     global wsd
-    rich.print("Are you the kind of person who likes to be anxious?")
+    rich.print("[magenta]Are you the kind of person who likes to be anxious?")
     while True:
         Ques1 = input(": ")
         a = Ques1.lower()
@@ -59,7 +58,6 @@ def ques1():
             break
     if a == "y":
         bp+=1
-        return bp
     else:
         pf+=1
         mun+=1
@@ -264,6 +262,15 @@ def ques10():
         filenames = ["example.txt","exampl2.txt"]
         fireworks(filenames,repeat=4)
         sys.exit("Great, I hope you enjoyed the experience!")
+def more (a,b,c,d):
+    if a>b and a>c and a>d:
+        return a
+    elif b>a and b>c and b>d:
+        return b
+    elif c>a and c>b and c>d:
+        return c
+    else:
+        return d
 
 if __name__ == "__main__":
     main()
