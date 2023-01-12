@@ -2,8 +2,9 @@ import rich
 import os
 import time
 import sys
-import random
 from ancd import chartize
+from  extra import fireworks
+filenames = ["example.txt","exampl2.txt"]
 bp = 0
 pf = 0
 mun = 0
@@ -45,6 +46,7 @@ def main():
 
        # pdf_ize()
     else:
+        fireworks()
         sys.exit("Great, I hope you enjoyed the experience!")
 def ques1():
     global bp
