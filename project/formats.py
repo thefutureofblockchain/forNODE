@@ -9,5 +9,5 @@ def mun():
     d = "Pretend play was a hugeee thing for you as a child, and you seek entertainment and positivity everywhere. You find relationships in life are much like alliances, and you always abide by them, ie, you are very loyal."
     return d
 def wsd():
-    d = "You never stop speaking, do you? "
+    d = "You never stop speaking, do you? Generally, you have philosophical outcomes about life and you find the world around you to be a fascinating place, filled with secrets."
     return d
