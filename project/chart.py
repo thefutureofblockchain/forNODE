@@ -10,3 +10,4 @@ def chartize(bp=0, pf=0, wsd=0, mun=0):
     fig = plt.figure(figsize =(10, 7))
     plt.pie(data, labels = cars)
     plt.savefig('debate_analysis.png')
+    
