@@ -1,5 +1,5 @@
 # FIND YOUR DEBATE FORMAT
-#### Video Demo:  <URL HERE>
+#### Video Demo:  <https://youtu.be/voyW1dBPnGQ>
 #### Description: I ultimately decided on making this my project because i do speech and debate, and i dont frequenty see online communities or as much content about them as other areas i am interested in, therefore i was inspired.
 The first file in this folder, is an image, and throughout this entire folder, there are collectively four images in total, and they’re the descriptions to the analysis that is made finally. (will explain about this in the following paragraphs)
 The main project is a buzzfeed-adjacent personality quiz where you are asked 10 questions and based on those questions; you are at the end of the program, judged and told which of the four styles/formats (british parliamentary, model united nations, world schools debate and public forum) you are most suited for and then prompts you to enter y or n to either download a pdf or not download a pdf with detailed analysis. When and if you don’t choose to download the pdf, the program ends with a greeting and an ASCII art based firework animation in the terminal window.
