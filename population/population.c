@@ -1,10 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
 
+int get_size(void);
+void print_grid(int n);
+
 int main(void)
 {
     // TODO: Prompt for start size
-    
+
 
     // TODO: Prompt for end size
 
