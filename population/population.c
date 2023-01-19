@@ -1,7 +1,8 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int get_size(void);
+int get_start_size(void);
+int get_start_size(void);
 void print_grid(int n);
 
 int main(void)
