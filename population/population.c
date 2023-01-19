@@ -3,7 +3,7 @@
 
 int get_start_size(void);
 int get_start_size(void);
-void print_grid(int n);
+int return_years(int n);
 
 int main(void)
 {
