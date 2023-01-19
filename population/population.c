@@ -7,6 +7,8 @@ int return_years(int n);
 
 int main(void)
 {
+        int n = get_size();
+        print_grid(n);
     // TODO: Prompt for start size
 
 
