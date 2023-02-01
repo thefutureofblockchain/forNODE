@@ -3,13 +3,14 @@
 
 int get_start_size(void);
 int get_end_size(void);
-int return_years_1(int n);
+int return_years_1(int n, int m);
 
 int main(void)
 {
         int n = get_start_size();
         int sizee = get_end_size();
         int years = return_years_1(n, sizee);
+        printf("A %i \n" , years);
 }
     // TODO: Prompt for end size
     // TODO: Calculate number of years until we reach threshold
@@ -23,4 +24,9 @@ int get_end_size (void)
 {
         int n = get_int("End size: ");
         return n ;
+}
+int return_years_1 (int n , int m)
+{
+        int a = m - n;
+        return a;
 }
