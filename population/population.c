@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int get_start_size(void);
-int get_start_size(void);
+int get_end_size(void);
 int return_years(int n);
 
 int main(void)
