@@ -8,7 +8,7 @@ int return_years(int n);
 int main(void)
 {
         int n = get_start_size();
-        int sizee = get_end_size(n);
+        int sizee = get_end_size(n);  
 
 
     // TODO: Prompt for end size
