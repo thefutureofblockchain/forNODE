@@ -24,6 +24,6 @@ int get_number(void)
     {
     a = get_int("enter: ");
     }
-    while (a < 0 || a > 8);
+    while (a <= 0 || a > 8);
     return a;
 }
