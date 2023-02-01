@@ -16,7 +16,12 @@ int main(void)
     // TODO: Calculate number of years until we reach threshold
     // TODO: Print number of years
 int get_start_size (void) {
-        int n = get_int("Starting Size: ");
+        int n;
+        do
+        {
+                n = get_int("Starting Size: ");
+        }
+        while (n < 9);
         return n;
 }
 
