@@ -10,7 +10,7 @@ int main(void)
         int n = get_start_size();
         int sizee = get_end_size(n);
         int years = return_years_1(n, sizee);
-        printf("A %i \n" , years);
+        printf("%i \n" , years);
 }
     // TODO: Prompt for end size
     // TODO: Calculate number of years until we reach threshold
