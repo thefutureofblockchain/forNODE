@@ -8,7 +8,7 @@ int return_years(int n, int m);
 int main(void)
 {
         int n = get_start_size();
-        printf("")
+        printf("a %i")
         int sizee = get_end_size();
     // TODO: Prompt for end size
     // TODO: Calculate number of years until we reach threshold
