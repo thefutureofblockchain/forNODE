@@ -38,5 +38,13 @@ int get_end_size (int q)
 int return_years_1 (int n , int m)
 {
         int a = m - n;
-        return a;
+        int counter = 0;
+        while (m > n) {
+                counter+=1;
+                int new = n/3;
+                int die = n/4;
+                n = n + new;
+                n = n - die;
+        }
+        return counter;
 }
