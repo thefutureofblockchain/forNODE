@@ -43,7 +43,7 @@ int get_cents(void)
     a = get_int("enter: ");
     return a;
     }
-    while (a != 0);
+    while (a > 50);
 }
 
 int calculate_quarters(int cents)
