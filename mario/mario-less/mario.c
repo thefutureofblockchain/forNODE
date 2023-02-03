@@ -9,7 +9,7 @@ int main(void)
     int y = 1;
     for (int i = 0; i < x; i++) {
         for (int q = x-i-1; q > 0; q--) {
-                printf(".");
+                printf(" ");
             }
         for (int j = x-i-1; j < x; j++) {
             printf("#");
