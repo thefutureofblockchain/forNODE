@@ -5,7 +5,7 @@
 
 // Points assigned to each letter of the alphabet
 int POINTS[] = {1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10};
-int alphs[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l","m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
+string alphs[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l","m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
 
 int compute_score(string word);
 
@@ -30,7 +30,11 @@ int compute_score(string word)
     printf("%i\n", a);
     for (int i = 0; i<=a; i++) {
       //printf("%c\n", word[i]);
-      if (alphs[i] == word)
+      string da = toupper(alphs[i]);
+      string b = toupper(word[i]);
+      if (da == b) {
+        printf("y");
+      }
       printf("%i\n%i\n",POINTS[i], i);
     }
     return POINTS[0];
