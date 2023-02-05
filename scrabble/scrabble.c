@@ -28,11 +28,19 @@ int compute_score(string word)
     int a = strlen(word);
     //printf("%i\n", a);
     for (int i = 0; i<=a; i++) {
-      char bake = tolower(word[i]);
-      //printf("%c\n", word[i]);
-      string bakee[] = {bake,"/0"};
-      if (alphs[i] == bake) {
+        char bake = tolower(word[i]);
+      //example
+        char merge[2];// this is just temporary array to merge with
+        merge[0] = bake;
+        merge[1] = '\0';
+      for (int ba = 0; ba < 25; ba++){
+        if (alphs[i] == merge) {
         printf("y");
+        }
+
+        else{
+        printf("%s\n%s\n", alphs[i], merge);
+      }
       }
       //printf("%i\n%i\n",POINTS[i], i);
     }
