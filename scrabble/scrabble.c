@@ -28,7 +28,7 @@ int compute_score(string word)
     int a = strlen(word);
     printf("%i", a);
     for (int i = 0;i<=a; i++) {
-      printf("%c%c\n", POINTS[i], word[b]);
+      printf("%c%c\n", word[i]);
     }
     return POINTS[2];
 }
