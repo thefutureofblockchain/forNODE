@@ -38,7 +38,8 @@ int compute_score(string word)
             printf("y");
         }
         else {
-            printf("%s", merge);
+            //printf("%s", merge);
+            //printf("%s" , alphs[ba]);
         }
       }
       //printf("%i\n%i\n",POINTS[i], i);
