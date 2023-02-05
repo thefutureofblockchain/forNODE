@@ -26,9 +26,9 @@ int compute_score(string word)
     // TODO: Compute and return score for string
     int b = 0;
     int a = strlen(word);
-    printf("%i", a);
-    for (int i = 0;i<=a; i++) {
-      printf("%c%c\n", word[i]);
+    printf("%i\n", a);
+    for (int i = 0; i<=a; i++) {
+      printf("%c\n", word[i]);
     }
     return POINTS[2];
 }
