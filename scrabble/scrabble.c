@@ -34,13 +34,12 @@ int compute_score(string word)
         merge[0] = bake;
         merge[1] = '\0';
       for (int ba = 0; ba < 25; ba++){
-        if (alphs[i] == merge) {
-        printf("y");
+        if (alphs[ba] == merge) {
+            printf("y");
         }
-
-        else{
-        printf("%s\n%s\n", alphs[i], merge);
-      }
+        else {
+            printf("%s", merge);
+        }
       }
       //printf("%i\n%i\n",POINTS[i], i);
     }
