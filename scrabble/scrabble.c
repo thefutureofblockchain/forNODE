@@ -25,17 +25,15 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    int b = 0;
     int a = strlen(word);
-    printf("%i\n", a);
+    //printf("%i\n", a);
     for (int i = 0; i<=a; i++) {
+        printf("%i", tolower(word[i]));
       //printf("%c\n", word[i]);
-      string da = toupper(alphs[i]);
-      string b = toupper(word[i]);
-      if (da == b) {
-        printf("y");
-      }
-      printf("%i\n%i\n",POINTS[i], i);
+      //if (alphs[i] == tolower(word[i])) {
+        //printf("y");
+      //}
+      //printf("%i\n%i\n",POINTS[i], i);
     }
     return POINTS[0];
 }
