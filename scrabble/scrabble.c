@@ -30,9 +30,10 @@ int compute_score(string word)
     for (int i = 0; i<=a; i++) {
       char bake = tolower(word[i]);
       //printf("%c\n", word[i]);
-      if (alphs[i] == bake) {
-        //printf("y");
-      //}
+      char apple = tolower(alphs[i]);
+      if (apple == bake) {
+        printf("y");
+      }
       //printf("%i\n%i\n",POINTS[i], i);
     }
     return POINTS[0];
