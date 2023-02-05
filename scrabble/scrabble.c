@@ -18,6 +18,9 @@ int main(void)
     // Score both words
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
+    if (score1>score2) {
+        printf("")
+    }
 
     // TODO: Print the winner
 }
@@ -26,23 +29,19 @@ int compute_score(string word)
 {
     // TODO: Compute and return score for string
     int a = strlen(word);
+    int ab = 0;
     //printf("%i\n", a);
     for (int i = 0; i<=a; i++) {
-        char bake = tolower(word[i]);
-      //example
-        char merge[2];// this is just temporary array to merge with
-        merge[0] = bake;
-        merge[1] = '\0';
-      for (int ba = 0; ba < 25; ba++){
-        if (alphs[ba] == merge) {
-            printf("y");
+        int bake = toupper(word[i]);
+        if (bake < 65 || bake > 90)
+        {
+            continue;
         }
         else {
-            //printf("%s", merge);
-            //printf("%s" , alphs[ba]);
+            int caw = POINTS[bake-65];
+            ab += caw;
         }
-      }
       //printf("%i\n%i\n",POINTS[i], i);
     }
-    return POINTS[0];
+    return ab;
 }
