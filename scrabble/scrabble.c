@@ -28,9 +28,9 @@ int compute_score(string word)
     int a = strlen(word);
     //printf("%i\n", a);
     for (int i = 0; i<=a; i++) {
-        printf("%c", tolower(word[i]));
+      char bake = tolower(word[i]);
       //printf("%c\n", word[i]);
-      //if (alphs[i] == tolower(word[i])) {
+      if (alphs[i] == bake) {
         //printf("y");
       //}
       //printf("%i\n%i\n",POINTS[i], i);
