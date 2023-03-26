@@ -3,6 +3,7 @@
 
 int letters(string a);
 int sentence(string a);
+int words(string a);
 
 int main(void)
 {
