@@ -9,4 +9,6 @@ int main(void)
 {
     string a = get_string("Enter: ");
     int L = letters(a);
+    int S = sentence(a);
+    int W = words(a);
 }
