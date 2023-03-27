@@ -1,5 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <ctype.h>
 
 int letters(string a);
 int sentence(string a);
@@ -14,7 +15,7 @@ int main(void)
 }
 
 int letters(string a) {
-    if (isupper(a)){
-        
+    if (isalpha(a)){
+        r
     }
 }
