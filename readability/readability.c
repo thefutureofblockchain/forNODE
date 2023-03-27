@@ -8,8 +8,13 @@ int words(string a);
 int main(void)
 {
     string a = get_string("Text: ");
-    printf("%s\n", a);
-    string L = a;
-    string S = a;
-    string W = a;
+    int L = letters(a);
+    int S = sentence(a);
+    int W = words(a);
+}
+
+int letters(string a) {
+    if (isupper(a)){
+        
+    }
 }
