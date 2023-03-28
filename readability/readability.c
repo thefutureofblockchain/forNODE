@@ -43,6 +43,10 @@ int words(string a){
         c = a[n-1];
         if (isblank(c)) {
             j = j+1;
-            printf("%d\n", j);}}
+            }
+
+            printf("%d\n", j);
+
+            }
     return 0;
     }
