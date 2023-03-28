@@ -15,8 +15,8 @@ int main(void)
     int W = words(a);
     float l = (L/W)*100;
     float s = (S/W)*100;
-    float index = (0.0588 * l) - (0.296 * s )- 15.8;
-    printf("Grade %f\n",index);
+    float index = (0.0588 * l) - (0.296 * s)- 15.8;
+    printf("Grade %f\n",l);
 
 }
 
