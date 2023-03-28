@@ -13,8 +13,8 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    int l = round(L/W);
-    int s = round(S/W);
+    int l = round(L/W)*100;
+    int s = round(S/W)*100;
     int index = round(0.0588 * l - 0.296 * s - 15.8);
     printf("%d\n", index);
 
@@ -60,9 +60,11 @@ int words(string a){
         }
 
 
-        if (c == '.' && n == strlen(a)) {
+        if (c == '.'|| c == '!' || c == '?') {
+            if ( n == strlen(a)) {
             printf("words is %d\n", j);
             return j;
+            }
         }
         }
 
