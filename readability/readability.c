@@ -15,7 +15,16 @@ int main(void)
 }
 
 int letters(string a) {
-    if (isalpha(a)){
-        r
+    while (isalpha(a)) {
+        printf("%s\n", a)
+        
     }
+}
+
+int sentence(string a ){
+
+}
+
+int words(string a){
+
 }
