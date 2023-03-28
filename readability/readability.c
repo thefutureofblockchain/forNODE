@@ -13,6 +13,7 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
+
 }
 
 int letters(string a) {
