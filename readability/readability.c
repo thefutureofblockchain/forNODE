@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <math.h>
 int letters(string a);
 int sentence(string a);
 int words(string a);
@@ -15,7 +16,8 @@ int main(void)
     int l = (L/W)*100;
     int s = (S/W)*100;
     int index = 0.0588 * l - 0.296 * s - 15.8;
-    printf("%d\n", index);
+    int i = round(index);
+    printf("%d\n", i);
 
 }
 
