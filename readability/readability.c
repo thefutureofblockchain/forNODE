@@ -16,17 +16,18 @@ int main(void)
 }
 
 int letters(string a) {
-    printf("%lu\n", strlen(a));
     char c;
     int n;
+    int i = 0;
     for (n= 1; n <= strlen(a); n = n+1) {
         c = a[n-1];
         if (isalpha(c) != 0) {
-            printf("hell yes");
+            i = i+1;
+
         }
     }
-    printf("\n");
-    return 1;
+    printf("words is %d\n", i);
+    return i;
 }
 
 int sentence(string a ){
