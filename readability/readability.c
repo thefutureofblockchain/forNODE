@@ -12,8 +12,10 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    int l = (W/L)*100;
+    int l = (L/W)*100;
     int s = (S/W)*100;
+    int index = 0.0588 * l - 0.296 * s - 15.8;
+    printf("%d\n", index);
 
 }
 
