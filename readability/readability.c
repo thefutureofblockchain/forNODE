@@ -17,7 +17,7 @@ int main(void)
     float s = (S/W)*100;
     float index = (0.0588 * l) - (0.296 * s)- 15.8;
     int in = round(index);
-    printf("Grade %f\n",round(in));
+    printf("Grade %d\n",in);
 
 }
 
