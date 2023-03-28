@@ -37,19 +37,22 @@ int sentence(string a ){
 
 int words(string a){
     char c;
-    int j = 0;
+    int j = 1;
     int n;
     for (n= 1; n <= strlen(a); n = n+1) {
 
         c = a[n-1];
         if (isblank(c)) {
             j = j+1;
-            }
-            }
+        }
 
 
+        if (c == '.') {
             printf("%d\n", j);
-        
+            return j;
+        }
+        }
+
 
     return 0;
     }
