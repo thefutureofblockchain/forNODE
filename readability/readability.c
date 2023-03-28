@@ -38,12 +38,10 @@ int sentence(string a ){
         c = a[n-1];
         if (c == '.' || c == '?' || c == '!') {
             i = i+1;
-
         }
-    return 0;
-    printf("%d\n",i);
 }
-return 0;}
+printf(" sentences is %d\n",i);
+return i;}
 
 int words(string a){
     char c;
