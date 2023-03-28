@@ -49,6 +49,7 @@ int words(string a){
 
 
             printf("%d\n", j);
+        
 
     return 0;
     }
