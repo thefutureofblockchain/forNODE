@@ -41,7 +41,7 @@ int words(string a){
     int n;
     for (n= 1; n <= strlen(a); n = n+1) {
         if (c == '.' || c == '?' || c == '!') {
-            break;
+            ;
         }
         c = a[n-1];
         if (isblank(c)) {
