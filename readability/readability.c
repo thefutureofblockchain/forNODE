@@ -16,13 +16,16 @@ int main(void)
 }
 
 int letters(string a) {
-    printf("strlen of a is %lu \n", strlen(a));
-    for (int n=1; n <= strlen(a); n++) {
-        char c;
-        c = a[n];
-        printf("%d\n", isalpha(c));
-        return 0;
+    printf("%lu\n", strlen(a));
+    char c;
+    int n;
+    for (n= 1; n <= strlen(a); n = n+1) {
+        c = a[n-1];
+        if (isalpha(c) != 0) {
+            printf("hell yes");
+        }
     }
+    printf("\n");
     return 1;
 }
 
