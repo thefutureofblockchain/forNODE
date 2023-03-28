@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
-
 int letters(string a);
 int sentence(string a);
 int words(string a);
@@ -13,7 +12,8 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    
+    int l = (W/L)*100;
+    int s = (S/W)*100;
 
 }
 
