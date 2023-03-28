@@ -16,12 +16,14 @@ int main(void)
 }
 
 int letters(string a) {
-    for (n=1; n <= strlen(a); n++) {
+    printf("strlen of a is %lu \n", strlen(a));
+    for (int n=1; n <= strlen(a); n++) {
         char c;
-        c = 'm';
+        c = a[n];
         printf("%d\n", isalpha(c));
         return 0;
     }
+    return 1;
 }
 
 int sentence(string a ){
