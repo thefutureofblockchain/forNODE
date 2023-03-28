@@ -40,7 +40,7 @@ int letters(string a) {
 
         }
     }
-    printf("letters is %d\n", i);
+   // printf("letters is %d\n", i);
     return i;
 }
 
@@ -54,7 +54,7 @@ int sentence(string a ){
             i = i+1;
         }
 }
-printf(" sentences is %d\n",i);
+//printf(" sentences is %d\n",i);
 return i;}
 
 int words(string a){
@@ -68,15 +68,15 @@ int words(string a){
             j = j+1;
         }
 
-
-        if (c == '.'|| c == '!' || c == '?') {
-            if ( n == strlen(a)) {
-            printf("words is %d\n", j);
-            return j;
-            }
-        }
+//c == '.'|| c == '!' ||
+        //if (c == '?') {
+           // if (n == strlen(a)) {
+           // }
+      //  }
         }
 
 
+       // printf("words is %d\n", j);
+        return j;
     return 0;
     }
