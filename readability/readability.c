@@ -26,7 +26,7 @@ int letters(string a) {
 
         }
     }
-    printf("words is %d\n", i);
+    printf("letters is %d\n", i);
     return i;
 }
 
@@ -48,7 +48,7 @@ int words(string a){
 
 
         if (c == '.') {
-            printf("%d\n", j);
+            printf(" words is %d\n", j);
             return j;
         }
         }
