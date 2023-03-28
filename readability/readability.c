@@ -18,10 +18,10 @@ int main(void)
     float index = (0.0588 * l) - (0.296 * s)- 15.8;
     int in = round(index);
     if (in > 16){
-        printf("Grade 16+");
+        printf("Grade 16+\n");
     }
     else if (in < 1){
-        printf("Before Grade 1");
+        printf("Before Grade 1\n");
     }
     else {
     printf("Grade %d\n",in);
