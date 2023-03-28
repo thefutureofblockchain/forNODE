@@ -13,10 +13,7 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    float l = L/W;
-    float s = S/W;
-    int index = 0.0588 * l - 0.296 * s - 15.8;
-    int i = round(index);
+    
 
 }
 
