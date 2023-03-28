@@ -16,7 +16,7 @@ int main(void)
     int l = round((L/W)*100);
     int s = round((S/W)*100);
 
-    printf("%d  and %d\n", l, s);
+    printf("%d \n", l);
     int index = 0.0588 * l - 0.296 * s - 15.8;
     int i = round(index);
 
