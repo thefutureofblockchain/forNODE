@@ -47,9 +47,8 @@ int words(string a){
         }
 
 
-        if (c == '.') {
-            printf(" words is %d\n", j);
-            return j;
+        if (c == '.' && n == strlen(a)) {
+            printf("words is %d\n", j);
         }
         }
 
