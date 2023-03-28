@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 int letters(string a);
 int sentence(string a);
@@ -15,10 +16,12 @@ int main(void)
 }
 
 int letters(string a) {
-    char c;
-    c = 'q';
-    printf("%d\n", isalpha(c));
-    return 0;
+    for (n=1; n <= strlen(a); n++) {
+        char c;
+        c = 'm';
+        printf("%d\n", isalpha(c));
+        return 0;
+    }
 }
 
 int sentence(string a ){
