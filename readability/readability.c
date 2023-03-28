@@ -31,9 +31,19 @@ int letters(string a) {
 }
 
 int sentence(string a ){
+    int n = 0;
+    int i= 0;
+    char c;
+    for (n= 1; n <= strlen(a); n = n+1) {
+        c = a[n-1];
+        if (c == '.' || c == '?' || c == '!') {
+            i = i+1;
 
+        }
     return 0;
+    printf("%d\n",i);
 }
+return 0;}
 
 int words(string a){
     char c;
