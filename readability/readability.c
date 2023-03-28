@@ -41,7 +41,7 @@ int words(string a){
     int n;
     for (n= 1; n <= strlen(a); n = n+1) {
         c = a[n-1];
-        if ( c == ' ') {
+        if ( c == '/0') {
             j = j+1;
             printf("%d\n", j);}}
     return 0;
