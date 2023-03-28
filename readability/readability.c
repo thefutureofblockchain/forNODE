@@ -13,8 +13,9 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    long l = L/W;
-    printf("%ld\n",l);
+    int l = round(L/W);
+    int s = round(S/W);
+    printf("%d and %d\n", l, s);
 
 }
 
@@ -60,6 +61,7 @@ int words(string a){
 
         if (c == '.' && n == strlen(a)) {
             printf("words is %d\n", j);
+            return j;
         }
         }
 
