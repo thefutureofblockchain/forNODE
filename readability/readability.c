@@ -13,11 +13,12 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    int l = (L/W)*100;
-    int s = (S/W)*100;
+    int l = round((L/W)*100);
+    int s = round((S/W)*100);
+
+    printf("%d  and %d\n", l, s);
     int index = 0.0588 * l - 0.296 * s - 15.8;
     int i = round(index);
-    printf("%d\n", i);
 
 }
 
