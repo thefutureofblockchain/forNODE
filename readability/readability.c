@@ -39,7 +39,10 @@ int words(string a){
     char c;
     int j = 0;
     int n;
-    for (n= 1; n <= strlen(a) && c != '.' && c != '?'; n = n+1) {
+    for (n= 1; n <= strlen(a); n = n+1) {
+        if (c == '.' || c == '?' || c == '!') {
+            break;
+        }
         c = a[n-1];
         if (isblank(c)) {
             j = j+1;
