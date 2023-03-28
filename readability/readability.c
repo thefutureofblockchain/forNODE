@@ -15,7 +15,8 @@ int main(void)
     int W = words(a);
     int l = round(L/W);
     int s = round(S/W);
-    printf("%d and %d\n", l, s);
+    int index = round(0.0588 * l - 0.296 * s - 15.8);
+    printf("%d\n", index);
 
 }
 
