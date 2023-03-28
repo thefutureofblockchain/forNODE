@@ -13,10 +13,10 @@ int main(void)
     int L = letters(a);
     int S = sentence(a);
     int W = words(a);
-    int l = L/W*100;
-    int s = S/W*100;
-    int index = round(0.0588 * l - 0.296 * s - 15.8);
-    printf("Grade %d\n", index);
+    float l = L/W*100;
+    float s = S/W*100;
+    float index = 0.0588 * l - 0.296 * s - 15.8;
+    printf("Grade %f\n", index);
 
 }
 
