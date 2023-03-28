@@ -10,13 +10,13 @@ int words(string a);
 int main(void)
 {
     string a = get_string("Text: ");
-    int L = letters(a);
-    int S = sentence(a);
-    int W = words(a);
+    float L = letters(a);
+    float S = sentence(a);
+    float W = words(a);
     float l = (L/W)*100;
     float s = (S/W)*100;
     float index = (0.0588 * l) - (0.296 * s)- 15.8;
-    printf("Grade %f\n",l);
+    printf("Grade %f\n",index);
 
 }
 
