@@ -16,7 +16,7 @@ int main(void)
     float l = L/W;
     float s = S/W;
 
-    printf("%f \n", l);
+    printf("%d \n", L);
     int index = 0.0588 * l - 0.296 * s - 15.8;
     int i = round(index);
 
