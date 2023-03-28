@@ -15,7 +15,9 @@ int main(void)
 }
 
 int letters(string a) {
-    printf("%d\n", isalpha(1));
+    char c;
+    c = 'q';
+    printf("%d\n", isalpha(c));
     return 0;
 }
 
