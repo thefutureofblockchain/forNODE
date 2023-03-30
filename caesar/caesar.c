@@ -19,7 +19,9 @@ int main(int argc,  string argv[])
     char d;
     int it = 0;
     while (it > strlen(a)) {
-        d = a[it]
+        d = a[it];
+        printf("%c",rotate(d, b));
+        it++;
     }
 
 
@@ -38,6 +40,6 @@ for (int n = 1; n <= strlen(k); n = n+1) {
         }}
 
         }
-char rotate(char c, int n) {
-
+char rotate(char d, int b) {
+        
 }
