@@ -19,7 +19,9 @@ int main(int argc,  string argv[])
             printf("error\n");
             return 1;
          }
-        
+        else {
+            return 0;
+        }
         }
     if (argc != 2) {
         printf("error\n");
