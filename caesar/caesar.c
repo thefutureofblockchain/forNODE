@@ -43,13 +43,11 @@ for (int n = 1; n <= strlen(k); n = n+1) {
 char rotate(char d, int b) {
         int cast = d;
         if (isupper(d)) {
-            int answer = cast - 65;
-            answer = (answer + b)%26;
-            answer += 65;
+            int answer = ((cast - 65)+b)%26+65;
             return answer;
         }
         else if (islower(d)) {
-            int answer = ((cast - 65)+b)%26+97;
+            int answer = ((cast - 97)+b)%26+97;
             return answer;
 
         }
