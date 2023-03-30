@@ -19,7 +19,7 @@ int main(int argc,  string argv[])
     char d;
     while (it < strlen(a)) {
         d = a[it];
-        printf("%c",rotate(d,b));
+        printf("ciphertext: %c",rotate(d,b));
         it++;
     }
     printf("\n");
