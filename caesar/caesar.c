@@ -17,7 +17,6 @@ int main(int argc,  string argv[])
     string a = get_string("plaintext: ");
     int it = 0;
     char d;
-    int it = 0;
     while (it > strlen(a)) {
         d = a[it];
         printf("%c",rotate(d, b));
@@ -41,5 +40,26 @@ for (int n = 1; n <= strlen(k); n = n+1) {
 
         }
 char rotate(char d, int b) {
-        
+        int cast = d;
+        if (isupper(d)) {
+        int answer = cast - 65;
+        answer += b;
+        answer += 65;
+        printf("%c", answer);
+        return answer;
+        }
+        else if (islower(d)) {
+            int answer = cast - 97;
+        answer += b;
+        answer += 65;
+        printf("%c", answer);
+        return answer;
+
+        }
+        else {
+
+        return d;
+        }
+
+
 }
