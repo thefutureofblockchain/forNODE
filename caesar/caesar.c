@@ -12,7 +12,7 @@ int main(int argc,  string argv[])
     string k = argv[1];
     char c;
 
-    for (int n = 0; n <= strlen(k); n = n+1) {
+    for (int n = 1; n <= strlen(k); n = n+1) {
 
         c = k[n];
         if (isdigit(c) == false) {
@@ -20,7 +20,7 @@ int main(int argc,  string argv[])
             return 1;
          }
         else {
-            return 0;
+             int a = 1;
         }
         }
     if (argc != 2) {
