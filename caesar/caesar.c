@@ -15,6 +15,9 @@ int main(int argc,  string argv[])
     string k = argv[1];
     int b = atoi(k);
     string a = get_string("plaintext: ");
+    int it = 0;
+
+    while ()
 
 
 char c;
