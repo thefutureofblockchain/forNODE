@@ -17,7 +17,10 @@ int main(int argc,  string argv[])
     string a = get_string("plaintext: ");
     int it = 0;
 
-    while ()
+    while (it > strlen(k)) {
+        
+    }
+
 
 
 char c;
