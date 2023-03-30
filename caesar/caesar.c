@@ -17,6 +17,9 @@ for (int n = 1; n <= strlen(k); n = n+1) {
 
         c = k[n-1];
         if (isdigit(c)) {
+            return 0;
+        }
+        else {
             printf("error\n");
             return 1;
         }}}
