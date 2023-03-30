@@ -12,10 +12,14 @@ int main(int argc,  string argv[])
     string k = argv[1];
     char c;
 
-    for (int n = 1; n <= strlen(k); n = n+1) {
+    if (argc != 2) {
+        printf("error\n");
+        return 1;
+    }
 
-        c = k[n];
-        if (isdigit(c) == false) {
+    for (int n = 1; n <= strlen(k)x; n = n+1) {
+
+        if (!isdigit(argv[1][n])) {
             printf("error\n");
             return 1;
          }
@@ -23,10 +27,6 @@ int main(int argc,  string argv[])
              int a = 1;
         }
         }
-    if (argc != 2) {
-        printf("error\n");
-        return 1;
-    }
     int b = atoi(k);
     string a = get_string("plaintext: ");
     int it = 0;
