@@ -3,6 +3,8 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
+char rotate(char c, int n);
+
 
 int main(int argc,  string argv[])
 {
@@ -13,7 +15,7 @@ int main(int argc,  string argv[])
     string k = argv[1];
     int b = atoi(k);
     string a = get_string("plaintext: ");
-    
+
 
 char c;
 
@@ -26,4 +28,9 @@ for (int n = 1; n <= strlen(k); n = n+1) {
         else {
             printf("error\n");
             return 1;
-        }}}
+        }}
+
+        }
+char rotate(char c, int n) {
+
+}
