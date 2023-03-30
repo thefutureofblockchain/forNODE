@@ -41,17 +41,16 @@ for (int n = 1; n <= strlen(k); n = n+1) {
 
         }
 char rotate(char d, int b) {
-        if b > 26)
         int cast = d;
         if (isupper(d)) {
             int answer = cast - 65;
-            answer += b;
+            answer = (answer + b)%26;
             answer += 65;
             return answer;
         }
         else if (islower(d)) {
             int answer = cast - 65;
-            answer += b;
+            answer = (answer + b)%26;
             answer += 65;
             return answer;
 
