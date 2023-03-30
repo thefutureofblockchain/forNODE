@@ -49,9 +49,7 @@ char rotate(char d, int b) {
             return answer;
         }
         else if (islower(d)) {
-            int answer = cast - 65;
-            answer = (answer + b)%26;
-            answer += 65;
+            int answer = ((cast - 65)+b)%26+97;
             return answer;
 
         }
