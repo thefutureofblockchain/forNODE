@@ -8,11 +8,25 @@ char rotate(char c, int n);
 
 int main(int argc,  string argv[])
 {
+
+    string k = argv[1];
+    char c;
+
+    for (int n = 0; n <= strlen(k); n = n+1) {
+
+        c = k[n];
+        if (isdigit(c)) {
+            return 0;
+        }
+        else {
+            printf("error\n");
+            return 1;
+        }
+        }
     if (argc != 2) {
         printf("error\n");
         return 1;
     }
-    string k = argv[1];
     int b = atoi(k);
     string a = get_string("plaintext: ");
     int it = 0;
@@ -27,19 +41,7 @@ int main(int argc,  string argv[])
 
 
 
-    char c;
 
-    for (int n = 0; n <= strlen(k); n = n+1) {
-
-        c = k[n];
-        if (isdigit(c)) {
-            return 0;
-        }
-        else {
-            printf("error\n");
-            return 1;
-        }
-        }
 
         }
 char rotate(char d, int b) {
