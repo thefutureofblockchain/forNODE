@@ -12,4 +12,5 @@ int main(int argc, string argv[])
 
 }
 
-// i
+// in is number implement it in a way so as to ensure it is a number as well as the side effect of print
+//additionally, you need to have something that checks whether it is a number or not. 
