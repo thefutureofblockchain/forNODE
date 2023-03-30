@@ -17,7 +17,8 @@ int main(int argc,  string argv[])
 //additionally, you need to have something that checks whether it is a number or not.
 int isnumber(int c, string a) {
 
-    if (strlen(a) >  2 ) {
-
+    if (c !=  2 ) {
+        return 1;
+        printf("error");
     }
 }
