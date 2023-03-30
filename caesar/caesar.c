@@ -27,18 +27,19 @@ int main(int argc,  string argv[])
 
 
 
-char c;
+    char c;
 
-for (int n = 1; n <= strlen(k); n = n+1) {
+    for (int n = 0; n <= strlen(k); n = n+1) {
 
-        c = k[n-1];
+        c = k[n];
         if (isdigit(c)) {
             return 0;
         }
         else {
             printf("error\n");
             return 1;
-        }}
+        }
+        }
 
         }
 char rotate(char d, int b) {
