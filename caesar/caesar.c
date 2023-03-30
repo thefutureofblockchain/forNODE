@@ -16,9 +16,10 @@ int main(int argc,  string argv[])
     int b = atoi(k);
     string a = get_string("plaintext: ");
     int it = 0;
-    char d
+    char d;
+    int it = 0;
     while (it > strlen(a)) {
-
+        d = a[it]
     }
 
 
