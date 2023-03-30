@@ -15,7 +15,9 @@ int main(int argc,  string argv[])
     for (int n = 0; n <= strlen(k); n = n+1) {
 
         c = k[n];
-        if (isdigit(c)) {   }
+        if (isdigit(c)) {
+            int abc = 0;
+         }
         else {
             printf("error\n");
             return 1;
