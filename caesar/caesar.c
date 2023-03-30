@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(int argc,  string argv[])
 {
@@ -10,6 +11,9 @@ int main(int argc,  string argv[])
         return 1;
     }
     string k = argv[1];
+    int b = atoi(k);
+    string a = get_string("plaintext: ");
+    
 
 char c;
 
