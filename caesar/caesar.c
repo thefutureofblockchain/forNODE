@@ -16,11 +16,11 @@ int main(int argc,  string argv[])
         printf("error\n");
         return 1;
     }
-    printf("%d", isdigit(argv[1][2]));
+    //printf("%d", isdigit(argv[1][2]));
 
     for (int n = 1; n <= strlen(k); n = n+1) {
-
-        if (isdigit(argv[1][n])) {
+        int cd = argv[1][1];
+        if (isdigit(cd) == true) {
             printf("error\n");
             return 1;
          }
