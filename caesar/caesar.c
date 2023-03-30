@@ -17,9 +17,10 @@ int main(int argc,  string argv[])
     string a = get_string("plaintext: ");
     int it = 0;
     char d;
+    printf("ciphertext: ");
     while (it < strlen(a)) {
         d = a[it];
-        printf("ciphertext: %c",rotate(d,b));
+        printf("%c",rotate(d,b));
         it++;
     }
     printf("\n");
