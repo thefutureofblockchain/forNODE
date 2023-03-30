@@ -16,12 +16,10 @@ int main(int argc,  string argv[])
 
         c = k[n];
         if (isdigit(c) == false) {
-            printf("b");
-         }
-        else {
             printf("error\n");
             return 1;
-        }
+         }
+        
         }
     if (argc != 2) {
         printf("error\n");
