@@ -21,4 +21,7 @@ int isnumber(int c, string a) {
         return 1;
         printf("error");
     }
+    else {
+        return 0;
+    }
 }
