@@ -60,7 +60,7 @@ char rotate(char d, int b) {
 
 bool o_digits(string a){
     printf("%d", atoi(a));
-    if (atoi(a) > 47 && atoi(a) < 58) {
+    if (atoi(a)) {
         return true;
     }
     else {
