@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 char rotate(char c, int n);
-int o_digits(string a);
+bool o_digits(string a);
 
 int main(int argc,  string argv[])
 {
@@ -17,7 +17,8 @@ int main(int argc,  string argv[])
         return 1;
     }
     //printf("%d", isdigit(argv[1][2]));
-    if (o_digits(argv[1]) == 1) {
+    if (o_digits(argv[1]) == true) {
+            printf("error\n");
             return 1;
     }
 
@@ -57,18 +58,13 @@ char rotate(char d, int b) {
 
 }
 
-int o_digits(string a){
-    int len = strlen(a);
-    int n = 0;
-    char k;
-    while (n<=len) {
-       k = a[n];
-       if (!isdigit(k)) {
-        printf("error\n");
-        //return 1;
-       }
+bool o_digits(string a){
+    printf("%d", atoi(a));
+    if (atoi(a) > 47 && atoi(a) < 58) {
+        return true;
     }
-    printf("hi");
-    return 0;
+    else {
+        return false;
+    }
 
 }
