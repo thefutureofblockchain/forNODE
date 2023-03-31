@@ -60,8 +60,10 @@ char rotate(char d, int b) {
 
 bool o_digits(string a){
     printf("%d", atoi(a));
-    if (atoi(a)) {
+    if (atoi(a)==0) {
+        printf("hi\n");
         return true;
+
     }
     else {
         return false;
