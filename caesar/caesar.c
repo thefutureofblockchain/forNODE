@@ -59,14 +59,23 @@ char rotate(char d, int b) {
 }
 
 bool o_digits(string a){
-    printf("%d", atoi(a));
-    if (isdigit(atoi(a)) && atoi(a)) {
-        printf("hi\n");
-        return true;
-
+    int l = strlen(a);
+    int i = 0;
+    char da;
+    for (int n = 0; n<l; n++) {
+        da = a[n];
+        if (isdigit(da)){
+            i+=1;
+        }
+        else{
+            i = 50;
+        }
+    }
+    if (i != 50) {
+        return false;
     }
     else {
-        return false;
+        return true;
     }
 
 }
