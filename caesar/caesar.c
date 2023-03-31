@@ -18,16 +18,7 @@ int main(int argc,  string argv[])
     }
     //printf("%d", isdigit(argv[1][2]));
 
-    for (int n = 1; n <= strlen(k); n = n+1) {
-        int cd = argv[1][1];
-        if (isdigit(cd) == true) {
-            printf("error\n");
-            return 1;
-         }
-        else {
-             int a = 1;
-        }
-        }
+
     int b = atoi(k);
     string a = get_string("plaintext: ");
     int it = 0;
