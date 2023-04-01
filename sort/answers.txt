@@ -1,11 +1,11 @@
-sort1 uses: selection sort
+sort1 uses: Selection sort
 
 How do you know?: dhhf
 
-sort2 uses: bubble sort
+sort2 uses: Bubble sort
 
 How do you know?: blah
 
-sort3 uses: merge sort
+sort3 uses: Merge sort
 
 How do you know?: fjf
