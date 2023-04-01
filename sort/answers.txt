@@ -1,10 +1,12 @@
 sort1 uses: Bubble sort
 
-How do you know?: dhhf
+How do you know?: In sorting random numbers, bubble sort is the slowest as was witnessed at the end of the lecture. this was true here too, with a time of .227 seconds
+
 
 sort2 uses: Merge sort
 
-How do you know?: blah
+How do you know?: Merge sort was the fastest at sorting random numbers in the lecture and here too, with a time of 0.43 seconds
+
 
 sort3 uses: Selection sort
 
