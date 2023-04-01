@@ -2,10 +2,10 @@ sort1 uses: selection sort
 
 How do you know?: dhhf
 
-sort2 uses: merge sort
+sort2 uses: bubble sort
 
 How do you know?: blah
 
-sort3 uses: bubble sort
+sort3 uses: merge sort
 
 How do you know?: fjf
