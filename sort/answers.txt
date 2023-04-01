@@ -10,4 +10,4 @@ How do you know?: Merge sort was the fastest at sorting random numbers in the le
 
 sort3 uses: Selection sort
 
-How do you know?: fjf
+How do you know?: was middle fastest in lecture and here, with a time of .62 seconds.
