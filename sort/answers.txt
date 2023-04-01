@@ -1,4 +1,4 @@
-sort1 uses: Bubb;e sort
+sort1 uses: Bubble sort
 
 How do you know?: dhhf
 
