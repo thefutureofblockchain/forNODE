@@ -68,7 +68,7 @@ bool vote(string name)
 {
     string b;
     printf("%s", candidates[1].name);
-    for (int i = 0; i < MAX; i++) {
+    for (int i = 0; i < 2; i++) {
         b =  candidates[i].name;
         if (b == name)  {
 
