@@ -66,7 +66,14 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    int i = 0;
+    string b;
+    for (int i = 0; i < MAX; i++) {
+        b =  candidates[i];
+        if (b == name)  {
+
+        printf("no.");
+        return true; }
+    }
     return false;
 }
 
