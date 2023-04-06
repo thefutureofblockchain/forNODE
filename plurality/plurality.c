@@ -67,7 +67,6 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     int i = 0;
-    while (i)
     return false;
 }
 
