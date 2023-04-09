@@ -102,9 +102,18 @@ void print_winner(void)
         }
     }
     int q=0;
+    int in = 0;
+    string x[MAX];
     while (q<MAX) {
-
+        if (candidates[q].votes = w) {
+            x[in] = candidates[q].name;
+            in++;
+        }
         q++;
+    }
+    for (int j = 0; j < strlen(x); j++){
+        string winname = x[j];
+        printf("%s", winname);
     }
 
 
