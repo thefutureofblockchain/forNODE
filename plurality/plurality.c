@@ -71,10 +71,10 @@ bool vote(string name)
     printf("%s", name);
     for (int i = 0; i < 2; i++) {
         b =  candidates[i].name;
-        if (b == name)  {
+        if (strcmp(b, name) == 0)  {
 
-        printf("no.");
-        return true;
+         printf("no.");
+         return true;
          }
     }
     return false;}
