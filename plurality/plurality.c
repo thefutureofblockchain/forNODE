@@ -68,11 +68,12 @@ bool vote(string name)
 {
     string b;
     int i;
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < candidate_count; i++) {
         b =  candidates[i].name;
         if (strcmp(b, name) == 0)  {
 
          printf("no.\n");
+         candidates[i].votes +=1;
          return true;
          }
     }
