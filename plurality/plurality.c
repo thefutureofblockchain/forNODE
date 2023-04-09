@@ -86,6 +86,7 @@ void print_winner(void)
     int w = 0;
     for (a = 0; a < candidate_count-2; a++) {
         candidate n = candidates[a];
+        printf("%d", n.votes);
         candidate m = candidates[a+1];
         if (n.votes > m.votes) {
             if (n.votes > w){
@@ -100,6 +101,6 @@ void print_winner(void)
         }
     }
 
-        printf("%d", w);
+    printf("%d", w);
     return;
 }
