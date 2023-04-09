@@ -98,7 +98,8 @@ void print_winner(void)
             }
 
         }
-        printf("%d", w);
     }
+
+        printf("%d", w);
     return;
 }
