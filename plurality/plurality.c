@@ -84,7 +84,6 @@ void print_winner(void)
 {
     int a;
     int w = 0;
-    int
     for (a = 0; a < candidate_count; a++) {
         candidate n = candidates[a];
         //printf("%d\n", n.votes);
@@ -105,7 +104,7 @@ void print_winner(void)
     int in = 0;
     string x[MAX];
     while (q<MAX) {
-        if (candidates[q].votes = w) {
+        if (candidates[q].votes == w) {
             x[in] = candidates[q].name;
             in++;
         }
