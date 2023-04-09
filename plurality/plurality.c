@@ -84,6 +84,7 @@ void print_winner(void)
 {
     int a;
     int w = 0;
+    int
     for (a = 0; a < candidate_count; a++) {
         candidate n = candidates[a];
         //printf("%d\n", n.votes);
@@ -100,6 +101,9 @@ void print_winner(void)
 
         }
     }
+    int q=0;
+    while (q<)
+
 
     printf("%d\n", w);
     return;
