@@ -102,7 +102,10 @@ void print_winner(void)
         }
     }
     int q=0;
-    while (q<)
+    while (q<MAX) {
+
+        q++;
+    }
 
 
     printf("%d\n", w);
