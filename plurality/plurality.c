@@ -110,9 +110,9 @@ void print_winner(void)
         }
         q++;
     }
-    for (int j = 0; j < MAX; j++){
+    for (int j = 0; j < in; j++){
         string winname = x[j];
-        printf("%s", winname);
+        printf("%s\n", winname);
     }
 
 
