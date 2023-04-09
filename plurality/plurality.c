@@ -67,9 +67,10 @@ int main(int argc, string argv[])
 bool vote(string name)
 {
     string b;
+    int i;
     printf("%s", candidates[0].name);
     printf("%s", name);
-    for (int i = 0; i < 2; i++) {
+    for (i = 0; i < 2; i++) {
         b =  candidates[i].name;
         if (strcmp(b, name) == 0)  {
 
