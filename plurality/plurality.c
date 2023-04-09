@@ -114,8 +114,5 @@ void print_winner(void)
         string winname = x[j];
         printf("%s\n", winname);
     }
-
-
-    printf("%d\n", w);
     return;
 }
